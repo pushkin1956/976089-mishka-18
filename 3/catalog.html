@@ -5,75 +5,77 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Academy: Мишка</title>
+  <title>HTML Academy: Мишка - каталог</title>
   <base href="https://htmlacademy-adaptive.github.io/976089-mishka-18/3/">
 </head>
 
 <body>
 
+  <!-- Шапка сайта -->
   <header class="header">
-    <div class="container">
-      <a href="index.html" class="header__logo">
-        <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Логотип интернет магазина Мишка" class="header__image">
+    <div class="header__inner">
+      <a class="header__logo" href="index.html">
+        <img class="header__image" src="https://via.placeholder.com/150x150" width="86" height="35" alt="Логотип интернет магазина Мишка">
       </a>
       <nav class="menu">
         <button class="menu__btn" type="button" aria-label="Открыть меню">Открыть меню</button>
-        <div class="menu__toggle">
-          <ul class="menu__list">
-            <li class="menu__item"><a>Каталог товаров</a></li>
-            <li class="menu__item"><a href="#">Вязание на заказ</a></li>
-            <li class="menu__item">
-              <label><input type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту"></label>
-            </li>
-            <li class="menu__item"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
-        </div>
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link">Каталог товаров</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Вязание на заказ</a></li>
+          <li class="menu__item">
+            <label><input type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту"></label>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="#">Корзина: пока пуста</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
+  <!-- Основной контент сайта -->
   <main class="main">
 
-    <h1 class="visually-hidden">Каталог товаров интернет-магазина Мишка</h1>
+    <!-- Для ридера -->
+    <h1 class="visually-hidden">Интернет-магазин Мишка - каталог товаров</h1>
 
     <div class="title">
       <p class="title__text page-title">Каталог товаров</p>
     </div>
 
+<!-- Секция каталога -->
     <section class="catalog">
-      <div class="container">
+      <div class="catalog__inner">
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a href="#">
-              <img src="https://via.placeholder.com/150x150" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Зайчик-попрыгайчик">
               <p class="catalog__title">Зайчик-попрыгайчик</p>
             </a>
             <p class="catalog__text">Рост 30 см, вес 200 г</p>
             <div class="catalog__price">
               <p class="catalog__money">1200 руб.</p>
-              <span class="catalog__icon"></span>
+              <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
             </div>
           </li>
           <li class="catalog__item">
-            <a href="#">
-              <img src="https://via.placeholder.com/150x150" width="260" height="195" alt="Корзинка для белья">
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Корзинка для белья">
               <p class="catalog__title">Корзинка для белья</p>
             </a>
             <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
             <div class="catalog__price">
               <p class="catalog__money">690 руб.</p>
-              <span class="catalog__icon"></span>
+              <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
             </div>
           </li>
           <li class="catalog__item">
-            <a href="#">
-              <img src="https://via.placeholder.com/150x150" width="260" height="195" alt="Большая корзина для игрушек">
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Большая корзина для игрушек">
               <p class="catalog__title">Большая корзина для игрушек</p>
             </a>
             <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
             <div class="catalog__price">
               <p class="catalog__money">1500 руб.</p>
-              <span class="catalog__icon"></span>
+              <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
             </div>
           </li>
           <li class="catalog__item">
@@ -91,8 +93,9 @@
 
   </main>
 
+  <!-- Подвал сайта -->
   <footer class="footer">
-    <div class="container">
+    <div class="footer__inner">
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -109,24 +112,29 @@
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
+          <img class="footer__image" src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
     </div>
   </footer>
 
+  <!-- Секция модального окна -->
   <section class="modal-add modal">
-    <p class="modal__title">Добавить в корзину</p>
-    <fieldset>
-      <legend class="modal__legend">Выберите размер:</legend>
-      <label for="size-s">S</label>
-      <label for="size-m">M</label>
-      <label for="size-l">L</label>
-      <input class="visually-hidden" id="size-s" type="radio" name="size">
-      <input class="visually-hidden" id="size-m" type="radio" name="size">
-      <input class="visually-hidden" id="size-l" type="radio" name="size">
-    </fieldset>
-    <button class="modal__btn button" type="button">Добавить</button>
+    <div class="modal__inner">
+      <p class="modal__title">Добавить в корзину</p>
+      <fieldset>
+        <legend class="modal__legend">Выберите размер:</legend>
+        <label for="size-s">S</label>
+        <label for="size-m">M</label>
+        <label for="size-l">L</label>
+        <input class="visually-hidden" id="size-s" type="radio" name="size" value="size-s">
+        <input class="visually-hidden" id="size-m" type="radio" name="size" value="size-m">
+        <input class="visually-hidden" id="size-l" type="radio" name="size" value="size-l">
+      </fieldset>
+      <button class="modal__btn button" type="button">Добавить</button>
+    </div>
   </section>
 
 </body>
+
+</html>
