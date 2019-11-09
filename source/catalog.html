@@ -11,7 +11,7 @@
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="header__inner">
       <a href="index.html" class="header__logo">
         <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Логотип интернет магазина Мишка" class="header__image">
       </a>
@@ -40,7 +40,7 @@
     </div>
 
     <section class="catalog">
-      <div class="container">
+      <div class="catalog__inner">
         <ul class="catalog__list">
           <li class="catalog__item">
             <a href="#">
@@ -91,7 +91,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="footer__inner">
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -115,17 +115,19 @@
   </footer>
 
   <section class="modal-add modal">
-    <p class="modal__title">Добавить в корзину</p>
-    <fieldset>
-      <legend class="modal__legend">Выберите размер:</legend>
-      <label for="size-s">S</label>
-      <label for="size-m">M</label>
-      <label for="size-l">L</label>
-      <input class="visually-hidden" id="size-s" type="radio" name="size">
-      <input class="visually-hidden" id="size-m" type="radio" name="size">
-      <input class="visually-hidden" id="size-l" type="radio" name="size">
-    </fieldset>
-    <button class="modal__btn button" type="button">Добавить</button>
+    <div class="modal__inner">
+      <p class="modal__title">Добавить в корзину</p>
+      <fieldset>
+        <legend class="modal__legend">Выберите размер:</legend>
+        <label for="size-s">S</label>
+        <label for="size-m">M</label>
+        <label for="size-l">L</label>
+        <input class="visually-hidden" id="size-s" type="radio" name="size">
+        <input class="visually-hidden" id="size-m" type="radio" name="size">
+        <input class="visually-hidden" id="size-l" type="radio" name="size">
+      </fieldset>
+      <button class="modal__btn button" type="button">Добавить</button>
+    </div>
   </section>
 
 </body>
