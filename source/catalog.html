@@ -12,18 +12,18 @@
 
   <header class="header">
     <div class="header__inner">
-      <a href="index.html" class="header__logo">
-        <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Логотип интернет магазина Мишка" class="header__image">
+      <a class="header__logo" href="index.html">
+        <img class="header__image" src="https://via.placeholder.com/150x150" width="86" height="35" alt="Логотип интернет магазина Мишка">
       </a>
       <nav class="menu">
         <button class="menu__btn" type="button" aria-label="Открыть меню">Открыть меню</button>
         <ul class="menu__list">
-          <li class="menu__item"><a>Каталог товаров</a></li>
-          <li class="menu__item"><a href="#">Вязание на заказ</a></li>
+          <li class="menu__item"><a class="menu__link">Каталог товаров</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Вязание на заказ</a></li>
           <li class="menu__item">
             <label><input type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту"></label>
           </li>
-          <li class="menu__item"><a href="#">Корзина: пока пуста</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </div>
@@ -41,8 +41,8 @@
       <div class="catalog__inner">
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a href="#">
-              <img src="https://via.placeholder.com/150x150" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Зайчик-попрыгайчик">
               <p class="catalog__title">Зайчик-попрыгайчик</p>
             </a>
             <p class="catalog__text">Рост 30 см, вес 200 г</p>
@@ -52,8 +52,8 @@
             </div>
           </li>
           <li class="catalog__item">
-            <a href="#">
-              <img src="https://via.placeholder.com/150x150" width="260" height="195" alt="Корзинка для белья">
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Корзинка для белья">
               <p class="catalog__title">Корзинка для белья</p>
             </a>
             <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
@@ -63,8 +63,8 @@
             </div>
           </li>
           <li class="catalog__item">
-            <a href="#">
-              <img src="https://via.placeholder.com/150x150" width="260" height="195" alt="Большая корзина для игрушек">
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Большая корзина для игрушек">
               <p class="catalog__title">Большая корзина для игрушек</p>
             </a>
             <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
@@ -106,7 +106,7 @@
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
+          <img class="footer__image" src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
     </div>
@@ -120,12 +120,14 @@
         <label for="size-s">S</label>
         <label for="size-m">M</label>
         <label for="size-l">L</label>
-        <input class="visually-hidden" id="size-s" type="radio" name="size">
-        <input class="visually-hidden" id="size-m" type="radio" name="size">
-        <input class="visually-hidden" id="size-l" type="radio" name="size">
+        <input class="visually-hidden" id="size-s" type="radio" name="size" value="size-s">
+        <input class="visually-hidden" id="size-m" type="radio" name="size" value="size-m">
+        <input class="visually-hidden" id="size-l" type="radio" name="size" value="size-l">
       </fieldset>
       <button class="modal__btn button" type="button">Добавить</button>
     </div>
   </section>
 
 </body>
+
+</html>
