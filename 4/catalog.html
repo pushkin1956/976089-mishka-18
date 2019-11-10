@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Academy: Мишка - каталог</title>
+  <base href="https://htmlacademy-adaptive.github.io/976089-mishka-18/4/">
+</head>
+
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo logo" href="index.html">
+        <img class="logo__image" src="https://via.placeholder.com/150x150" width="86" height="35" alt="Логотип интернет магазина Мишка">
+      </a>
+      <nav class="menu">
+        <button class="menu__btn" type="button" aria-label="Открыть меню для навигации на сайте">Открыть меню</button>
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link">Каталог товаров</a></li>
+          <li class="menu__item"><a class="menu__link" href="form.html">Вязание на заказ</a></li>
+          <li class="menu__item">
+            <label><input type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту"></label>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основной контент сайта -->
+  <main class="main">
+
+    <!-- Для ридера -->
+    <h1 class="visually-hidden">Интернет-магазин Мишка - каталог товаров</h1>
+
+    <div class="title">
+      <p class="title__text page-title">Каталог товаров</p>
+    </div>
+
+<!-- Секция каталога -->
+    <section class="catalog">
+      <div class="catalog__inner">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <p class="catalog__title">Зайчик-попрыгайчик</p>
+            </a>
+            <p class="catalog__text">Рост 30 см, вес 200 г</p>
+            <div class="catalog__price">
+              <p class="catalog__money">1200 руб.</p>
+              <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Корзинка для белья">
+              <p class="catalog__title">Корзинка для белья</p>
+            </a>
+            <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
+            <div class="catalog__price">
+              <p class="catalog__money">690 руб.</p>
+              <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Большая корзина для игрушек">
+              <p class="catalog__title">Большая корзина для игрушек</p>
+            </a>
+            <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
+            <div class="catalog__price">
+              <p class="catalog__money">1500 руб.</p>
+              <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+            </div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__process">
+              <span class="catalog__video-icon"></span>
+              <p class="catalog__title">Процесс производства</p>
+            </div>
+            <img src="https://via.placeholder.com/150x150" width="260" height="150" alt="Процесс производства">
+            <p class="catalog__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button class="catalog__btn button" type="button">Сделать заказ</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link-instagram" href="#" aria-label="Инстаграм">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link-facebook" href="#" aria-label="Фейсбук">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link-twitter" href="#" aria-label="Твитер">Twitter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="footer__image" src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Секция модального окна -->
+  <section class="modal-add modal">
+    <div class="modal__inner">
+      <p class="modal__title">Добавить в корзину</p>
+      <fieldset>
+        <legend class="modal__legend">Выберите размер:</legend>
+        <label for="size-s">S</label>
+        <label for="size-m">M</label>
+        <label for="size-l">L</label>
+        <input class="visually-hidden" id="size-s" type="radio" name="size" value="size-s">
+        <input class="visually-hidden" id="size-m" type="radio" name="size" value="size-m">
+        <input class="visually-hidden" id="size-l" type="radio" name="size" value="size-l">
+      </fieldset>
+      <button class="modal__btn button" type="button">Добавить</button>
+    </div>
+  </section>
+
+</body>
+
+</html>
