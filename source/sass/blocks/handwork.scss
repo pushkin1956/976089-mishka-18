@@ -21,6 +21,8 @@
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
+    margin: 0;
+    padding-left: 29px;
   }
 }
 
@@ -38,7 +40,12 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  padding-left: 29px;
+  min-height: 103px;
+}
+
+.handwork__image-itn,
+.handwork__image-toys {
+  opacity: 0.2;
 }
 
 .handwork__image-itn {
