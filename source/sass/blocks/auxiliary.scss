@@ -56,3 +56,8 @@ body {
 .footer__inner {
   @include center-inner;
 }
+
+fieldset {
+  border: none;
+  padding: 0;
+}
