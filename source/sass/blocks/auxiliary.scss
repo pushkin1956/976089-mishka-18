@@ -24,6 +24,7 @@ input[type="radio"].visually-hidden {
 
 /* Основные стили документа */
 body {
+  width: 320px;
   margin: 0;
   padding: 0;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -43,5 +44,15 @@ body {
   font-size: 25px;
   font-weight: bold;
   line-height: 1.2;
+  margin: 0;
+  padding: 0;
 }
 
+.handwork__inner,
+.baskets__inner,
+.about-us__inner,
+.reviews__inner,
+.contacts__inner,
+.footer__inner {
+  @include center-inner;
+}

@@ -19,6 +19,11 @@
   line-height: 1.18;
   color: $color-brown;
   text-transform: uppercase;
-  padding: 20px 85px;
+  padding: 20px 83.3px;
   border: solid 2px $color-brown;
+}
+
+@mixin center-inner {
+  margin: 0 auto;
+  width: 260px;
 }

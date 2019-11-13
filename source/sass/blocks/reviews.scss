@@ -1,0 +1,45 @@
+.reviews__title {
+  margin-bottom: 38px;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 2;
+  color: $color-brown;
+  margin: 0 0 40px 0;
+}
+
+.reviews__name {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  margin: 0 0 5px 0;
+}
+
+.reviews__account {
+  font-style: normal;
+  font-size: 17px;
+  line-height: 1.76;
+  color: $color-brown;
+  margin-bottom: 36px;
+}
+
+.reviews__btn {
+  button {
+    width: 130px;
+    height: 52px;
+    padding: 0;
+    border: solid 1px #ececec;
+    background-color: transparent;
+    margin-bottom: 38px;
+    cursor: pointer;
+  }
+}
+
+.reviews__btn-next {
+  margin-left: -5px;
+}
+
+.reviews__write-btn {
+  margin-bottom: 45px;
+}
