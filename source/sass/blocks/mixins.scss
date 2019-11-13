@@ -14,13 +14,15 @@
 }
 
 @mixin button-style {
+  font-family: inherit;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
   color: $color-brown;
   text-transform: uppercase;
-  padding: 20px 83.3px;
   border: solid 2px $color-brown;
+  width: 260px;
+  padding: 20px 0;
 }
 
 @mixin center-inner {
