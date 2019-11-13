@@ -1,3 +1,10 @@
+.handwork__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0 auto;
+}
+
 .handwork__title {
   .handwork__text {
     width: 244px;
@@ -22,11 +29,14 @@
     text-align: left;
     color: #ffffff;
     margin: 0;
-    padding-left: 29px;
+    padding-top: 8px;
   }
 }
 
 .handwork__interior {
+  .handwork__image-itn {
+    padding-right: 10px;
+  }
   background-color: #63d1bb;
 }
 
@@ -46,12 +56,4 @@
 .handwork__image-itn,
 .handwork__image-toys {
   opacity: 0.2;
-}
-
-.handwork__image-itn {
-  padding-right: 36px;
-}
-
-.handwork__image-toys {
-  padding-right: 27px;
 }

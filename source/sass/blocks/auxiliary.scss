@@ -22,25 +22,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-/* Подключение шрифтов */
-@font-face {
-  font-family: "OpenSans";
-  src:
-    url("../../fonts/opensans.woff") format("woff"),
-    url("../../fonts/opensans.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src:
-    url("../../fonts/opensansbold.woff") format("woff"),
-    url("../../fonts/opensansbold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
 /* Основные стили документа */
 body {
   margin: 0;
@@ -56,4 +37,10 @@ body {
   font-weight: bold;
   line-height: 1.11;
   color: #010000;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
 }
