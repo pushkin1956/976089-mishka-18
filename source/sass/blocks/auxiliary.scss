@@ -55,10 +55,5 @@ body {
 .contacts__inner,
 .footer__inner,
 .catalog__inner {
-  @include center-inner;
-}
-
-fieldset {
-  border: none;
-  padding: 0;
+  @include mobile-center-inner;
 }

@@ -4,7 +4,7 @@
 }
 
 .modal__inner {
-  @include center-inner;
+  @include mobile-center-inner;
 }
 
 .modal__title {
@@ -49,4 +49,9 @@ input[type="radio"]:checked + .modal__size {
   background-color: #63d1bb;
   border: none;
   margin-bottom: 46px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
 }
