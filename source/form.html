@@ -53,8 +53,16 @@
         <form action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-type">Тип</legend>
-            <label class="form__style-text"><input class="form__input-padding" type="radio" name="type" checked>Аксессуар для интерьера</label>
-            <label class="form__style-text"><input class="form__input-padding" type="radio" name="type">Детская игрушка</label>
+            <div class="form__radio">
+              <div class="form__interior">
+                <input class="form__input-padding" id="interior" type="radio" name="type" checked>
+                <label class="form__style-text" for="interior">Аксессуар <br> для интерьера</label>
+              </div>
+              <div class="form__games">
+                <input class="form__input-padding" id="games" type="radio" name="type">
+                <label class="form__style-text" for="games">Детская игрушка</label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-color">Цвет</legend>
