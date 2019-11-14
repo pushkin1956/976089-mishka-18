@@ -41,7 +41,7 @@
     <h1 class="visually-hidden">Интернет-магазин Мишка - форма заказа</h1>
 
     <div class="title">
-      <p class="title__text page-title">Вязание на заказ</p>
+      <p class="title__text title__text-form page-title">Вязание на заказ</p>
     </div>
 
 <!-- Секция формы заказа -->
@@ -51,39 +51,39 @@
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-type">Тип</legend>
-            <label><input type="radio" name="type" checked>Аксессуар для интерьера</label>
-            <label><input type="radio" name="type">Детская игрушка</label>
+            <label class="form__style-text"><input class="form__input-padding" type="radio" name="type" checked>Аксессуар для интерьера</label>
+            <label class="form__style-text"><input class="form__input-padding" type="radio" name="type">Детская игрушка</label>
           </fieldset>
-          <fieldset>
+          <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-color">Цвет</legend>
-            <label><input type="checkbox" checked>Белый</label>
-            <label><input type="checkbox" checked>Серый</label>
-            <label><input type="checkbox">«Тиффани»</label>
-            <label><input type="checkbox">Черный</label>
-            <label><input type="checkbox">Розовый</label>
-            <label><input type="checkbox">Оранжевый</label>
+            <label class="form__style-text"><input class="form__input-padding" type="checkbox" checked>Белый</label>
+            <label class="form__style-text"><input class="form__input-padding" type="checkbox" checked>Серый</label>
+            <label class="form__style-text"><input class="form__input-padding" type="checkbox">«Тиффани»</label>
+            <label class="form__style-text"><input class="form__input-padding" type="checkbox">Черный</label>
+            <label class="form__style-text"><input class="form__input-padding" type="checkbox">Розовый</label>
+            <label class="form__style-text"><input class="form__input-padding" type="checkbox">Оранжевый</label>
           </fieldset>
-          <fieldset>
+          <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-name">Фио</legend>
-            <label>Имя:<input type="text" placeholder="Введите ваше имя*"></label>
-            <label>Фамилия:<input type="text" placeholder="Укажите фамилию*"></label>
-            <label>Отчество:<input type="text" placeholder="Отчество, если желаете"></label>
+            <label class="form__style-text form__style-text-mb">Имя:<input class="form__placeholder" type="text" placeholder="Введите ваше имя*"></label>
+            <label class="form__style-text form__style-text-mb">Фамилия:<input class="form__placeholder" type="text" placeholder="Укажите фамилию*"></label>
+            <label class="form__style-text form__style-text-mb">Отчество:<input class="form__placeholder" type="text" placeholder="Отчество, если желаете"></label>
           </fieldset>
-          <fieldset>
+          <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-phone">Тел</legend>
-            <label><input type="tel" pattern="2[0-9]{3}-[0-9]{3}" placeholder="+7 XXX XXX XX XX*" required></label>
+            <label><input class="form__placeholder" type="tel" pattern="2[0-9]{3}-[0-9]{3}" placeholder="+7 XXX XXX XX XX*" required></label>
           </fieldset>
-          <fieldset>
+          <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-email">E-mail</legend>
-            <label><input type="email" placeholder="Ваш Email*" required></label>
+            <label><input class="form__placeholder" type="email" placeholder="Ваш Email*" required></label>
           </fieldset>
-          <fieldset>
+          <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-additionally">Доп</legend>
-            <label><textarea name="form-text" id="form-text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea></label>
+            <label class="form__textarea"><textarea name="form-text" id="form-text" cols="29" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea></label>
           </fieldset>
-          <p class="form__require"><sup>*</sup>Поля обязательны для заполнения</p>
+          <small class="form__require"><sup>*</sup>Поля обязательны для заполнения</small>
           <button class="form__btn button" type="submit">Отправить заказ</button>
         </form>
       </div>
