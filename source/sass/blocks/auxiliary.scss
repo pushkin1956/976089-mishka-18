@@ -54,6 +54,7 @@ body {
 .reviews__inner,
 .contacts__inner,
 .footer__inner,
-.catalog__inner {
+.catalog__inner,
+.form__inner {
   @include mobile-center-inner;
 }
