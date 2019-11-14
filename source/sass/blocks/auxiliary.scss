@@ -53,7 +53,8 @@ body {
 .about-us__inner,
 .reviews__inner,
 .contacts__inner,
-.footer__inner {
+.footer__inner,
+.catalog__inner {
   @include center-inner;
 }
 
