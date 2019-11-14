@@ -57,3 +57,9 @@ body {
 .form__inner {
   @include mobile-center-inner;
 }
+
+.line {
+  height: 1px;
+  background-color: #e1e1e1;
+  border: none;
+}

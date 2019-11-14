@@ -10,8 +10,7 @@
 }
 
 .social__item {
-  padding: 25px 0;
-  margin-bottom: 50px;
+  padding-top: 25px;
 }
 
 .footer__copyright {
@@ -19,4 +18,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 23px;
+}
+
+.footer__line {
+  margin: 27px 0;
 }

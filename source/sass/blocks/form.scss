@@ -93,13 +93,14 @@
     &::placeholder {
       opacity: 0.3;
       font-size: 17px;
-      line-height: 1.06;
+      line-height: 1.26;
       color: $color-brown;
-      padding: 18px 75px 0 17px;
+      padding: 15px 55px 0 17px;
     }
     resize: none;
     border: solid 2px $color-brown;
   }
+  margin-bottom: 18px;
 }
 
 .form__style-text-mb {
@@ -109,4 +110,13 @@
 .form__legend-phone,
 .form__legend-email {
   margin: 0;
+}
+
+.form__require {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.form__btn {
+  margin: 31px 0 55px 0;
 }
