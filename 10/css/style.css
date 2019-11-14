@@ -68,6 +68,11 @@ body {
   margin: 0 auto;
   width: 260px; }
 
+.line {
+  height: 1px;
+  background-color: #e1e1e1;
+  border: none; }
+
 .header {
   position: relative; }
 
@@ -335,8 +340,7 @@ table {
       flex-wrap: wrap; }
 
 .social__item {
-  padding: 25px 0;
-  margin-bottom: 50px; }
+  padding-top: 25px; }
 
 .footer__copyright {
   display: -webkit-box;
@@ -347,6 +351,9 @@ table {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-bottom: 23px; }
+
+.footer__line {
+  margin: 27px 0; }
 
 .modal {
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
@@ -411,7 +418,7 @@ input[type="radio"]:checked + .modal__size {
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
-  padding: 76px 41px;
+  padding: 76px 0;
   background-color: #f1f1f1;
   margin: 0; }
 
@@ -428,6 +435,7 @@ input[type="radio"]:checked + .modal__size {
   margin-bottom: 30px; }
 
 .catalog__link {
+  display: block;
   text-decoration: none; }
 
 .catalog__image {
@@ -454,9 +462,6 @@ input[type="radio"]:checked + .modal__size {
   margin: 0 0 26px 0; }
 
 .catalog__line {
-  height: 1px;
-  background-color: #ececec;
-  border: none;
   margin: 0 0 27px 0; }
 
 .catalog__price {
@@ -510,13 +515,28 @@ input[type="radio"]:checked + .modal__size {
   margin-bottom: 33px; }
 
 .title__text-form {
-  padding: 76px 35px; }
+  padding: 76px 0; }
 
 .form__text {
   font-size: 13px;
   color: #444444;
   line-height: 1.85;
   margin: 30px 0; }
+
+.form__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.form__interior,
+.form__games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .form__fieldset {
   display: -webkit-box;
@@ -528,31 +548,8 @@ input[type="radio"]:checked + .modal__size {
           flex-direction: column;
   border: none;
   padding: 0; }
-  .form__fieldset input::-webkit-input-placeholder {
-    opacity: 0.3;
-    font-size: 17px;
-    line-height: 1.06;
-    color: #444444; }
-  .form__fieldset input::-moz-placeholder {
-    opacity: 0.3;
-    font-size: 17px;
-    line-height: 1.06;
-    color: #444444; }
-  .form__fieldset input:-ms-input-placeholder {
-    opacity: 0.3;
-    font-size: 17px;
-    line-height: 1.06;
-    color: #444444; }
-  .form__fieldset input::-ms-input-placeholder {
-    opacity: 0.3;
-    font-size: 17px;
-    line-height: 1.06;
-    color: #444444; }
-  .form__fieldset input::placeholder {
-    opacity: 0.3;
-    font-size: 17px;
-    line-height: 1.06;
-    color: #444444; }
+  .form__fieldset:not(:last-of-type) {
+    margin-bottom: 30px; }
 
 .form__legend {
   position: relative;
@@ -586,13 +583,16 @@ input[type="radio"]:checked + .modal__size {
       -ms-flex-direction: row;
           flex-direction: row; }
 
+.form__input-padding {
+  margin-right: 22px;
+  margin-bottom: 20px; }
+
 .form__style-text {
+  margin-right: 22px;
+  margin-bottom: 20px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.06; }
-  .form__style-text .form__input-padding {
-    margin-right: 22px;
-    margin-bottom: 20px; }
 
 .form__placeholder {
   width: 100%;
@@ -600,40 +600,67 @@ input[type="radio"]:checked + .modal__size {
   -webkit-box-shadow: inset 0 -2px 0 0 #000000;
           box-shadow: inset 0 -2px 0 0 #000000;
   padding: 18px 0; }
+  .form__placeholder::-webkit-input-placeholder {
+    opacity: 0.3;
+    font-size: 17px;
+    line-height: 1.06;
+    color: #444444; }
+  .form__placeholder::-moz-placeholder {
+    opacity: 0.3;
+    font-size: 17px;
+    line-height: 1.06;
+    color: #444444; }
+  .form__placeholder:-ms-input-placeholder {
+    opacity: 0.3;
+    font-size: 17px;
+    line-height: 1.06;
+    color: #444444; }
+  .form__placeholder::-ms-input-placeholder {
+    opacity: 0.3;
+    font-size: 17px;
+    line-height: 1.06;
+    color: #444444; }
+  .form__placeholder::placeholder {
+    opacity: 0.3;
+    font-size: 17px;
+    line-height: 1.06;
+    color: #444444; }
 
-.form__textarea textarea {
-  resize: none;
-  border: solid 2px #444444; }
-  .form__textarea textarea::-webkit-input-placeholder {
-    opacity: 0.3;
-    font-size: 17px;
-    line-height: 1.06;
-    color: #444444;
-    padding: 18px 75px 0 17px; }
-  .form__textarea textarea::-moz-placeholder {
-    opacity: 0.3;
-    font-size: 17px;
-    line-height: 1.06;
-    color: #444444;
-    padding: 18px 75px 0 17px; }
-  .form__textarea textarea:-ms-input-placeholder {
-    opacity: 0.3;
-    font-size: 17px;
-    line-height: 1.06;
-    color: #444444;
-    padding: 18px 75px 0 17px; }
-  .form__textarea textarea::-ms-input-placeholder {
-    opacity: 0.3;
-    font-size: 17px;
-    line-height: 1.06;
-    color: #444444;
-    padding: 18px 75px 0 17px; }
-  .form__textarea textarea::placeholder {
-    opacity: 0.3;
-    font-size: 17px;
-    line-height: 1.06;
-    color: #444444;
-    padding: 18px 75px 0 17px; }
+.form__textarea {
+  margin-bottom: 18px; }
+  .form__textarea textarea {
+    resize: none;
+    border: solid 2px #444444; }
+    .form__textarea textarea::-webkit-input-placeholder {
+      opacity: 0.3;
+      font-size: 17px;
+      line-height: 1.26;
+      color: #444444;
+      padding: 15px 55px 0 17px; }
+    .form__textarea textarea::-moz-placeholder {
+      opacity: 0.3;
+      font-size: 17px;
+      line-height: 1.26;
+      color: #444444;
+      padding: 15px 55px 0 17px; }
+    .form__textarea textarea:-ms-input-placeholder {
+      opacity: 0.3;
+      font-size: 17px;
+      line-height: 1.26;
+      color: #444444;
+      padding: 15px 55px 0 17px; }
+    .form__textarea textarea::-ms-input-placeholder {
+      opacity: 0.3;
+      font-size: 17px;
+      line-height: 1.26;
+      color: #444444;
+      padding: 15px 55px 0 17px; }
+    .form__textarea textarea::placeholder {
+      opacity: 0.3;
+      font-size: 17px;
+      line-height: 1.26;
+      color: #444444;
+      padding: 15px 55px 0 17px; }
 
 .form__style-text-mb {
   margin-bottom: 20px; }
@@ -641,5 +668,12 @@ input[type="radio"]:checked + .modal__size {
 .form__legend-phone,
 .form__legend-email {
   margin: 0; }
+
+.form__require {
+  font-size: 14px;
+  line-height: 1.14; }
+
+.form__btn {
+  margin: 31px 0 55px 0; }
 
 /*# sourceMappingURL=style.css.map */
