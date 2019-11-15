@@ -50,6 +50,5 @@
 }
 
 .contacts__btn {
-  @include button-reset;
   @include button-style;
 }
