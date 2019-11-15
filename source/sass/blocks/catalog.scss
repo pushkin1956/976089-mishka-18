@@ -34,7 +34,7 @@
 }
 
 .catalog__desc {
-  width: 204px;
+  width: 205px;
   margin: 0 auto;
 }
 
@@ -84,7 +84,7 @@
 .catalog__process {
   display: flex;
   align-items: center;
-  width: 204px;
+  width: 205px;
   margin: 28px auto;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .catalog__text-process {
-  width: 183px;
+  width: 185px;
   line-height: 1.85;
   text-align: left;
   margin: 0 auto 29px auto;
@@ -109,7 +109,7 @@
 
 .catalog__btn {
   @include button-style;
-  width: 192px;
+  width: 195px;
   padding: 14px 0;
   margin-bottom: 33px;
 }
