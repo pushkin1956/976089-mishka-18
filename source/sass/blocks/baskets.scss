@@ -12,7 +12,7 @@
   font-weight: bold;
   line-height: 1.18;
   letter-spacing: normal;
-  color: $color-green;
+  color: $color-brand;
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 30px;
@@ -21,13 +21,13 @@
 .baskets__description {
   font-size: 15px;
   line-height: 1.6;
-  color: $color-brown;
+  color: $color-danger;
   margin: 0 0 34px 0;
 }
 
 .baskets__desc-table {
   border-bottom: 1px solid #cecece;
-  color: $color-brown;
+  color: $color-danger;
 }
 
 .baskets__table {
@@ -45,7 +45,7 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
-  color: $color-brown;
+  color: $color-danger;
   margin-bottom: 28px;
 }
 
