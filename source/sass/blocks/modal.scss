@@ -34,7 +34,7 @@
   margin-bottom: 31px;
 }
 
-input[type="radio"]:checked + .modal__size {
+.modal__radio:checked + .modal__size {
   border: solid 2px #63d1bb;
 }
 
