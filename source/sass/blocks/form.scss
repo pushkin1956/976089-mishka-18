@@ -109,7 +109,7 @@
   margin-bottom: 18px;
 }
 
-.form__text-mb {
+.form__text-mb:not(:last-of-type) {
   margin-bottom: 20px;
 }
 
