@@ -16,7 +16,7 @@
 
   <!-- Шапка сайта -->
   <header class="header">
-    <div class="header__inner">
+    <div class="inner">
       <a class="header__logo logo" href="index.html">
         <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Мишка">
       </a>
@@ -47,7 +47,7 @@
 
 <!-- Секция формы заказа -->
     <section class="form">
-      <div class="form__inner">
+      <div class="inner">
         <p class="form__text">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
@@ -56,23 +56,36 @@
             <legend class="form__legend form__legend-type">Тип</legend>
             <div class="form__radio">
               <div class="form__interior">
-                <input class="visually-hidden" id="interior" type="radio" name="type" checked>
+                <input class="visually-hidden" id="interior" type="radio" name="type" value="interior" checked>
                 <label class="form__style-text form__text-indentation" for="interior">Аксессуар для интерьера</label>
               </div>
               <div class="form__games">
-                <input class="visually-hidden" id="games" type="radio" name="type">
+                <input class="visually-hidden" id="games" type="radio" name="type" value="games">
                 <label class="form__style-text form__text-indentation" for="games">Детская игрушка</label>
               </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend-color">Цвет</legend>
-            <label class="form__style-text form__text-indentation"><input class="visually-hidden" type="checkbox" checked>Белый</label>
-            <label class="form__style-text form__text-indentation"><input class="visually-hidden" type="checkbox" checked>Серый</label>
-            <label class="form__style-text form__text-indentation"><input class="visually-hidden" type="checkbox">«Тиффани»</label>
-            <label class="form__style-text form__text-indentation"><input class="visually-hidden" type="checkbox">Черный</label>
-            <label class="form__style-text form__text-indentation"><input class="visually-hidden" type="checkbox">Розовый</label>
-            <label class="form__style-text form__text-indentation"><input class="visually-hidden" type="checkbox">Оранжевый</label>
+            <legend class="form__legend form__legend-color">Цвет
+            </legend>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="white" type="checkbox" checked>Белый
+            </label>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="grey" type="checkbox" checked>Серый
+            </label>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="tiffany" type="checkbox">«Тиффани»
+            </label>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="black" type="checkbox">Черный
+            </label>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="pink" type="checkbox">Розовый
+            </label>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="orange" type="checkbox">Оранжевый
+            </label>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-name">Фио</legend>
@@ -102,7 +115,7 @@
 
   <!-- Подвал сайта -->
   <footer class="footer">
-    <div class="footer__inner">
+    <div class="inner">
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">

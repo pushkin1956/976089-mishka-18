@@ -16,7 +16,7 @@
 
   <!-- Шапка сайта -->
   <header class="header">
-    <div class="header__inner">
+    <div class="inner">
       <a class="header__logo logo">
         <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Мишка">
       </a>
@@ -48,13 +48,13 @@
       </div>
       <div class="handwork__goods">
         <a href="catalog.html" class="handwork__interior">
-          <div class="handwork__inner">
+          <div class="inner">
             <p class="handwork__text">Предметы интерьера</p>
             <img class="handwork__image-itn" src="https://via.placeholder.com/150x150" width="40" height="62" alt="Предметы интерьера">
           </div>
         </a>
         <a href="catalog.html" class="handwork__toys">
-          <div class="handwork__inner">
+          <div class="inner">
             <p class="handwork__text">Детские игрушки</p>
             <img class="handwork__image-toys" src="https://via.placeholder.com/150x150" width="60" height="60" alt="Детские игрушки">
           </div>
@@ -64,7 +64,7 @@
 
 <!-- Секция вязаных корзинок -->
     <section class="baskets">
-      <div class="baskets__inner">
+      <div class="inner">
         <div class="baskets__good">
           <h2 class="baskets__title title">Вязаные корзинки</h2>
           <p class="baskets__week">Товар недели</p>
@@ -106,7 +106,7 @@
 
 <!-- Секция о нас -->
     <section class="about-us">
-      <div class="about-us__inner">
+      <div class="inner">
         <h2 class="about-us__title title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item">
@@ -139,7 +139,7 @@
 
 <!-- Секция отзывов -->
     <section class="reviews">
-      <div class="reviews__inner">
+      <div class="inner">
         <h2 class="reviews__title title">Отзывы</h2>
         <div class="reviews__slider">
           <p class="reviews__text">
@@ -158,7 +158,7 @@
 
 <!-- Секция контактов -->
     <section class="contacts">
-      <div class="contacts__inner">
+      <div class="inner">
         <h2 class="contacts__title title">Контакты</h2>
         <div class="contacts__info">
           <div class="contacts__email">
@@ -179,7 +179,7 @@
         <img class="contacts__image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         <img class="contacts__pin" src="https://via.placeholder.com/150x150" alt="" width="100" height="67">
       </div>
-      <div class="contacts__inner">
+      <div class="inner">
         <button class="contacts__btn button">Напишите нам</button>
       </div>
     </section>
@@ -188,7 +188,7 @@
 
   <!-- Подвал сайта -->
   <footer class="footer">
-    <div class="footer__inner">
+    <div class="inner">
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -217,14 +217,14 @@
 
   <!-- Секция модального окна -->
   <section class="modal-add modal">
-    <div class="modal__inner">
+    <div class="inner">
       <p class="modal__title">Добавить в корзину</p>
       <fieldset class="modal__fieldset">
         <legend class="modal__legend">Выберите размер:</legend>
         <div class="modal__sizes">
-          <input class="modal__radio visually-hidden" id="size-s" type="radio" name="size">
-          <input class="modal__radio visually-hidden" id="size-m" type="radio" name="size">
-          <input class="modal__radio visually-hidden" id="size-l" type="radio" name="size" checked>
+          <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size">
+          <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
+          <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size" checked>
           <label class="modal__size" for="size-s">S</label>
           <label class="modal__size" for="size-m">M</label>
           <label class="modal__size" for="size-l">L</label>
