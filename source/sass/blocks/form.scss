@@ -1,3 +1,7 @@
+.form {
+  margin-bottom: 55px;
+}
+
 .form__inner {
   @include mobile-center-inner;
 }
@@ -125,5 +129,5 @@
 
 .form__btn {
   @include button-style;
-  margin: 31px 0 55px 0;
+  margin-top: 31px;
 }

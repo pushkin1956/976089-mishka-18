@@ -1,3 +1,7 @@
+.catalog {
+  margin-bottom: 30px;
+}
+
 .catalog__inner {
   @include mobile-center-inner;
 }
@@ -19,9 +23,11 @@
 }
 
 .catalog__item {
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
   width: 260px;
   border: 1px solid #ececec;
-  margin-bottom: 30px;
 }
 
 .catalog__link {

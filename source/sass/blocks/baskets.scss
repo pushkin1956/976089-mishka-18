@@ -1,3 +1,7 @@
+.baskets {
+  margin-bottom: 36px;
+}
+
 .baskets__inner {
   @include mobile-center-inner;
 }
@@ -51,5 +55,4 @@
 
 .baskets__to-order-btn {
   @include button-style;
-  margin-bottom: 36px;
 }
