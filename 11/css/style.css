@@ -713,6 +713,8 @@ footer {
     color: #444444; }
 
 .form__textarea-text {
+  width: 250px;
+  height: 140px;
   resize: none;
   border: solid 2px #444444;
   margin-bottom: 18px; }
