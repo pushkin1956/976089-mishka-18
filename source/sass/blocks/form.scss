@@ -18,9 +18,13 @@
   flex-direction: column;
 }
 
-.form__interior,
 .form__games {
   display: flex;
+}
+
+.form__interior {
+  display: flex;
+  margin-bottom: 30px;
 }
 
 .form__fieldset {
@@ -66,17 +70,17 @@
   flex-direction: row;
 }
 
-.form__input-padding {
-  margin-right: 22px;
-  margin-bottom: 20px;
-}
-
 .form__style-text {
-  margin-right: 22px;
-  margin-bottom: 20px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.06;
+}
+
+.form__text-indentation {
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+  padding-left: 60px;
 }
 
 .form__placeholder {
@@ -105,7 +109,7 @@
   margin-bottom: 18px;
 }
 
-.form__style-text-mb {
+.form__text-mb {
   margin-bottom: 20px;
 }
 
