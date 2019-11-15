@@ -2,12 +2,13 @@
   margin: 44px 0 42px 0;
 }
 
-.contacts__desc {
+.contacts__info {
   margin-bottom: 42px;
 }
 
 .contacts__email,
 .contacts__address {
+  display: flex;
   font-size: 15px;
   line-height: 2;
   color: $color-brown;
@@ -21,6 +22,10 @@
 
 .contacts__value {
   padding-right: 17px;
+}
+
+.contacts__field-line {
+  border-bottom: 1px solid $color-green;
 }
 
 .contacts__map {
