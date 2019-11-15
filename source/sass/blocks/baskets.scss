@@ -1,0 +1,60 @@
+.baskets__title {
+  padding: 0 0 8px 0;
+  margin: 0;
+}
+
+.baskets__week {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  letter-spacing: normal;
+  color: $color-green;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.baskets__description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: $color-brown;
+  margin: 0 0 34px 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.baskets__desc {
+  .baskets__table {
+    border-bottom: 1px solid #cecece;
+    color: $color-brown;
+  }
+  width: 100%;
+  margin: 0 0 28px 0;
+}
+
+.baskets__value,
+.baskets__field {
+  p {
+    @include reset-list;
+  }
+}
+
+.baskets__prise {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  color: $color-brown;
+  margin-bottom: 28px;
+}
+
+.button {
+  @include button-reset;
+  @include button-style;
+}
+
+.baskets__to-order-btn {
+  margin-bottom: 36px;
+}

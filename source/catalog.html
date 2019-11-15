@@ -7,6 +7,8 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка - каталог</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -15,16 +17,17 @@
   <header class="header">
     <div class="header__inner">
       <a class="header__logo logo" href="index.html">
-        <img class="logo__image" src="https://via.placeholder.com/150x150" width="86" height="35" alt="Логотип интернет магазина Мишка">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Мишка">
       </a>
-      <nav class="menu">
-        <button class="menu__btn" type="button" aria-label="Открыть меню для навигации на сайте">Открыть меню</button>
+      <nav class="header__menu menu">
+        <button class="menu__btn" type="button" aria-label="Открыть меню для навигации на сайте">Меню</button>
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link">Каталог товаров</a></li>
           <li class="menu__item"><a class="menu__link" href="form.html">Вязание на заказ</a></li>
-          <li class="menu__item">
-            <label><input type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту"></label>
-          </li>
+          <li class="menu__item"><a class="menu__link" href="#">Поиск по сайту</a></li>
+          <!--<li class="menu__item">-->
+          <!--<label><input class="menu__item-search" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту"></label>-->
+          <!--</li>-->
           <li class="menu__item"><a class="menu__link" href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
@@ -48,43 +51,52 @@
           <li class="catalog__item">
             <a class="catalog__link" href="#">
               <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Зайчик-попрыгайчик">
-              <p class="catalog__title">Зайчик-попрыгайчик</p>
+                <div class="catalog__desc">
+                  <p class="catalog__title">Зайчик-попрыгайчик</p>
+                <p class="catalog__text">Рост 30 см, вес 200 г</p>
+                <hr class="catalog__line line">
+                <div class="catalog__price">
+                  <p class="catalog__money">1200 руб.</p>
+                  <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+                </div>
+              </div>
             </a>
-            <p class="catalog__text">Рост 30 см, вес 200 г</p>
-            <div class="catalog__price">
-              <p class="catalog__money">1200 руб.</p>
-              <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
-            </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
               <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Корзинка для белья">
-              <p class="catalog__title">Корзинка для белья</p>
+                <div class="catalog__desc">
+                  <p class="catalog__title">Корзинка для белья</p>
+                <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
+                <hr class="catalog__line line">
+                <div class="catalog__price">
+                  <p class="catalog__money">690 руб.</p>
+                  <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+                </div>
+              </div>
             </a>
-            <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
-            <div class="catalog__price">
-              <p class="catalog__money">690 руб.</p>
-              <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
-            </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
               <img class="catalog__image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Большая корзина для игрушек">
-              <p class="catalog__title">Большая корзина для игрушек</p>
+                <div class="catalog__desc">
+                  <p class="catalog__title">Большая корзина<br> для игрушек</p>
+                <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
+                <hr class="catalog__line line">
+                <div class="catalog__price">
+                  <p class="catalog__money">1500 руб.</p>
+                  <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+                </div>
+              </div>
             </a>
-            <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
-            <div class="catalog__price">
-              <p class="catalog__money">1500 руб.</p>
-              <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
-            </div>
           </li>
           <li class="catalog__item">
             <div class="catalog__process">
-              <span class="catalog__video-icon"></span>
-              <p class="catalog__title">Процесс производства</p>
+              <img class="catalog__img" src="https://via.placeholder.com/150x150" width="32" height="22" alt="процес производства">
+              <p class="catalog__title catalog__title-process">Процесс производства</p>
             </div>
-            <img src="https://via.placeholder.com/150x150" width="260" height="150" alt="Процесс производства">
-            <p class="catalog__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <img class="catalog__video" src="https://via.placeholder.com/150x150" width="260" height="150" alt="Процесс производства">
+            <p class="catalog__text catalog__text-process">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <button class="catalog__btn button" type="button">Сделать заказ</button>
           </li>
         </ul>
@@ -99,19 +111,23 @@
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link-instagram" href="#" aria-label="Инстаграм">Instagram</a>
+            <a class="social__link social__link-instagram" href="#" aria-label="Инстаграм">
+              <img src="https://via.placeholder.com/150x150" alt="Наш инстаграм" width="22" height="21"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link-facebook" href="#" aria-label="Фейсбук">Facebook</a>
+            <a class="social__link social__link-facebook" href="#" aria-label="Фейсбук">
+              <img src="https://via.placeholder.com/150x150" alt="Наш фейсбук" width="15" height="28"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link-twitter" href="#" aria-label="Твитер">Twitter</a>
+            <a class="social__link social__link-twitter" href="#" aria-label="Твитер">
+              <img src="https://via.placeholder.com/150x150" alt="Наш твиттер" width="23" height="20"></a>
           </li>
         </ul>
       </div>
+      <hr class="footer__line line">
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="footer__image" src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
@@ -121,15 +137,17 @@
   <!-- Секция модального окна -->
   <section class="modal-add modal">
     <div class="modal__inner">
-      <p class="modal__title">Добавить в корзину</p>
-      <fieldset>
+      <p class="modal__title">Добавить<br> в корзину</p>
+      <fieldset class="modal__fieldset">
         <legend class="modal__legend">Выберите размер:</legend>
-        <label for="size-s">S</label>
-        <label for="size-m">M</label>
-        <label for="size-l">L</label>
-        <input class="visually-hidden" id="size-s" type="radio" name="size" value="size-s">
-        <input class="visually-hidden" id="size-m" type="radio" name="size" value="size-m">
-        <input class="visually-hidden" id="size-l" type="radio" name="size" value="size-l">
+        <div class="modal__sizes">
+          <input class="visually-hidden" id="size-s" type="radio" name="size">
+          <input class="visually-hidden" id="size-m" type="radio" name="size">
+          <input class="visually-hidden" id="size-l" type="radio" name="size" checked>
+          <label class="modal__size" for="size-s">S</label>
+          <label class="modal__size" for="size-m">M</label>
+          <label class="modal__size" for="size-l">L</label>
+        </div>
       </fieldset>
       <button class="modal__btn button" type="button">Добавить</button>
     </div>

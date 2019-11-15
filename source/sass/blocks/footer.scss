@@ -1,0 +1,25 @@
+.footer {
+  background-color: #f1f1f1;
+}
+
+.social__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  padding-top: 25px;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 23px;
+}
+
+.footer__line {
+  margin: 27px 0;
+}

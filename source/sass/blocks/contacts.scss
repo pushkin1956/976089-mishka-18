@@ -1,0 +1,41 @@
+.contacts__title {
+  margin: 44px 0 42px 0;
+}
+
+.contacts__desc {
+  margin-bottom: 42px;
+}
+
+.contacts__email,
+.contacts__address {
+  font-size: 15px;
+  line-height: 2;
+  color: $color-brown;
+}
+
+.contacts__value,
+.contacts__field {
+  vertical-align: top;
+  padding: 0;
+}
+
+.contacts__value {
+  padding-right: 17px;
+}
+
+.contacts__map {
+  position: relative;
+  text-align: center;
+  margin-bottom: 39px;
+}
+
+.contacts__pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -33.5px);
+}
+
+.contacts__btn {
+  margin-bottom: 39px;
+}

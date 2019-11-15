@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+/* Для ридера */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Основные стили документа */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.page-title {
+  font-size: 26.5px;
+  font-weight: bold;
+  line-height: 1.11;
+  color: #010000;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+.handwork__inner,
+.baskets__inner,
+.about-us__inner,
+.reviews__inner,
+.contacts__inner,
+.footer__inner,
+.catalog__inner,
+.form__inner {
+  @include mobile-center-inner;
+}
+
+.line {
+  height: 1px;
+  background-color: #e1e1e1;
+  border: none;
+}
