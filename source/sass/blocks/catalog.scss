@@ -2,8 +2,8 @@
   margin-bottom: 30px;
 }
 
-.catalog__inner {
-  @include mobile-center-inner;
+.inner {
+  @include inner;
 }
 
 .title__text {

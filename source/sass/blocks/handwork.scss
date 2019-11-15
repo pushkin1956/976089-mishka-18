@@ -2,10 +2,8 @@
   margin-bottom: 34px;
 }
 
-.handwork__inner {
-  @include mobile-center-inner;
-  display: flex;
-  justify-content: space-between;
+.inner {
+  @include inner;
 }
 
 .handwork__title {
@@ -21,6 +19,11 @@
 }
 
 .handwork__goods {
+  .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .handwork__text {
     width: 105px;
     font-size: 19px;

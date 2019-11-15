@@ -5,8 +5,8 @@
   border: solid 1px #c6c6c6;
 }
 
-.modal__inner {
-  @include mobile-center-inner;
+.inner {
+  @include inner;
 }
 
 .modal__title {

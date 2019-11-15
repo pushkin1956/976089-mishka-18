@@ -2,8 +2,8 @@
   margin-bottom: 55px;
 }
 
-.form__inner {
-  @include mobile-center-inner;
+.inner {
+  @include inner;
 }
 
 .title__text-form {

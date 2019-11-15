@@ -2,8 +2,8 @@
   margin-bottom: 39px;
 }
 
-.contacts__inner {
-  @include mobile-center-inner;
+.inner {
+  @include inner;
 }
 
 .contacts__title {

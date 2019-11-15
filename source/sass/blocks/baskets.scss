@@ -2,8 +2,8 @@
   margin-bottom: 36px;
 }
 
-.baskets__inner {
-  @include mobile-center-inner;
+.inner {
+  @include inner;
 }
 
 .baskets__title {

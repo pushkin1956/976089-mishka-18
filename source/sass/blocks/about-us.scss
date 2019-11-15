@@ -2,8 +2,8 @@
   margin-bottom: 61px;
 }
 
-.about-us__inner {
-  @include mobile-center-inner;
+.inner {
+  @include inner;
 }
 
 .about-us__title {

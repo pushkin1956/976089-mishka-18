@@ -2,8 +2,8 @@
   margin-bottom: 45px;
 }
 
-.reviews__inner {
-  @include mobile-center-inner;
+.inner {
+  @include inner;
 }
 
 .reviews__title {

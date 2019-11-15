@@ -1,3 +1,10 @@
+@mixin inner {
+  width: 260px;
+  margin: 0 auto;
+  //@media (min-width: 768px) {}
+  //@media (min-width: 1150px) {}
+}
+
 @mixin reset-list {
   margin: 0;
   padding: 0;
@@ -15,9 +22,4 @@
   width: 260px;
   padding: 20px 0;
   cursor: pointer;
-}
-
-@mixin mobile-center-inner {
-  margin: 0 auto;
-  width: 260px;
 }
