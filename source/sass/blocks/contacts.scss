@@ -46,5 +46,7 @@
 }
 
 .contacts__btn {
+  @include button-reset;
+  @include button-style;
   margin-bottom: 39px;
 }

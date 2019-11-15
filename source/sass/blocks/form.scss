@@ -92,18 +92,16 @@
   padding: 18px 0;
 }
 
-.form__textarea {
-  textarea {
-    &::placeholder {
-      opacity: 0.3;
-      font-size: 17px;
-      line-height: 1.26;
-      color: $color-brown;
-      padding: 15px 55px 0 17px;
-    }
-    resize: none;
-    border: solid 2px $color-brown;
+.form__textarea-text {
+  &::placeholder {
+    opacity: 0.3;
+    font-size: 17px;
+    line-height: 1.26;
+    color: $color-brown;
+    padding: 15px 55px 0 17px;
   }
+  resize: none;
+  border: solid 2px $color-brown;
   margin-bottom: 18px;
 }
 
@@ -122,5 +120,6 @@
 }
 
 .form__btn {
+  @include button-style;
   margin: 31px 0 55px 0;
 }

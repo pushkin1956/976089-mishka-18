@@ -4,6 +4,8 @@
 
 .handwork__inner {
   @include mobile-center-inner;
+  display: flex;
+  justify-content: space-between;
 }
 
 .handwork__title {
@@ -39,11 +41,6 @@
 
 .handwork__toys {
   background-color: #56c3b2;
-}
-
-.handwork__inner {
-  display: flex;
-  justify-content: space-between;
 }
 
 .handwork__interior,

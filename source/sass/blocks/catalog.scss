@@ -107,7 +107,8 @@
   margin: 0 auto 29px auto;
 }
 
-.catalog__btn.button {
+.catalog__btn {
+  @include button-style;
   width: 192px;
   padding: 14px 0;
   margin-bottom: 33px;

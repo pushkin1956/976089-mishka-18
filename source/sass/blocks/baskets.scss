@@ -36,11 +36,8 @@
   border-collapse: collapse;
 }
 
-.baskets__value,
-.baskets__field {
-  p {
-    @include reset-list;
-  }
+.baskets__text {
+  @include reset-list;
 }
 
 .baskets__prise {
@@ -52,11 +49,7 @@
   margin-bottom: 28px;
 }
 
-.button {
-  @include button-reset;
-  @include button-style;
-}
-
 .baskets__to-order-btn {
+  @include button-style;
   margin-bottom: 36px;
 }

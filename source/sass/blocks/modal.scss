@@ -49,6 +49,7 @@ input[type="radio"]:checked + .modal__size {
 }
 
 .modal__btn {
+  @include button-style;
   color: #ffffff;
   background-color: #63d1bb;
   border: none;

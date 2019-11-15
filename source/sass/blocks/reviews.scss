@@ -28,16 +28,18 @@
   margin-bottom: 36px;
 }
 
-.reviews__btn {
-  button {
-    width: 130px;
-    height: 52px;
-    padding: 0;
-    border: solid 1px #ececec;
-    background-color: transparent;
-    cursor: pointer;
-  }
+.reviews__slide {
   margin-bottom: 38px;
+}
+
+.reviews__btn-prev,
+.reviews__btn-next {
+  width: 130px;
+  height: 52px;
+  padding: 0;
+  border: solid 1px #ececec;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .reviews__btn-next {
@@ -45,5 +47,6 @@
 }
 
 .reviews__write-btn {
+  @include button-style;
   margin-bottom: 45px;
 }
