@@ -2,6 +2,10 @@
   margin-bottom: 34px;
 }
 
+.handwork__inner {
+  @include mobile-center-inner;
+}
+
 .handwork__title {
   .handwork__text {
     width: 244px;

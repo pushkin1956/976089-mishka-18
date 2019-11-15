@@ -2,10 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-.content-box-component {
-  box-sizing: content-box;
-}
-
 /* Для ридера */
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -45,17 +41,6 @@ body {
   line-height: 1.2;
   margin: 0;
   padding: 0;
-}
-
-.handwork__inner,
-.baskets__inner,
-.about-us__inner,
-.reviews__inner,
-.contacts__inner,
-.footer__inner,
-.catalog__inner,
-.form__inner {
-  @include mobile-center-inner;
 }
 
 .line {

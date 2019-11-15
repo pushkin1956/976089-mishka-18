@@ -1,3 +1,7 @@
+.form__inner {
+  @include mobile-center-inner;
+}
+
 .title__text-form {
   padding: 76px 0;
 }

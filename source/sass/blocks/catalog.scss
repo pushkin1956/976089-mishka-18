@@ -1,3 +1,7 @@
+.catalog__inner {
+  @include mobile-center-inner;
+}
+
 .title__text {
   font-size: 27px;
   font-weight: bold;

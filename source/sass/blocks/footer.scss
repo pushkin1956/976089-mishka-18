@@ -1,4 +1,8 @@
-.footer {
+.footer__inner {
+  @include mobile-center-inner;
+}
+
+footer {
   background-color: #f1f1f1;
 }
 
