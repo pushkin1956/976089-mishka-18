@@ -431,7 +431,7 @@ footer {
           justify-content: space-between;
   margin-bottom: 31px; }
 
-.modal__input:checked + .modal__size {
+.modal__input:checked ~ .modal__size {
   border: solid 2px #63d1bb; }
 
 .modal__size {
