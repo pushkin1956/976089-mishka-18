@@ -1,3 +1,11 @@
+.reviews {
+  margin-bottom: 45px;
+}
+
+.reviews__inner {
+  @include inner;
+}
+
 .reviews__title {
   margin-bottom: 38px;
 }
@@ -5,7 +13,7 @@
 .reviews__text {
   font-size: 15px;
   line-height: 2;
-  color: $color-brown;
+  color: $color-danger;
   margin: 0 0 40px 0;
 }
 
@@ -20,20 +28,22 @@
   font-style: normal;
   font-size: 17px;
   line-height: 1.76;
-  color: $color-brown;
+  color: $color-danger;
   margin-bottom: 36px;
 }
 
-.reviews__btn {
-  button {
-    width: 130px;
-    height: 52px;
-    padding: 0;
-    border: solid 1px #ececec;
-    background-color: transparent;
-    cursor: pointer;
-  }
+.reviews__slide {
   margin-bottom: 38px;
+}
+
+.reviews__btn-prev,
+.reviews__btn-next {
+  width: 130px;
+  height: 52px;
+  padding: 0;
+  border: solid 1px #ececec;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .reviews__btn-next {
@@ -41,5 +51,5 @@
 }
 
 .reviews__write-btn {
-  margin-bottom: 45px;
+  @include button-style;
 }

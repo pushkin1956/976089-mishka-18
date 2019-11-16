@@ -2,9 +2,15 @@
   margin-bottom: 34px;
 }
 
+.handwork__inner {
+  @include inner;
+  display: flex;
+  justify-content: space-between;
+}
+
 .handwork__title {
   .handwork__text {
-    width: 244px;
+    width: 245px;
     margin: -51px auto 0 auto;
   }
   display: flex;
@@ -16,7 +22,7 @@
 
 .handwork__goods {
   .handwork__text {
-    width: 106px;
+    width: 105px;
     font-size: 19px;
     font-weight: bold;
     line-height: 1.26;
@@ -35,11 +41,6 @@
 
 .handwork__toys {
   background-color: #56c3b2;
-}
-
-.handwork__inner {
-  display: flex;
-  justify-content: space-between;
 }
 
 .handwork__interior,

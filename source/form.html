@@ -7,8 +7,8 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка - форма заказа</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -55,29 +55,42 @@
             <legend class="form__legend form__legend-type">Тип</legend>
             <div class="form__radio">
               <div class="form__interior">
-                <input class="form__input-padding" id="interior" type="radio" name="type" checked>
-                <label class="form__style-text" for="interior">Аксессуар <br> для интерьера</label>
+                <input class="visually-hidden" id="interior" type="radio" name="type" value="interior" checked>
+                <label class="form__style-text form__text-indentation" for="interior">Аксессуар для интерьера</label>
               </div>
               <div class="form__games">
-                <input class="form__input-padding" id="games" type="radio" name="type">
-                <label class="form__style-text" for="games">Детская игрушка</label>
+                <input class="visually-hidden" id="games" type="radio" name="type" value="games">
+                <label class="form__style-text form__text-indentation" for="games">Детская игрушка</label>
               </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend-color">Цвет</legend>
-            <label class="form__style-text"><input class="form__input-padding" type="checkbox" checked>Белый</label>
-            <label class="form__style-text"><input class="form__input-padding" type="checkbox" checked>Серый</label>
-            <label class="form__style-text"><input class="form__input-padding" type="checkbox">«Тиффани»</label>
-            <label class="form__style-text"><input class="form__input-padding" type="checkbox">Черный</label>
-            <label class="form__style-text"><input class="form__input-padding" type="checkbox">Розовый</label>
-            <label class="form__style-text"><input class="form__input-padding" type="checkbox">Оранжевый</label>
+            <legend class="form__legend form__legend-color">Цвет
+            </legend>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="white" type="checkbox" checked>Белый
+            </label>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="grey" type="checkbox" checked>Серый
+            </label>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="tiffany" type="checkbox">«Тиффани»
+            </label>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="black" type="checkbox">Черный
+            </label>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="pink" type="checkbox">Розовый
+            </label>
+            <label class="form__style-text form__text-indentation">
+              <input class="visually-hidden" name="color" value="orange" type="checkbox">Оранжевый
+            </label>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-name">Фио</legend>
-            <label class="form__style-text form__style-text-mb">Имя:<input class="form__placeholder" type="text" placeholder="Введите ваше имя*"></label>
-            <label class="form__style-text form__style-text-mb">Фамилия:<input class="form__placeholder" type="text" placeholder="Укажите фамилию*"></label>
-            <label class="form__style-text form__style-text-mb">Отчество:<input class="form__placeholder" type="text" placeholder="Отчество, если желаете"></label>
+            <label class="form__style-text form__text-mb">Имя:<input class="form__placeholder" type="text" placeholder="Введите ваше имя*"></label>
+            <label class="form__style-text form__text-mb">Фамилия:<input class="form__placeholder" type="text" placeholder="Укажите фамилию*"></label>
+            <label class="form__style-text form__text-mb">Отчество:<input class="form__placeholder" type="text" placeholder="Отчество, если желаете"></label>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-phone">Тел</legend>
@@ -89,7 +102,7 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend-additionally">Доп</legend>
-            <label class="form__textarea"><textarea name="form-text" id="form-text" cols="29" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea></label>
+            <label><textarea class="form__textarea-text" name="form-text" id="form-text" placeholder="Опишите все ваши пожелания к заказу"></textarea></label>
           </fieldset>
           <small class="form__require"><sup>*</sup>Поля обязательны для заполнения</small>
           <button class="form__btn button" type="submit">Отправить заказ</button>

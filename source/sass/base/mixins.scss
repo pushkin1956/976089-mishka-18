@@ -1,0 +1,25 @@
+@mixin inner {
+  width: 260px;
+  margin: 0 auto;
+  //@media (min-width: 768px) {}
+  //@media (min-width: 1150px) {}
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-style {
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  color: $color-danger;
+  text-transform: uppercase;
+  border: solid 2px $color-danger;
+  width: 260px;
+  padding: 20px 0;
+  cursor: pointer;
+}

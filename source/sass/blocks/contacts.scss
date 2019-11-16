@@ -1,16 +1,25 @@
-.contacts__title {
-  margin: 44px 0 42px 0;
+.contacts {
+  margin-bottom: 39px;
 }
 
-.contacts__desc {
+.contacts__inner {
+  @include inner;
+}
+
+.contacts__title {
+  margin-bottom: 42px;
+}
+
+.contacts__info {
   margin-bottom: 42px;
 }
 
 .contacts__email,
 .contacts__address {
+  display: flex;
   font-size: 15px;
   line-height: 2;
-  color: $color-brown;
+  color: $color-danger;
 }
 
 .contacts__value,
@@ -21,6 +30,10 @@
 
 .contacts__value {
   padding-right: 17px;
+}
+
+.contacts__field-line {
+  border-bottom: 1px solid $color-brand;
 }
 
 .contacts__map {
@@ -37,5 +50,5 @@
 }
 
 .contacts__btn {
-  margin-bottom: 39px;
+  @include button-style;
 }
