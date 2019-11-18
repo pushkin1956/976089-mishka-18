@@ -1,12 +1,16 @@
 @mixin inner {
   width: 260px;
-  margin: 0 auto;
+  padding: 0 30px;
 
   @media (min-width: 768px) {
     width: 670px;
-    margin: 0 auto;
+    padding: 0 49px;
   }
-  //@media (min-width: 1150px) {}
+
+  @media (min-width: 1150px) {
+    width: 1050px;
+    padding: 0 50px;
+  }
 }
 
 @mixin reset-list {

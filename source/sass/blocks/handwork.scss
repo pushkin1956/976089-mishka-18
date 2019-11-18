@@ -92,3 +92,26 @@
     justify-content: center;
   }
 }
+
+// Media Desktop
+@media (min-width: 1150px) {
+  .handwork__title {
+    .handwork__text {
+      width: 615px;
+      font-size: 53px;
+      font-weight: bold;
+      line-height: 1.08;
+    }
+  }
+
+  .handwork__interior,
+  .handwork__toys {
+    width: 525px;
+  }
+
+  .handwork__goods {
+    .handwork__inner {
+      width: 460px;
+    }
+  }
+}
