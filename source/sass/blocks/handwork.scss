@@ -1,5 +1,6 @@
 .handwork {
   margin-bottom: 34px;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center top;
 }
 
 .handwork__inner {
@@ -16,8 +17,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  min-height: 283px;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 20%;
+  min-height: 300px;
 }
 
 .handwork__goods {
@@ -54,4 +54,41 @@
 .handwork__image-itn,
 .handwork__image-toys {
   opacity: 0.2;
+}
+
+// Media tablet
+@media (min-width: 768px) {
+  .handwork {
+    background: url("../img/hero-tablet@1x.jpg") no-repeat center top;
+  }
+
+  .handwork__title {
+    .handwork__text {
+      width: 500px;
+      height: 95px;
+      font-size: 43px;
+      font-weight: bold;
+      line-height: 1.16;
+      margin: -227px auto 0 auto;
+    }
+    min-height: 630px;
+  }
+
+  .handwork__interior,
+  .handwork__toys {
+    width: 335px;
+  }
+
+  .handwork__goods {
+    .handwork__text {
+      font-size: 20px;
+      padding-top: 5px;
+    }
+
+    .handwork__inner {
+      width: 270px;
+    }
+    display: flex;
+    justify-content: center;
+  }
 }
