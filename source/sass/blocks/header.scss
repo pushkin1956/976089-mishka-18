@@ -9,3 +9,13 @@
 .logo__image {
   margin: 22px auto;
 }
+
+// Media in tablet
+@media (min-width: 768px) {
+  .header__inner {
+    display: flex;
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
