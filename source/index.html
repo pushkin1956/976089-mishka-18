@@ -147,13 +147,14 @@
           <p class="reviews__text">
             Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
           </p>
-          <p class="reviews__name">Анастасия Красильникова</p>
-          <address class="reviews__account">@misssssiskras</address>
+          <p class="reviews__name">Анастасия Красильникова<br><span class="reviews__account">@misssssiskras</span></p>
+          <!-- <address class="reviews__account"></address> -->
+          <div class="reviews__slide">
+            <button class="reviews__btn-prev" type="button" aria-label="Предущий слайд">Предыдущий</button>
+            <button class="reviews__btn-next" type="button" aria-label="Следующий слайд">Следующий</button>
+          </div>
         </div>
-        <div class="reviews__slide">
-          <button class="reviews__btn-prev" type="button" aria-label="Предущий слайд">Предыдущий</button>
-          <button class="reviews__btn-next" type="button" aria-label="Следующий слайд">Следующий</button>
-        </div>
+
         <button type="button" class="reviews__write-btn button">Написать</button>
       </div>
     </section>
@@ -161,27 +162,37 @@
 <!-- Секция контактов -->
     <section class="contacts">
       <div class="contacts__inner">
-        <h2 class="contacts__title title">Контакты</h2>
-        <div class="contacts__info">
-          <div class="contacts__email">
-            <p class="contacts__value">e-mail:</p>
-            <p class="contacts__field contacts__field-line">info@mimimishkashop.ru</p>
-          </div>
-          <div class="contacts__address">
-            <p class="contacts__value">адрес:</p>
-            <p class="contacts__field">
-              г. Санкт-Петербург,<br>
-              ул. Большая Конюшенная,<br>
-              д. 19/8, офис 101
-            </p>
+        <div class="contacts__contact">
+          <h2 class="contacts__title title">Контакты</h2>
+          <div class="contacts__info">
+            <div class="contacts__email">
+              <p class="contacts__value">e-mail:</p>
+              <p class="contacts__field contacts__field-line">info@mimimishkashop.ru</p>
+            </div>
+            <div class="contacts__address">
+              <p class="contacts__value">адрес:</p>
+              <p class="contacts__field">
+                г. Санкт-Петербург,<br>
+                ул. Большая Конюшенная,<br>
+                д. 19/8, офис 101
+              </p>
+            </div>
           </div>
         </div>
+        <div class="contacts__map contacts__map-desctop">
+          <img class="contacts__image" src="img/map-desktop@1x.jpg" width="525" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <img class="contacts__pin" src="https://via.placeholder.com/150x150" alt="" width="100" height="67">
+        </div>
       </div>
-      <div class="contacts__map">
+      <div class="contacts__map contacts__map-mobile">
         <img class="contacts__image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         <img class="contacts__pin" src="https://via.placeholder.com/150x150" alt="" width="100" height="67">
       </div>
-      <div class="contacts__inner">
+      <div class="contacts__map contacts__map-tablet">
+        <img class="contacts__image" src="img/map-tablet@1x.jpg" width="768" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <img class="contacts__pin" src="https://via.placeholder.com/150x150" alt="" width="100" height="67">
+      </div>
+      <div class="contacts__inner contacts__inner-btn">
         <button class="contacts__btn button">Напишите нам</button>
       </div>
     </section>
@@ -191,6 +202,7 @@
   <!-- Подвал сайта -->
   <footer class="footer">
     <div class="footer__inner">
+      <img class="footer__logo" src="img/logo-footer.svg" alt="Логотип Мишка">
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">

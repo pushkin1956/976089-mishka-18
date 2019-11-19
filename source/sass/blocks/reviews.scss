@@ -2,6 +2,10 @@
   margin-bottom: 45px;
 }
 
+.reviews__image {
+  display: none;
+}
+
 .reviews__inner {
   @include inner;
 }
@@ -26,6 +30,7 @@
 
 .reviews__account {
   font-style: normal;
+  font-weight: normal;
   font-size: 17px;
   line-height: 1.76;
   color: $color-danger;
@@ -52,4 +57,63 @@
 
 .reviews__write-btn {
   @include button-style;
+}
+
+@media (min-width: 768px) {
+  .reviews__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 85px;
+    background: url("../img/review@1x.jpg") no-repeat;
+  }
+
+  .reviews__slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 2;
+  }
+
+  .reviews__text {
+    width: 645px;
+    font-size: 17px;
+    line-height: 1.76;
+    padding-top: 53px;
+    margin-bottom: 70px;
+  }
+
+  .reviews__write-btn {
+    width: 175px;
+    padding: 0;
+  }
+
+  .reviews__title {
+    align-self: center;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+    margin-bottom: 0;
+  }
+
+  .reviews__btn-prev,
+  .reviews__btn-next {
+    border: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .reviews__inner {
+    background: url("../img/review@1x.jpg") no-repeat 6%;
+    padding-bottom: 60px;
+  }
+
+  .reviews__title,
+  .reviews__slider {
+    padding-left: 175px;
+  }
+
+  .reviews__text {
+    width: 770px;
+  }
 }
