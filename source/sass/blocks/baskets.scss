@@ -12,6 +12,7 @@
 }
 
 .baskets__week {
+  align-self: center;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
@@ -55,4 +56,109 @@
 
 .baskets__to-order-btn {
   @include button-style;
+}
+
+.baskets__image-tablet {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .baskets__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .baskets__block-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  .baskets__block-two {
+    display: flex;
+    flex-wrap: wrap;
+    width: 255px;
+  }
+
+  .baskets__title {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+    padding: 0;
+  }
+
+  .baskets__week {
+    align-self: center;
+    text-align: center;
+    width: 70px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0 28px 0 0;
+  }
+
+  .baskets__prise {
+    margin: 0 auto 28px auto;
+  }
+
+  .baskets__image-mobile,
+  .baskets__image-desktop {
+    display: none;
+  }
+
+  .baskets__image-tablet {
+    display: block;
+  }
+
+  .baskets__to-order-btn {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .baskets__image-mobile,
+  .baskets__image-tablet {
+    display: none;
+  }
+
+  .baskets__image-desktop {
+    margin-top: -151px;
+    display: block;
+  }
+
+  .baskets__title {
+    order: 2;
+    z-index: 1;
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 1.08;
+  }
+
+  .baskets__block-one {
+    padding-left: 36px;
+    justify-content: unset;
+  }
+
+  .baskets__week {
+    align-self: center;
+    padding: 0 65px 0 0;
+  }
+
+  .baskets__info {
+    padding-left: 176px;
+  }
+
+  .baskets__description {
+    font-size: 17px;
+    width: 290px;
+  }
+
+  .baskets__block-two {
+    width: 295px;
+  }
+
+  .baskets__to-order-btn {
+    width: 295px;
+  }
 }
