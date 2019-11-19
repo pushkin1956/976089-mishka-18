@@ -58,7 +58,8 @@
   @include button-style;
 }
 
-.baskets__image-tablet {
+.baskets__image-tablet,
+.baskets__image-desktop {
   display: none;
 }
 
@@ -133,20 +134,22 @@
     font-size: 53px;
     font-weight: bold;
     line-height: 1.08;
-  }
-
-  .baskets__block-one {
-    padding-left: 36px;
-    justify-content: unset;
+    padding-left: 171px;
   }
 
   .baskets__week {
-    align-self: center;
-    padding: 0 65px 0 0;
+    position: absolute;
+    top: 13px;
+    left: 35px;
+  }
+
+  .baskets__block-one {
+    position: relative;
+    justify-content: unset;
   }
 
   .baskets__info {
-    padding-left: 176px;
+    padding-left: 175px;
   }
 
   .baskets__description {
@@ -154,10 +157,7 @@
     width: 290px;
   }
 
-  .baskets__block-two {
-    width: 295px;
-  }
-
+  .baskets__block-two,
   .baskets__to-order-btn {
     width: 295px;
   }
