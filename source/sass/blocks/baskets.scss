@@ -64,6 +64,10 @@
 }
 
 @media (min-width: 768px) {
+  .baskets {
+    margin-bottom: 100px;
+  }
+
   .baskets__info {
     display: flex;
     justify-content: space-between;
