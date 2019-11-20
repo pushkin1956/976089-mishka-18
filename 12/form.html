@@ -17,19 +17,27 @@
   <!-- Шапка сайта -->
   <header class="header">
     <div class="header__inner">
-      <a class="header__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Мишка">
-      </a>
       <nav class="header__menu menu">
+        <a class="header__logo logo" href="index.html">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Мишка">
+        </a>
         <button class="menu__btn" type="button" aria-label="Открыть меню для навигации на сайте">Меню</button>
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="menu__item"><a class="menu__link">Вязание на заказ</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Поиск по сайту</a></li>
-          <!-- <li class="menu__item">-->
-          <!-- <label><input class="menu__item-search" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту"></label>-->
-          <!-- </li>-->
-          <li class="menu__item"><a class="menu__link" href="#">Корзина: пока пуста</a></li>
+        <ul class="menu__list menu__list-catalog-order">
+          <li class="menu__item"><a class="menu__link menu__link-catalog" href="catalog.html">Каталог товаров</a></li>
+          <li class="menu__item"><a class="menu__link menu__link-order">Вязание на заказ</a></li>
+        </ul>
+        <ul class="menu__list menu__list-search-basket">
+          <li class="menu__item"><a class="menu__link menu__link-search" href="#">Поиск по сайту</a></li>
+          <li class="menu__item"><a class="menu__link menu__link-basket" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="menu__list menu__list-new">
+          <li class="menu__item"><a class="menu__link menu__link-new" href="#">Новые поступления</a></li>
+          <li class="menu__item"><a class="menu__link menu__link-new" href="#">Распродажа</a></li>
+        </ul>
+        <ul class="menu__list menu__list-delivery">
+          <li class="menu__item">
+            <a class="menu__link menu__link-delivery" href="#">Бесплатная доставка по Росии</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -116,6 +124,7 @@
   <!-- Подвал сайта -->
   <footer class="footer">
     <div class="footer__inner">
+      <img class="footer__logo" src="img/logo-footer.svg" alt="Логотип Мишка">
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
