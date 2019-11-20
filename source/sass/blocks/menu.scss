@@ -87,7 +87,7 @@
   }
 
   .menu__link-catalog {
-    padding-right: 37px;
+    margin-right: 37px;
     font-size: 15px;
   }
 
@@ -112,5 +112,38 @@
 
   .menu__btn {
     display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .menu__list-new {
+    display: flex;
+    margin-right: auto;
+  }
+
+  .menu__link-new {
+    &:first-of-type {
+      margin-right: 25px;
+    }
+    font-size: 15px;
+  }
+
+  .menu__list-delivery,
+  .menu__list-new {
+    margin-top: 25px;
+  }
+
+  .menu__list-catalog-order {
+    order: -1;
+    margin: 0 75px 0 0;
+  }
+
+  .menu__link-catalog,
+  .menu__link-order {
+    font-size: 17px;
+  }
+
+  .menu__link-catalog {
+    margin-right: 71px;
   }
 }
