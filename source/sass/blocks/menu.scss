@@ -2,10 +2,12 @@
   @include reset-list;
 }
 
+.menu__list-new,
+.menu__list-delivery {
+  display: none;
+}
+
 .menu__item {
-  &:last-child {
-    display: none;
-  }
   width: auto;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
   padding: 32px 0 32px 76px;
@@ -50,11 +52,7 @@
 
 // Media tablet
 @media (min-width: 768px) {
-  .menu__btn {
-    display: none;
-  }
-
-  .header__menu {
+  .menu {
     display: flex;
   }
 
@@ -63,11 +61,25 @@
     flex-wrap: wrap;
   }
 
-  .menu__link {
+  .menu__list-delivery {
+    display: block;
+    order: 2;
+  }
+
+  .menu__list-catalog-order {
     order: 1;
   }
 
-  .menu__item-delivery {
-    display: block;
+  .menu__item {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .menu__list-new {
+    display: none;
+  }
+
+  .menu__btn {
+    display: none;
   }
 }
