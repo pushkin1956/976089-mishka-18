@@ -1,5 +1,6 @@
 .menu__list {
   @include reset-list;
+  position: relative;
 }
 
 .menu__list-new,
@@ -52,8 +53,13 @@
 
 // Media tablet
 @media (min-width: 768px) {
+  .logo {
+    margin-right: auto;
+  }
+
   .menu {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .menu__list {
@@ -64,19 +70,44 @@
   .menu__list-delivery {
     display: block;
     order: 2;
+    margin-top: 25px;
   }
 
   .menu__list-catalog-order {
+    margin-right: auto;
     order: 1;
+    font-size: 15px;
+    margin-top: 25px;
   }
 
   .menu__item {
+    align-self: center;
     box-shadow: none;
     padding: 0;
   }
 
+  .menu__link-catalog {
+    padding-right: 37px;
+    font-size: 15px;
+  }
+
+  .menu__link-order {
+    font-size: 15px;
+  }
+
   .menu__list-new {
     display: none;
+  }
+
+  .menu__link-search {
+    margin-right: 60px;
+  }
+
+  .menu__link-delivery {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: $color-danger;
   }
 
   .menu__btn {
