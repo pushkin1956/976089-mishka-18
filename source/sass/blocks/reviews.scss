@@ -61,11 +61,14 @@
 
 @media (min-width: 768px) {
   .reviews__inner {
+    background: url("../img/review@1x.jpg") no-repeat;
+  }
+
+  .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 85px;
-    background: url("../img/review@1x.jpg") no-repeat;
   }
 
   .reviews__slider {
@@ -108,9 +111,9 @@
     padding-bottom: 60px;
   }
 
-  .reviews__title,
-  .reviews__slider {
-    padding-left: 175px;
+  .reviews__wrapper {
+    width: 875px;
+    margin-left: auto;
   }
 
   .reviews__text {

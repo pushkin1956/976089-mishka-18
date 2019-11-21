@@ -122,6 +122,11 @@
 }
 
 @media (min-width: 1150px) {
+  .baskets__wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+
   .baskets__image-mobile,
   .baskets__image-tablet {
     display: none;
@@ -129,6 +134,7 @@
 
   .baskets__image-desktop {
     margin-top: -151px;
+    margin-left: 55px;
     display: block;
   }
 
@@ -138,22 +144,17 @@
     font-size: 53px;
     font-weight: bold;
     line-height: 1.08;
-    padding-left: 170px;
   }
 
   .baskets__week {
     position: absolute;
     top: 13px;
-    left: 35px;
+    left: -130px;
   }
 
   .baskets__good {
     position: relative;
     justify-content: unset;
-  }
-
-  .baskets__info {
-    padding-left: 175px;
   }
 
   .baskets__description {

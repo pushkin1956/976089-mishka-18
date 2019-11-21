@@ -95,17 +95,19 @@
 }
 
 @media (min-width: 1150px) {
-  .contacts__inner {
+  .contacts__wrapper {
     display: flex;
     justify-content: space-between;
+    width: 875px;
+    margin-left: auto;
   }
 
   .contacts__title {
     &::after {
       content: "";
       position: absolute;
-      top: 0;
-      left: 40px;
+      top: 5px;
+      left: -121px;
       background: url("https://via.placeholder.com/150x150");
       width: 50px;
       height: 50px;
@@ -114,12 +116,10 @@
     font-weight: bold;
     line-height: 1.08;
     display: inline-block;
-    padding-left: 175px;
   }
 
   .contacts__info {
     flex-direction: column;
-    padding-left: 175px;
   }
 
   .contacts__map-tablet {
