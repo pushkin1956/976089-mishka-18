@@ -11,14 +11,15 @@
 }
 
 .handwork__title {
-  .handwork__text {
-    width: 245px;
-    margin: -51px auto 0 auto;
-  }
   display: flex;
   align-items: center;
   text-align: center;
   min-height: 300px;
+}
+
+.page-title {
+  width: 245px;
+  margin: -51px auto 0 auto;
 }
 
 .handwork__category {
@@ -32,10 +33,11 @@
 }
 
 .handwork__interior {
-  .handwork__image-itn {
-    padding-right: 10px;
-  }
   background-color: #63d1bb;
+}
+
+.handwork__image-itn {
+  padding-right: 10px;
 }
 
 .handwork__toys {
@@ -64,15 +66,16 @@
   }
 
   .handwork__title {
-    .handwork__text {
-      width: 500px;
-      height: 95px;
-      font-size: 43px;
-      font-weight: bold;
-      line-height: 1.16;
-      margin: -227px auto 0 auto;
-    }
     min-height: 630px;
+  }
+
+  .page-title {
+    width: 500px;
+    height: 95px;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+    margin: -227px auto 0 auto;
   }
 
   .handwork__interior,
@@ -80,26 +83,24 @@
     width: 335px;
   }
 
-  .handwork__interior {
-    .handwork__image-itn {
-      padding-right: 0;
-    }
+  .handwork__image-itn {
+    padding-right: 0;
   }
 
   .handwork__goods {
-    .handwork__category {
-      font-size: 20px;
-    }
-
-    .handwork__inner {
-      width: 270px;
-      padding: 0 34px;
-    }
     display: flex;
     justify-content: center;
   }
-}
 
+  .handwork__category {
+    font-size: 20px;
+  }
+
+  .handwork__inner {
+    width: 270px;
+    padding: 0 34px;
+  }
+}
 // Media Desktop
 @media (min-width: 1150px) {
   .handwork {
@@ -119,10 +120,8 @@
     width: 525px;
   }
 
-  .handwork__goods {
-    .handwork__inner {
-      width: 460px;
-    }
+  .handwork__inner {
+    width: 460px;
   }
 
   .handwork__category {
