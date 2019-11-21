@@ -18,8 +18,11 @@
   margin-bottom: 20px;
 }
 
-.about-us__item:not(:last-of-type) {
-  margin-bottom: 30px;
+.about-us__item {
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+  width: 260px;
 }
 
 .about-us__text {
@@ -46,9 +49,6 @@
   }
 
   .about-us__item {
-    &:nth-of-type(odd) {
-      margin-right: 50px;
-    }
     width: 300px;
   }
 
@@ -67,12 +67,8 @@
   }
 
   .about-us__list {
+    width: 700px;
     padding-left: 175px;
-  }
-
-  .about-us__item {
-    &:nth-of-type(odd) {
-      margin-right: 145px;
-    }
+    justify-content: space-between;
   }
 }
