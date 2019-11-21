@@ -45,8 +45,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 6px;
-    left: 59px;
+    top: 5px;
+    left: 60px;
     width: 195px;
     height: 1px;
     background-color: $color-brand;
@@ -62,8 +62,8 @@
 
 .form__legend-email {
   &::after {
-    top: 6px;
-    left: 81px;
+    top: 5px;
+    left: 80px;
     width: 175px;
   }
 }
@@ -106,7 +106,7 @@
     font-size: 17px;
     line-height: 1.26;
     color: $color-danger;
-    padding: 15px 55px 0 17px;
+    padding: 15px 55px 0 16px;
   }
   width: 250px;
   height: 140px;
@@ -131,5 +131,5 @@
 
 .form__btn {
   @include button-style;
-  margin-top: 31px;
+  margin-top: 30px;
 }
