@@ -58,17 +58,12 @@
 }
 
 @media (min-width: 1150px) {
-  .about-us {
-    margin-bottom: 30px;
-  }
-
   .about-us__wrapper {
     width: 700px;
     margin: 0 auto;
   }
 
   .about-us__list {
-    width: 700px;
     justify-content: space-between;
   }
 }
