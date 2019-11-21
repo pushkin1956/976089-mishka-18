@@ -15,6 +15,14 @@
 }
 
 .menu__link {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -36px;
+    height: 18px;
+    opacity: 0.2;
+  }
   position: relative;
   font-size: 17px;
   font-weight: bold;
@@ -24,25 +32,13 @@
 }
 
 .menu__link-search::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: -36px;
   background: url("../img/icon-search.svg") no-repeat;
   width: 18px;
-  height: 18px;
-  opacity: 0.2;
 }
 
 .menu__link-basket::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: -36px;
   background: url("../img/icon-cart.svg") no-repeat;
   width: 20px;
-  height: 18px;
-  opacity: 0.2;
 }
 
 .menu__btn {
