@@ -56,6 +56,7 @@
 
 .baskets__to-order-btn {
   @include button-style;
+  padding: 20px 84px;
 }
 
 .baskets__image-tablet,
@@ -114,7 +115,7 @@
   }
 
   .baskets__to-order-btn {
-    padding: 0;
+    padding: 20px 84px;
   }
 }
 
@@ -160,8 +161,11 @@
     width: 290px;
   }
 
-  .baskets__about-product,
-  .baskets__to-order-btn {
+  .baskets__about-product {
     width: 295px;
+  }
+
+  .baskets__to-order-btn {
+    padding: 20px 100px;
   }
 }

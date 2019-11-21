@@ -57,6 +57,7 @@
 
 .reviews__write-btn {
   @include button-style;
+  padding: 20px 80px;
 }
 
 @media (min-width: 768px) {
@@ -87,8 +88,7 @@
   }
 
   .reviews__write-btn {
-    width: 175px;
-    padding: 0;
+    padding: 20px 40px;
   }
 
   .reviews__title {

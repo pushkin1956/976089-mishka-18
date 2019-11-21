@@ -56,6 +56,7 @@
 
 .contacts__btn {
   @include button-style;
+  padding: 20px 52px;
 }
 
 @media (min-width: 768px) {
@@ -91,6 +92,10 @@
 
   .contacts__inner-btn {
     text-align: center;
+  }
+
+  .contacts__btn {
+    padding: 20px 42px;
   }
 }
 
