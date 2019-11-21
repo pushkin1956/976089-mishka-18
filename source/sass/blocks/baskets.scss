@@ -73,14 +73,14 @@
     justify-content: space-between;
   }
 
-  .baskets__block-one {
+  .baskets__good {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 55px;
   }
 
-  .baskets__block-two {
+  .baskets__about-product {
     display: flex;
     flex-wrap: wrap;
     width: 255px;
@@ -147,7 +147,7 @@
     left: 35px;
   }
 
-  .baskets__block-one {
+  .baskets__good {
     position: relative;
     justify-content: unset;
   }
@@ -161,7 +161,7 @@
     width: 290px;
   }
 
-  .baskets__block-two,
+  .baskets__about-product,
   .baskets__to-order-btn {
     width: 295px;
   }
