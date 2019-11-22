@@ -43,8 +43,32 @@
 
 .menu__btn {
   position: absolute;
-  top: 30px;
+  top: 26px;
+  right: 32px;
+  z-index: 2;
+  display: none;
+  width: 35px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu__line {
+  &:nth-of-type(2) {
+    top: 4px;
+  }
+
+  &:last-of-type {
+    top: 8px;
+  }
+  position: relative;
+  top: 0;
   right: 0;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
 }
 
 // Media tablet
@@ -104,10 +128,6 @@
     font-weight: normal;
     line-height: 1.6;
     color: $color-danger;
-  }
-
-  .menu__btn {
-    display: none;
   }
 }
 
