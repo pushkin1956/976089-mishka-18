@@ -71,8 +71,7 @@
   background-color: #000000;
 }
 
-// Media tablet
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .logo {
     margin-right: auto;
   }
@@ -131,7 +130,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .menu__list-new {
     display: flex;
     margin-right: auto;

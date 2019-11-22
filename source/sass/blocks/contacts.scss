@@ -65,7 +65,7 @@
   padding: 20px 52px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .contacts__title {
     &::after {
       content: "";
@@ -104,7 +104,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .contacts__wrapper {
     display: flex;
     justify-content: space-between;

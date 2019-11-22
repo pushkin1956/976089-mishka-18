@@ -3,12 +3,12 @@
   margin: 0 auto;
   padding: 0 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: auto;
     padding: 0 50px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     max-width: 1150px;
   }
 }

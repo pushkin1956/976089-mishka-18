@@ -60,7 +60,7 @@
   padding: 20px 80px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .reviews__inner {
     background: url("../img/review@1x.jpg") no-repeat;
   }
@@ -105,7 +105,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .reviews__inner {
     background: url("../img/review@1x.jpg") no-repeat 6%;
     padding-bottom: 60px;
