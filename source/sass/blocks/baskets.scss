@@ -23,7 +23,7 @@
   padding-bottom: 30px;
 }
 
-.baskets__description {
+.baskets__about-text {
   font-size: 15px;
   line-height: 1.6;
   color: $color-danger;
@@ -73,6 +73,7 @@
 
   .baskets__info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -81,12 +82,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 55px;
-  }
-
-  .baskets__about-product {
-    display: flex;
-    flex-wrap: wrap;
-    width: 255px;
   }
 
   .baskets__title {
@@ -101,6 +96,14 @@
     width: 70px;
     line-height: 1;
     padding: 0 28px 0 0;
+  }
+
+  .baskets__description {
+    width: 255px;
+  }
+
+  .baskets__order {
+    margin-top: -75px;
   }
 
   .baskets__price {
@@ -144,7 +147,7 @@
     justify-content: unset;
   }
 
-  .baskets__description {
+  .baskets__about-text {
     font-size: 17px;
     width: 290px;
   }

@@ -97,6 +97,11 @@
   .contacts__btn {
     padding: 20px 42px;
   }
+
+  .contacts__value,
+  .contacts__field {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: 1150px) {
