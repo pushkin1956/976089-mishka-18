@@ -12,6 +12,10 @@
 
 .contacts__info {
   margin-bottom: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .contacts__email,
@@ -56,6 +60,8 @@
 
 .contacts__btn {
   @include button-style;
+  display: block;
+  margin: 0 auto;
   padding: 20px 52px;
 }
 
@@ -74,12 +80,6 @@
     font-size: 43px;
     font-weight: bold;
     line-height: 1.16;
-  }
-
-  .contacts__info {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
   }
 
   .contacts__map-tablet {

@@ -12,6 +12,9 @@
 
 .about-us__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .about-us__image {

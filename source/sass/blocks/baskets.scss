@@ -56,12 +56,14 @@
 
 .baskets__to-order-btn {
   @include button-style;
+  display: block;
   padding: 20px 84px;
+  margin: 0 auto;
 }
 
-.baskets__image-tablet,
-.baskets__image-desktop {
-  display: none;
+.baskets__image {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -105,15 +107,6 @@
     margin: 0 auto 28px auto;
   }
 
-  .baskets__image-mobile,
-  .baskets__image-desktop {
-    display: none;
-  }
-
-  .baskets__image-tablet {
-    display: block;
-  }
-
   .baskets__to-order-btn {
     padding: 20px 84px;
   }
@@ -125,12 +118,7 @@
     margin: 0 auto;
   }
 
-  .baskets__image-mobile,
-  .baskets__image-tablet {
-    display: none;
-  }
-
-  .baskets__image-desktop {
+  .baskets__image {
     width: 525px;
     margin-top: -151px;
     margin-left: 55px;
