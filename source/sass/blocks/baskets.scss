@@ -27,7 +27,7 @@
   font-size: 15px;
   line-height: 1.6;
   color: $color-danger;
-  margin: 0 0 34px 0;
+  margin: 0 0 28px 0;
 }
 
 .baskets__desc-table {
@@ -63,6 +63,8 @@
 
 .baskets__image {
   display: block;
+  width: 260px;
+  height: 315px;
   margin: 0 auto;
 }
 
@@ -99,11 +101,17 @@
   }
 
   .baskets__description {
-    width: 255px;
+    width: 285px;
+  }
+
+  .baskets__about-text {
+    font-size: 17px;
+    line-height: 1.76;
+    margin: 0 0 40px 0;
   }
 
   .baskets__order {
-    margin-top: -75px;
+    margin-top: -116px;
   }
 
   .baskets__price {
@@ -113,16 +121,23 @@
   .baskets__to-order-btn {
     padding: 20px 84px;
   }
+
+  .baskets__image {
+    width: 333px;
+    height: 404px;
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .baskets__wrapper {
-    width: 700px;
-    margin: 0 auto;
+    width: 875px;
+    margin-left: auto;
   }
 
   .baskets__image {
     width: 525px;
+    height: 636px;
     margin-top: -151px;
     margin-left: 55px;
     display: block;
@@ -134,6 +149,7 @@
     font-size: 53px;
     font-weight: bold;
     line-height: 1.08;
+    margin-left: -4px;
   }
 
   .baskets__week {
@@ -154,6 +170,18 @@
 
   .baskets__about-product {
     width: 295px;
+  }
+
+  .baskets__order {
+    margin-top: -122px;
+  }
+
+  .baskets__table {
+    line-height: 3;
+  }
+
+  .baskets__price {
+    font-size: 20px;
   }
 
   .baskets__to-order-btn {
