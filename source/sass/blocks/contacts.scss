@@ -103,11 +103,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    position: relative;
     margin-bottom: 110px;
   }
 
   .contacts__wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 875px;
@@ -137,22 +137,19 @@
 
   .contacts__btn {
     display: inline;
+    text-align: left;
+    margin-left: 180px;
   }
 
   .contacts__map {
     position: absolute;
     text-align: center;
     top: 0;
-    right: 50px;
+    right: 0;
   }
 
   .contacts__image {
     width: 525px;
     height: 457px;
-  }
-
-  .contacts__inner-btn {
-    text-align: left;
-    margin-left: 180px;
   }
 }
