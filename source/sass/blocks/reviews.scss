@@ -62,7 +62,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews__inner {
-    background: url("../img/review@1x.jpg") no-repeat;
+    background: url("../img/review@1x.jpg") no-repeat 0% 75%;
   }
 
   .reviews__wrapper {
@@ -107,13 +107,17 @@
 
 @media (min-width: $desktop-width) {
   .reviews__inner {
-    background: url("../img/review@1x.jpg") no-repeat 6%;
+    background: url("../img/review@1x.jpg") no-repeat 7% 27%;
     padding-bottom: 60px;
   }
 
   .reviews__wrapper {
     width: 875px;
     margin-left: auto;
+  }
+
+  .reviews__title {
+    font-size: 53px;
   }
 
   .reviews__text {
