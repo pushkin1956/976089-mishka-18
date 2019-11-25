@@ -109,7 +109,7 @@
   .contacts__wrapper {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 875px;
     margin-left: auto;
     margin-bottom: 45px;
@@ -129,16 +129,20 @@
     font-weight: bold;
     line-height: 1.08;
     display: inline-block;
+    margin-bottom: 44px;
   }
 
   .contacts__info {
     flex-direction: column;
+    margin-bottom: 26px;
+  }
+
+  .contacts__contact {
+    padding-top: 60px;
   }
 
   .contacts__btn {
-    display: inline;
-    text-align: left;
-    margin-left: 180px;
+    margin-left: 0;
   }
 
   .contacts__map {

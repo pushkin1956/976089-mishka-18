@@ -1,10 +1,10 @@
 @mixin inner {
-  width: auto;
+  // width: auto;
   margin: 0 auto;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    // width: auto;
     padding: 0 50px;
   }
 
