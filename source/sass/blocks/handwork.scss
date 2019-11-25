@@ -17,7 +17,8 @@
   min-height: 300px;
 }
 
-.page-title {
+.handwork__text {
+  @include page-title;
   width: 245px;
   margin: -50px auto 0 auto;
 }
@@ -73,9 +74,8 @@
     min-height: 630px;
   }
 
-  .page-title {
+  .handwork__text {
     width: 500px;
-    height: 95px;
     font-size: 43px;
     font-weight: bold;
     line-height: 1.16;
