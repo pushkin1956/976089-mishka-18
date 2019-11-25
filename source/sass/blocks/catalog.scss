@@ -7,11 +7,18 @@
 }
 
 .catalog__title-page {
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
+  }
   background-color: #f1f1f1;
-  margin-top: -55px;
 }
 
 .catalog__page-text {
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    width: 380px;
+  }
+
   @include page-title;
   display: flex;
   align-items: center;
@@ -20,34 +27,82 @@
 }
 
 .catalog__list {
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    margin: 60px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   margin-top: 30px;
   text-align: center;
 }
 
 .catalog__item {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
   &:not(:last-of-type) {
+    @media (min-width: $desktop-width) {
+      width: 316px;
+    }
     margin-bottom: 30px;
   }
-  width: 260px;
   border: 1px solid #ececec;
 }
 
 .catalog__link {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   display: block;
   text-decoration: none;
 }
 
 .catalog__image {
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
+  width: 260px;
+  height: 195px;
   margin-bottom: 30px;
 }
 
 .catalog__desc {
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    position: relative;
+  }
   width: 205px;
   margin: 0 auto;
 }
 
 .catalog__title {
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
@@ -69,15 +124,30 @@
   margin: 0 0 26px 0;
 }
 
-.catalog__line {
-  margin: 0 0 26px 0;
+.catalog__text-basket {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .catalog__price {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    min-width: 268px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    min-width: 268px;
+  }
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin-bottom: 30px;
+  padding-top: 27px;
+  border-top: 1px solid #e1e1e1;
 }
 
 .catalog__money {
