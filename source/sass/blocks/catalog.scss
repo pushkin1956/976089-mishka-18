@@ -19,6 +19,11 @@
     width: 380px;
   }
 
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    width: 470px;
+  }
+
   @include page-title;
   display: flex;
   align-items: center;
