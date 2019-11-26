@@ -1,4 +1,7 @@
 .contacts {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
   margin-bottom: 38px;
 }
 
@@ -6,11 +9,52 @@
   @include inner;
 }
 
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 875px;
+    margin-left: auto;
+    margin-bottom: 45px;
+  }
+}
+
 .contacts__title {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url("https://via.placeholder.com/150x150");
+      width: 50px;
+      height: 50px;
+    }
+    position: relative;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 5px;
+      left: -121px;
+    }
+    font-size: 53px;
+    line-height: 1.08;
+    display: inline-block;
+    margin-bottom: 44px;
+  }
   margin-bottom: 42px;
 }
 
 .contacts__info {
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
   margin-bottom: 42px;
   display: flex;
   flex-wrap: wrap;
@@ -28,6 +72,9 @@
 
 .contacts__value,
 .contacts__field {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
   vertical-align: top;
   padding: 0;
 }
@@ -41,6 +88,12 @@
 }
 
 .contacts__map {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+  }
   position: relative;
   text-align: center;
   margin-bottom: 38px;
@@ -55,105 +108,39 @@
 
 .contacts__btn {
   @include button-style;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
   display: block;
   margin: 0 auto;
   padding: 20px 52px;
 }
 
 .contacts__image {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
   width: 320px;
   height: 457px;
 }
 
-@media (min-width: $tablet-width) {
-  .contacts__title {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url("https://via.placeholder.com/150x150");
-      width: 50px;
-      height: 50px;
-    }
-    position: relative;
-    font-size: 43px;
-    font-weight: bold;
-    line-height: 1.16;
-  }
-
-  .contacts__inner-btn {
+.contacts__inner-btn {
+  @media (min-width: $tablet-width) {
     text-align: center;
-  }
-
-  .contacts__btn {
-    padding: 20px 42px;
-  }
-
-  .contacts__value,
-  .contacts__field {
-    font-size: 17px;
-  }
-
-  .contacts__image {
-    width: 768px;
-    height: 457px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .contacts {
-    margin-bottom: 110px;
-  }
-
-  .contacts__wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 875px;
-    margin-left: auto;
-    margin-bottom: 45px;
-  }
-
-  .contacts__title {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: -121px;
-      background: url("https://via.placeholder.com/150x150");
-      width: 50px;
-      height: 50px;
-    }
-    font-size: 53px;
-    font-weight: bold;
-    line-height: 1.08;
-    display: inline-block;
-    margin-bottom: 44px;
-  }
-
-  .contacts__info {
-    flex-direction: column;
-    margin-bottom: 26px;
-  }
-
-  .contacts__contact {
+.contacts__contact {
+  @media (min-width: $desktop-width) {
     padding-top: 60px;
-  }
-
-  .contacts__btn {
-    margin-left: 0;
-  }
-
-  .contacts__map {
-    position: absolute;
-    text-align: center;
-    top: 0;
-    right: 0;
-  }
-
-  .contacts__image {
-    width: 525px;
-    height: 457px;
   }
 }

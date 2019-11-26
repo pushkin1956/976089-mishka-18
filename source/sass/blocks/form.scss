@@ -14,6 +14,8 @@
 }
 
 .form__page-text {
+  @include page-title;
+
   @media (min-width: $tablet-width) {
     font-size: 43px;
     padding: 104px 185px 90px 185px;
@@ -23,8 +25,6 @@
     font-size: 53px;
     padding: 105px 330px 112px 330px;
   }
-
-  @include page-title;
   padding: 76px 36px 80px 36px;
   margin: 0;
 }

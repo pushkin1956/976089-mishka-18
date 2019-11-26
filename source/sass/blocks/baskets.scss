@@ -1,5 +1,15 @@
 .baskets {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
+  }
   margin-bottom: 36px;
+}
+
+.baskets__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 875px;
+    margin-left: auto;
+  }
 }
 
 .baskets__inner {
@@ -7,11 +17,38 @@
 }
 
 .baskets__title {
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    z-index: 1;
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 1.08;
+    margin-left: -4px;
+  }
   padding: 0 0 8px 0;
   margin: 0;
 }
 
 .baskets__week {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    width: 70px;
+    line-height: 1;
+    padding: 0 28px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 13px;
+    left: -130px;
+  }
   align-self: center;
   font-size: 17px;
   font-weight: bold;
@@ -24,6 +61,16 @@
 }
 
 .baskets__about-text {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.76;
+    margin: 0 0 40px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    width: 290px;
+  }
   font-size: 15px;
   line-height: 1.6;
   color: $color-danger;
@@ -36,6 +83,9 @@
 }
 
 .baskets__table {
+  @media (min-width: $desktop-width) {
+    line-height: 3;
+  }
   width: 100%;
   margin: 0 0 28px 0;
   border-collapse: collapse;
@@ -46,6 +96,13 @@
 }
 
 .baskets__price {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 28px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
   text-align: center;
   font-size: 17px;
   font-weight: bold;
@@ -56,135 +113,79 @@
 
 .baskets__to-order-btn {
   @include button-style;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 100px;
+  }
   display: block;
   padding: 20px 84px;
   margin: 0 auto;
 }
 
 .baskets__image {
-  display: block;
-  width: 260px;
-  height: 315px;
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .baskets {
-    margin-bottom: 100px;
-  }
-
-  .baskets__info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .baskets__good {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 55px;
-  }
-
-  .baskets__title {
-    font-size: 43px;
-    font-weight: bold;
-    line-height: 1.16;
-    padding: 0;
-  }
-
-  .baskets__week {
-    text-align: center;
-    width: 70px;
-    line-height: 1;
-    padding: 0 28px 0 0;
-  }
-
-  .baskets__description {
-    width: 285px;
-  }
-
-  .baskets__about-text {
-    font-size: 17px;
-    line-height: 1.76;
-    margin: 0 0 40px 0;
-  }
-
-  .baskets__order {
-    margin-top: -116px;
-  }
-
-  .baskets__price {
-    margin: 0 auto 28px auto;
-  }
-
-  .baskets__to-order-btn {
-    padding: 20px 84px;
-  }
-
-  .baskets__image {
+  @media (min-width: $tablet-width) {
     width: 333px;
     height: 404px;
     margin: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .baskets__wrapper {
-    width: 875px;
-    margin-left: auto;
-  }
-
-  .baskets__image {
+  @media (min-width: $desktop-width) {
     width: 525px;
     height: 636px;
     margin-top: -151px;
     margin-left: 55px;
     display: block;
   }
+  display: block;
+  width: 260px;
+  height: 315px;
+  margin: 0 auto;
+}
 
-  .baskets__title {
-    order: 2;
-    z-index: 1;
-    font-size: 53px;
-    font-weight: bold;
-    line-height: 1.08;
-    margin-left: -4px;
+.baskets__info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.baskets__good {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 55px;
   }
 
-  .baskets__week {
-    position: absolute;
-    top: 13px;
-    left: -130px;
-  }
-
-  .baskets__good {
+  @media (min-width: $desktop-width) {
     position: relative;
     justify-content: unset;
   }
+}
 
-  .baskets__about-text {
-    font-size: 17px;
-    width: 290px;
+.baskets__description {
+  @media (min-width: $tablet-width) {
+    width: 285px;
+  }
+}
+
+.baskets__order {
+  @media (min-width: $tablet-width) {
+    margin-top: -116px;
   }
 
-  .baskets__about-product {
-    width: 295px;
-  }
-
-  .baskets__order {
+  @media (min-width: $desktop-width) {
     margin-top: -122px;
   }
+}
 
-  .baskets__table {
-    line-height: 3;
-  }
-
-  .baskets__price {
-    font-size: 20px;
-  }
-
-  .baskets__to-order-btn {
-    padding: 20px 100px;
+.baskets__about-product {
+  @media (min-width: $desktop-width) {
+    width: 295px;
   }
 }

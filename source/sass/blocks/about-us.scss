@@ -1,5 +1,15 @@
 .about-us {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
   margin-bottom: 60px;
+}
+
+.about-us__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 875px;
+    margin-left: auto;
+  }
 }
 
 .about-us__inner {
@@ -7,11 +17,25 @@
 }
 
 .about-us__title {
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
   margin: 0 0 30px 0;
 }
 
 .about-us__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -23,6 +47,16 @@
 }
 
 .about-us__item {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-of-type) {
+      margin-bottom: 60px;
+    }
+  }
+
   &:not(:last-of-type) {
     margin-bottom: 30px;
   }
@@ -30,49 +64,12 @@
 }
 
 .about-us__text {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.1;
+  }
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
   margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .about-us {
-    margin-bottom: 30px;
-  }
-
-  .about-us__title {
-    font-size: 43px;
-    line-height: 1.16;
-    margin-bottom: 50px;
-  }
-
-  .about-us__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .about-us__item {
-    width: 300px;
-  }
-
-  .about-us__item:not(:last-of-type) {
-    margin-bottom: 60px;
-  }
-
-  .about-us__text {
-    font-size: 20px;
-    line-height: 1.1;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .about-us__wrapper {
-    width: 875px;
-    margin-left: auto;
-  }
-
-  .about-us__list {
-    justify-content: space-between;
-  }
 }

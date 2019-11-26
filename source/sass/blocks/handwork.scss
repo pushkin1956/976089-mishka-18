@@ -15,6 +15,8 @@
 }
 
 .handwork__inner {
+  @include inner;
+
   @media (min-width: $tablet-width) {
     width: 270px;
     padding: 0 34px;
@@ -23,8 +25,6 @@
   @media (min-width: $desktop-width) {
     width: 460px;
   }
-
-  @include inner;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,8 @@
 }
 
 .handwork__text {
+  @include page-title;
+
   @media (min-width: $tablet-width) {
     font-size: 43px;
     font-weight: bold;
@@ -50,8 +52,6 @@
     line-height: 1.08;
     padding: 161px 268px 354px 268px;
   }
-
-  @include page-title;
   padding: 85px 52px 130px 52px;
   margin: 0;
 }
