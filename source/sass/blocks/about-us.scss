@@ -7,8 +7,8 @@
 
 .about-us__wrapper {
   @media (min-width: $desktop-width) {
-    width: 875px;
-    margin-left: auto;
+    width: 700px;
+    margin: 0 auto;
   }
 }
 
@@ -34,7 +34,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
   }
   display: flex;
   flex-wrap: wrap;
