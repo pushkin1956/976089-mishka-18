@@ -16,19 +16,17 @@
 .catalog__page-text {
   @media (min-width: $tablet-width) {
     font-size: 43px;
-    width: 380px;
+    padding: 106px 190px 78px 190px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
-    width: 470px;
+    padding: 105px 340px 100px 340px;
   }
 
   @include page-title;
-  display: flex;
-  align-items: center;
-  padding: 90px 0;
-  margin: 0 auto;
+  padding: 76px 40px;
+  margin: 0;
 }
 
 .catalog__list {

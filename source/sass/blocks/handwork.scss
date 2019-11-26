@@ -1,9 +1,29 @@
 .handwork {
+  @media (min-width: $tablet-width) {
+    background: url("../img/hero-tablet@1x.jpg") no-repeat center top;
+    box-shadow: inset 0 -1px 0 1px #f9f9f9, inset 0 0 0 1px rgba(68, 68, 68, 0.2);
+    margin-top: -50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgb(249, 249, 249);
+    margin-top: -50px;
+    margin-bottom: 140px;
+  }
   margin-bottom: 34px;
   background: url("../img/hero-mobile@1x.jpg") no-repeat center top;
 }
 
 .handwork__inner {
+  @media (min-width: $tablet-width) {
+    width: 270px;
+    padding: 0 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+  }
+
   @include inner;
   display: flex;
   justify-content: space-between;
@@ -12,18 +32,38 @@
 
 .handwork__title {
   display: flex;
-  align-items: center;
-  text-align: center;
-  min-height: 300px;
+  flex-wrap: wrap;
 }
 
 .handwork__text {
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+    padding: 155px 120px 375px 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 615px;
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 1.08;
+    padding: 161px 268px 354px 268px;
+  }
+
   @include page-title;
-  width: 245px;
-  margin: -50px auto 0 auto;
+  padding: 85px 52px 130px 52px;
+  margin: 0;
 }
 
 .handwork__category {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 0;
+  }
   width: 105px;
   font-size: 19px;
   font-weight: bold;
@@ -42,6 +82,9 @@
 }
 
 .handwork__image-itn {
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
   padding-right: 10px;
 }
 
@@ -51,6 +94,14 @@
 
 .handwork__interior,
 .handwork__toys {
+  @media (min-width: $tablet-width) {
+    width: 335px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -62,74 +113,9 @@
   opacity: 0.2;
 }
 
-// Media tablet
-@media (min-width: $tablet-width) {
-  .handwork {
-    background: url("../img/hero-tablet@1x.jpg") no-repeat center top;
-    box-shadow: inset 0 -1px 0 1px #f9f9f9, inset 0 0 0 1px rgba(68, 68, 68, 0.2);
-    margin-top: -50px;
-  }
-
-  .handwork__title {
-    min-height: 630px;
-  }
-
-  .handwork__text {
-    width: 500px;
-    font-size: 43px;
-    font-weight: bold;
-    line-height: 1.16;
-    margin: -226px auto 0 auto;
-  }
-
-  .handwork__interior,
-  .handwork__toys {
-    width: 335px;
-  }
-
-  .handwork__image-itn {
-    padding-right: 0;
-  }
-
-  .handwork__goods {
+.handwork__goods {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
-  }
-
-  .handwork__category {
-    font-size: 20px;
-  }
-
-  .handwork__inner {
-    width: 270px;
-    padding: 0 34px;
-  }
-}
-// Media Desktop
-@media (min-width: $desktop-width) {
-  .handwork {
-    background-color: rgb(249, 249, 249);
-    margin-top: -50px;
-    margin-bottom: 140px;
-  }
-
-  .handwork__text {
-    width: 615px;
-    font-size: 53px;
-    font-weight: bold;
-    line-height: 1.08;
-  }
-
-  .handwork__interior,
-  .handwork__toys {
-    width: 525px;
-  }
-
-  .handwork__inner {
-    width: 460px;
-  }
-
-  .handwork__category {
-    padding: 35px 0;
   }
 }

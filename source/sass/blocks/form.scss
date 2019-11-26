@@ -16,16 +16,17 @@
 .form__page-text {
   @media (min-width: $tablet-width) {
     font-size: 43px;
-    width: 500px;
+    padding: 104px 185px 90px 185px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
+    padding: 105px 330px 112px 330px;
   }
 
   @include page-title;
-  padding: 90px 0;
-  margin: 0 auto;
+  padding: 76px 36px 80px 36px;
+  margin: 0;
 }
 
 .form__text {

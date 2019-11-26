@@ -1,6 +1,7 @@
 @import "base/layout";
 @import "base/variables";
 @import "base/mixins";
+@import "base/typography.scss";
 @import "blocks/fonts";
 @import "blocks/header";
 @import "blocks/menu";
@@ -13,4 +14,3 @@
 @import "blocks/modal";
 @import "blocks/catalog";
 @import "blocks/form";
-@import "base/typography.scss";
