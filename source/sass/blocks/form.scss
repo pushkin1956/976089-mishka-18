@@ -109,6 +109,10 @@
   padding: 18px 0;
 }
 
+.form__placeholder-mb {
+  margin-bottom: 25px;
+}
+
 .form__textarea-text {
   &::placeholder {
     opacity: 0.3;
