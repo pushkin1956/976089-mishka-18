@@ -1,42 +1,91 @@
 .handwork {
+  @media (min-width: $tablet-width) {
+    background: url("../img/hero-tablet@1x.jpg") no-repeat center top;
+    box-shadow: inset 0 -1px 0 1px #f9f9f9, inset 0 0 0 1px rgba(68, 68, 68, 0.2);
+    margin-top: -50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgb(249, 249, 249);
+    margin-top: -50px;
+    margin-bottom: 140px;
+  }
   margin-bottom: 34px;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center top;
 }
 
 .handwork__inner {
   @include inner;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+    padding: 0 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+  }
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .handwork__title {
-  .handwork__text {
-    width: 245px;
-    margin: -51px auto 0 auto;
-  }
   display: flex;
-  align-items: center;
-  text-align: center;
-  min-height: 283px;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 20%;
+  flex-wrap: wrap;
 }
 
-.handwork__goods {
-  .handwork__text {
-    width: 105px;
-    font-size: 19px;
+.handwork__text {
+  @include page-title;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
     font-weight: bold;
-    line-height: 1.26;
-    color: #ffffff;
-    margin: 0;
-    padding-top: 8px;
+    line-height: 1.16;
+    padding: 155px 120px 375px 120px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 615px;
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 1.08;
+    padding: 161px 268px 354px 268px;
+  }
+  padding: 85px 52px 130px 52px;
+  margin: 0 auto;
+}
+
+.handwork__category {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 0;
+  }
+  width: 105px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.handwork__inner.handwork__flex-g {
+  flex-grow: 1;
 }
 
 .handwork__interior {
-  .handwork__image-itn {
-    padding-right: 10px;
-  }
   background-color: #63d1bb;
+}
+
+.handwork__image-itn {
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
+  padding-right: 10px;
 }
 
 .handwork__toys {
@@ -45,13 +94,28 @@
 
 .handwork__interior,
 .handwork__toys {
+  @media (min-width: $tablet-width) {
+    width: 335px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+
   display: flex;
   align-items: center;
   text-decoration: none;
-  min-height: 103px;
+  min-height: 100px;
 }
 
 .handwork__image-itn,
 .handwork__image-toys {
   opacity: 0.2;
+}
+
+.handwork__goods {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
 }

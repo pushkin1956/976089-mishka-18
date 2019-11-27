@@ -1,8 +1,15 @@
 @mixin inner {
-  width: 260px;
   margin: 0 auto;
-  //@media (min-width: 768px) {}
-  //@media (min-width: 1150px) {}
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 @mixin reset-list {
@@ -19,7 +26,13 @@
   color: $color-danger;
   text-transform: uppercase;
   border: solid 2px $color-danger;
-  width: 260px;
-  padding: 20px 0;
+  background-color: transparent;
   cursor: pointer;
+}
+
+@mixin page-title {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
 }

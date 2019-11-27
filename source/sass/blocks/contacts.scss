@@ -1,17 +1,65 @@
 .contacts {
-  margin-bottom: 39px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
+  margin-bottom: 38px;
 }
 
 .contacts__inner {
   @include inner;
 }
 
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 875px;
+    margin-left: auto;
+    margin-bottom: 45px;
+  }
+}
+
 .contacts__title {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url("https://via.placeholder.com/150x150");
+      width: 50px;
+      height: 50px;
+    }
+    position: relative;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 5px;
+      left: -121px;
+    }
+    font-size: 53px;
+    line-height: 1.08;
+    display: inline-block;
+    margin-bottom: 44px;
+  }
   margin-bottom: 42px;
 }
 
 .contacts__info {
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
   margin-bottom: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .contacts__email,
@@ -24,12 +72,15 @@
 
 .contacts__value,
 .contacts__field {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
   vertical-align: top;
   padding: 0;
 }
 
 .contacts__value {
-  padding-right: 17px;
+  padding-right: 16px;
 }
 
 .contacts__field-line {
@@ -37,18 +88,59 @@
 }
 
 .contacts__map {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+  }
   position: relative;
   text-align: center;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .contacts__pin {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50px, -33.5px);
+  transform: translate(-50px, -50%);
 }
 
 .contacts__btn {
   @include button-style;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+  display: block;
+  margin: 0 auto;
+  padding: 20px 52px;
+}
+
+.contacts__image {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+  width: 320px;
+  height: 457px;
+}
+
+.contacts__inner-btn {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.contacts__contact {
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+  }
 }
