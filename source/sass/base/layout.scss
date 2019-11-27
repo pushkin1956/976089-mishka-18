@@ -2,6 +2,12 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* Для ридера */
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,

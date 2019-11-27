@@ -6,33 +6,31 @@
   display: flex;
 }
 
-.logo__image {
-  width: 86px;
-  height: 35px;
-  margin: 22px auto;
-}
+.header__inner {
+  @include inner;
 
-@media (min-width: $tablet-width) {
-  .header__inner {
+  @media (min-width: $tablet-width) {
     display: flex;
-    width: 668px;
-    padding: 0 50px;
+    width: 768px;
     margin: 0 auto;
   }
 
-  .logo__image {
-    width: 112px;
-    height: 46px;
+  @media (min-width: $desktop-width) {
+    width: 1150px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .header__inner {
-    width: 1050px;
+.logo__image {
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 46px;
   }
 
-  .logo__image {
+  @media (min-width: $desktop-width) {
     width: 149px;
     height: 72px;
   }
+  width: 86px;
+  height: 35px;
+  margin: 22px auto;
 }
