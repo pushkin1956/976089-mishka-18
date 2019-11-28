@@ -30,6 +30,10 @@
 }
 
 .form__text {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.76;
+  }
   font-size: 13px;
   color: $color-danger;
   line-height: 1.85;
@@ -50,7 +54,18 @@
   margin-bottom: 30px;
 }
 
+.form__checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__fieldset {
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: unset;
+    align-items: baseline;
+  }
+
   &:not(:last-of-type) {
     margin-bottom: 30px;
   }
@@ -61,6 +76,9 @@
 }
 
 .form__legend {
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
   display: inline-flex;
   align-items: center;
   width: 100%;
@@ -69,7 +87,7 @@
   line-height: 0.94;
   text-transform: uppercase;
   color: $color-brand;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
 .form__legend-line {

@@ -78,68 +78,71 @@
           Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form action="https://echo.htmlacademy.ru">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend-line">Тип</legend>
+          <div class="form__fieldset">
+            <p class="form__legend form__legend-line">Тип</p>
             <div class="form__radio">
               <div class="form__interior">
-                <input class="visually-hidden" id="interior"
-                        type="radio" name="type" value="interior" checked>
+                <input class="visually-hidden" id="interior"type="radio" name="type" value="interior" checked>
                 <label class="form__style-text form__text-indentation" for="interior">
                   Аксессуар для интерьера
                 </label>
               </div>
               <div class="form__games">
-                <input class="visually-hidden" id="games"
-                        type="radio" name="type" value="games">
-                <label class="form__style-text form__text-indentation" for="games">Детская игрушка</label>
+                <input class="visually-hidden" id="games" type="radio" name="type" value="games">
+                <label class="form__style-text form__text-indentation" for="games">
+                  Детская игрушка
+                </label>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend-line">Цвет</legend>
-            <input class="visually-hidden" id="white" name="color" value="white" type="checkbox" checked>
-            <label class="form__style-text form__text-indentation" for="white">Белый</label>
-            <input class="visually-hidden" id="gray" name="color" value="grey" type="checkbox" checked>
-            <label class="form__style-text form__text-indentation" for="gray">Серый</label>
-            <input class="visually-hidden" id="tiffany" name="color" value="tiffany" type="checkbox">
-            <label class="form__style-text form__text-indentation" for="tiffany">«Тиффани»</label>
-            <input class="visually-hidden" id="black" name="color" value="black" type="checkbox">
-            <label class="form__style-text form__text-indentation" for="black">Черный</label>
-            <input class="visually-hidden" id="pink" name="color" value="pink" type="checkbox">
-            <label class="form__style-text form__text-indentation" for="pink">Розовый</label>
-            <input class="visually-hidden" id="orange" name="color" value="orange" type="checkbox">
-            <label class="form__style-text form__text-indentation" for="orange">Оранжевый</label>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend-line">Фио</legend>
-            <label class="form__style-text form__text-mb" for="first-name">Имя:</label>
-            <input class="form__placeholder form__placeholder-mb"
-                    id="first-name" type="text" placeholder="Введите ваше имя*">
-            <label class="form__style-text form__text-mb" for="last-name">Фамилия:</label>
-            <input class="form__placeholder form__placeholder-mb"
-                    id="last-name" type="text" placeholder="Укажите фамилию*">
-            <label class="form__style-text form__text-mb" for="father-name">Отчество:</label>
-            <input class="form__placeholder"
-                    id="father-name" type="text" placeholder="Отчество, если желаете">
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend-line">Тел</legend>
+          </div>
+          <div class="form__fieldset">
+            <p class="form__legend form__legend-line">Цвет</p>
+            <div class="form__checkbox">
+              <input class="visually-hidden" id="white" name="color" value="white" type="checkbox" checked>
+              <label class="form__style-text form__text-indentation" for="white">Белый</label>
+              <input class="visually-hidden" id="gray" name="color" value="grey" type="checkbox" checked>
+              <label class="form__style-text form__text-indentation" for="gray">Серый</label>
+              <input class="visually-hidden" id="tiffany" name="color" value="tiffany" type="checkbox">
+              <label class="form__style-text form__text-indentation" for="tiffany">«Тиффани»</label>
+              <input class="visually-hidden" id="black" name="color" value="black" type="checkbox">
+              <label class="form__style-text form__text-indentation" for="black">Черный</label>
+              <input class="visually-hidden" id="pink" name="color" value="pink" type="checkbox">
+              <label class="form__style-text form__text-indentation" for="pink">Розовый</label>
+              <input class="visually-hidden" id="orange" name="color" value="orange" type="checkbox">
+              <label class="form__style-text form__text-indentation" for="orange">Оранжевый</label>
+            </div>
+          </div>
+          <div class="form__fieldset">
+            <p class="form__legend form__legend-line">Фио</p>
+            <div class="form__name">
+              <label class="form__style-text form__text-mb" for="first-name">Имя:</label>
+              <input class="form__placeholder form__placeholder-mb"
+                      id="first-name" type="text" placeholder="Введите ваше имя*">
+              <label class="form__style-text form__text-mb" for="last-name">Фамилия:</label>
+              <input class="form__placeholder form__placeholder-mb"id="last-name" type="text" placeholder="Укажите фамилию*">
+              <label class="form__style-text form__text-mb" for="father-name">Отчество:</label>
+              <input class="form__placeholder"
+                      id="father-name" type="text" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+          <div class="form__fieldset">
+            <p class="form__legend form__legend-line">Тел</p>
             <label for="number-phone"></label>
             <input class="form__placeholder" id="number-phone" type="tel" pattern="2[0-9]{3}-[0-9]{3}"
                     placeholder="+7 XXX XXX XX XX*" required>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend-line">Email</legend>
+          </div>
+          <div class="form__fieldset">
+            <p class="form__legend form__legend-line">Email</p>
             <label for="email"></label>
             <input class="form__placeholder" id="email" type="email" placeholder="Ваш Email*" required>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend-line">Доп</legend>
+          </div>
+          <div class="form__fieldset">
+            <p class="form__legend form__legend-line">Доп</p>
             <label>
               <textarea class="form__textarea-text" name="form-text" id="form-text"
                           placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
-          </fieldset>
+          </div>
           <small class="form__require"><sup>*</sup>Поля обязательны для заполнения</small>
           <button class="form__btn button" type="submit">Отправить заказ</button>
         </form>
