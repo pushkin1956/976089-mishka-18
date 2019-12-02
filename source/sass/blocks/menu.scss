@@ -11,6 +11,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
   }
   position: relative;
 }
@@ -45,9 +46,18 @@
 
 .menu__item {
   @media (min-width: $tablet-width) {
-    align-self: center;
+    align-self: stretch;
     box-shadow: none;
     padding: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -66px;
+    height: 18px;
+    opacity: 0.2;
   }
   width: auto;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
@@ -55,14 +65,6 @@
 }
 
 .menu__link {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: -36px;
-    height: 18px;
-    opacity: 0.2;
-  }
   position: relative;
   font-size: 17px;
   font-weight: bold;
@@ -124,14 +126,17 @@
   }
 }
 
-.menu__link-search {
-  @media (min-width: $tablet-width) {
-    margin-right: 60px;
-  }
-
+.menu__item-search {
   &::before {
     background: url("../img/icon-search.svg") no-repeat;
     width: 18px;
+  }
+}
+
+.menu__link-search {
+  @media (min-width: $tablet-width) {
+    margin-right: 60px;
+    font-size: 0;
   }
 }
 
