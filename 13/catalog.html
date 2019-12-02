@@ -128,11 +128,13 @@
             <img class="catalog__video" src="img/video-mobile@1x.jpg"
               srcset="img/video-mobile@1x.jpg 767w, img/video-tablet@1x.jpg 1149w, img/video-desktop@1x.jpg" width="260"
               height="150" alt="Процесс производства">
-            <p class="catalog__text catalog__text-process">
-              По просьбам наших любимых фолловеров мы сняли
-              для вас подробное видео о том, как появляются наши товары.
-            </p>
-            <button class="catalog__btn button" type="button">Сделать заказ</button>
+            <div class="catalog__process-wrapper">
+              <p class="catalog__text catalog__text-process">
+                По просьбам наших любимых фолловеров мы сняли
+                для вас подробное видео о том, как появляются наши товары.
+              </p>
+              <button class="catalog__btn button" type="button">Сделать заказ</button>
+            </div>
           </li>
         </ul>
       </div>
@@ -174,21 +176,24 @@
   </footer>
 
   <!-- Секция модального окна -->
-  <section class="modal-add modal">
-    <div class="modal__inner">
-      <p class="modal__title">Добавить в корзину</p>
-      <fieldset class="modal__fieldset">
-        <legend class="modal__legend">Выберите размер:</legend>
-        <div class="modal__sizes">
-          <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size" checked>
-          <label class="modal__size" for="size-s">S</label>
-          <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
-          <label class="modal__size" for="size-m">M</label>
-          <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size">
-          <label class="modal__size" for="size-l">L</label>
+  <section class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__inner">
+          <p class="modal__title">Добавить в корзину</p>
+          <fieldset class="modal__fieldset">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <div class="modal__sizes">
+              <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size" checked>
+              <label class="modal__size" for="size-s">S</label>
+              <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
+              <label class="modal__size" for="size-m">M</label>
+              <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size">
+              <label class="modal__size" for="size-l">L</label>
+            </div>
+          </fieldset>
+          <button class="modal__btn button" type="button">Добавить</button>
         </div>
-      </fieldset>
-      <button class="modal__btn button" type="button">Добавить</button>
     </div>
   </section>
 

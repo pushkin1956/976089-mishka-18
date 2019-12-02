@@ -36,7 +36,7 @@
           </li>
         </ul>
         <ul class="menu__list menu__list-search-basket">
-          <li class="menu__item">
+          <li class="menu__item menu__item-search">
             <a class="menu__link menu__link-search" href="#">Поиск по сайту</a>
           </li>
           <li class="menu__item">
@@ -212,21 +212,19 @@
     <section class="contacts">
       <div class="contacts__inner">
         <div class="contacts__wrapper">
-          <div class="contacts__contact">
-            <h2 class="contacts__title title">Контакты</h2>
-            <div class="contacts__info">
-              <div class="contacts__email">
-                <p class="contacts__value">e-mail:</p>
-                <p class="contacts__field contacts__field-line">info@mimimishkashop.ru</p>
-              </div>
-              <div class="contacts__address">
-                <p class="contacts__value">адрес:</p>
-                <p class="contacts__field">
-                  г. Санкт-Петербург,<br>
-                  ул. Большая Конюшенная,<br>
-                  д. 19/8, офис 101
-                </p>
-              </div>
+          <h2 class="contacts__title title">Контакты</h2>
+          <div class="contacts__info">
+            <div class="contacts__email">
+              <p class="contacts__value">e-mail:</p>
+              <p class="contacts__field contacts__field-line">info@mimimishkashop.ru</p>
+            </div>
+            <div class="contacts__address">
+              <p class="contacts__value">адрес:</p>
+              <p class="contacts__field">
+                г. Санкт-Петербург,<br>
+                ул. Большая Конюшенная,<br>
+                д. 19/8, офис 101
+              </p>
             </div>
           </div>
           <div class="contacts__map">
@@ -279,21 +277,24 @@
   </footer>
 
   <!-- Секция модального окна -->
-  <section class="modal-add modal">
-    <div class="modal__inner">
-      <p class="modal__title">Добавить в корзину</p>
-      <fieldset class="modal__fieldset">
-        <legend class="modal__legend">Выберите размер:</legend>
-        <div class="modal__sizes">
-          <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size" checked>
-          <label class="modal__size" for="size-s">S</label>
-          <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
-          <label class="modal__size" for="size-m">M</label>
-          <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size">
-          <label class="modal__size" for="size-l">L</label>
+  <section class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__inner">
+          <p class="modal__title">Добавить в корзину</p>
+          <fieldset class="modal__fieldset">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <div class="modal__sizes">
+              <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size" checked>
+              <label class="modal__size" for="size-s">S</label>
+              <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
+              <label class="modal__size" for="size-m">M</label>
+              <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size">
+              <label class="modal__size" for="size-l">L</label>
+            </div>
+          </fieldset>
+          <button class="modal__btn button" type="button">Добавить</button>
         </div>
-      </fieldset>
-      <button class="modal__btn button" type="button">Добавить</button>
     </div>
   </section>
 
