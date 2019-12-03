@@ -9,17 +9,17 @@
 .header__inner {
   @media (min-width: $tablet-width) {
     @include inner;
-    display: flex;
-    width: 768px;
-    margin: 0 auto;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 1150px;
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
 .logo__image {
+  width: 86px;
+  height: 35px;
+  margin: 22px auto;
+
   @media (min-width: $tablet-width) {
     width: 112px;
     height: 46px;
@@ -29,7 +29,4 @@
     width: 149px;
     height: 72px;
   }
-  width: 86px;
-  height: 35px;
-  margin: 22px auto;
 }

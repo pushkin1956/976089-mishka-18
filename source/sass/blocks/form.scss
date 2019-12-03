@@ -66,13 +66,17 @@
 }
 
 .form__title-page {
+  background-color: #f1f1f1;
+
   @media (min-width: $tablet-width) {
     margin-top: -55px;
   }
-  background-color: #f1f1f1;
 }
 
 .form__page-text {
+  padding: 76px 36px 80px 36px;
+  margin: 0;
+
   @include page-title;
 
   @media (min-width: $tablet-width) {
@@ -84,11 +88,14 @@
     font-size: 53px;
     padding: 105px 330px 112px 330px;
   }
-  padding: 76px 36px 80px 36px;
-  margin: 0;
 }
 
 .form__text {
+  font-size: 13px;
+  color: $color-danger;
+  line-height: 1.85;
+  margin: 30px 0;
+
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 1.76;
@@ -98,13 +105,12 @@
     width: 672px;
     margin: 100px auto 20px auto;
   }
-  font-size: 13px;
-  color: $color-danger;
-  line-height: 1.85;
-  margin: 30px 0;
 }
 
 .form__radio {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     width: 500px;
     margin-left: auto;
@@ -114,8 +120,6 @@
     width: 700px;
     margin: 0 auto;
   }
-  display: flex;
-  flex-direction: column;
 }
 
 .form__games {
@@ -128,6 +132,9 @@
 }
 
 .form__checkboxes {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     flex-direction: row;
@@ -141,28 +148,22 @@
     margin: 0 auto;
     padding-right: 140px;
   }
-  display: flex;
-  flex-direction: column;
 }
 
 .form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: baseline;
     padding: 50px 0;
   }
-  display: flex;
-  flex-direction: column;
-  border: none;
-  padding: 0;
 }
 
 .form__legend {
-  @media (min-width: $tablet-width) {
-    width: auto;
-    align-self: baseline;
-    min-width: 60px;
-  }
   display: inline-flex;
   align-items: center;
   width: 100%;
@@ -171,6 +172,12 @@
   line-height: 0.94;
   text-transform: uppercase;
   color: $color-brand;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    align-self: baseline;
+    min-width: 60px;
+  }
 }
 
 .form__legend-line {
@@ -187,13 +194,14 @@
 }
 
 .form__style-text {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+
   @media (min-width: $desktop-width) {
     font-size: 19px;
     line-height: 0.95;
   }
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.06;
 }
 
 .form__text-indentation {
@@ -204,16 +212,6 @@
 }
 
 .form__placeholder {
-  @media (min-width: $tablet-width) {
-    width: 500px;
-    margin-left: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 700px;
-    margin: 0 auto;
-  }
-
   &::placeholder {
     opacity: 0.3;
     font-size: 17px;
@@ -224,6 +222,16 @@
   border: none;
   box-shadow: inset 0 -2px 0 0 #000000;
   padding: 18px 0 18px 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin: 0 auto;
+  }
 }
 
 .form__placeholder-tel {
@@ -233,10 +241,11 @@
 }
 
 .form__placeholder-mb {
+  margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
-  margin-bottom: 25px;
 }
 
 .form__textarea {
@@ -267,13 +276,13 @@
 }
 
 .form__text-mb {
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     align-self: center;
     margin-right: 15px;
-  }
-
-  &:not(:last-of-type) {
-    margin-bottom: 20px;
   }
 }
 
@@ -297,13 +306,14 @@
 }
 
 .form__btn {
+  margin-top: 30px;
+  padding: 20px 45px;
+
   @include button-style;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
-  margin-top: 30px;
-  padding: 20px 45px;
 }
 
 .form__fieldset-background {

@@ -6,6 +6,8 @@
 }
 
 .menu__list {
+  position: relative;
+
   @include reset-list;
 
   @media (min-width: $tablet-width) {
@@ -13,15 +15,15 @@
     flex-wrap: wrap;
     align-content: center;
   }
-  position: relative;
 }
 
 .menu__list-new,
 .menu__list-delivery {
+  display: none;
+
   @media (min-width: $desktop-width) {
     margin-top: 25px;
   }
-  display: none;
 }
 
 .menu__list-new {
@@ -45,6 +47,10 @@
 }
 
 .menu__item {
+  width: auto;
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  padding: 32px 0 32px 76px;
+
   @media (min-width: $tablet-width) {
     align-self: stretch;
     box-shadow: none;
@@ -59,9 +65,6 @@
     height: 18px;
     opacity: 0.2;
   }
-  width: auto;
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-  padding: 32px 0 32px 76px;
 }
 
 .menu__link {

@@ -34,6 +34,8 @@
 }
 
 .reviews__title {
+  margin-bottom: 38px;
+
   @media (min-width: $tablet-width) {
     align-self: center;
     font-size: 43px;
@@ -45,10 +47,14 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
   }
-  margin-bottom: 38px;
 }
 
 .reviews__text {
+  font-size: 15px;
+  line-height: 2;
+  color: $color-danger;
+  margin: 0 0 40px 0;
+
   @media (min-width: $tablet-width) {
     width: 645px;
     font-size: 17px;
@@ -60,10 +66,6 @@
   @media (min-width: $desktop-width) {
     width: 770px;
   }
-  font-size: 15px;
-  line-height: 2;
-  color: $color-danger;
-  margin: 0 0 40px 0;
 }
 
 .reviews__name {
@@ -98,15 +100,16 @@
 
 .reviews__btn-prev,
 .reviews__btn-next {
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
   width: 130px;
   height: 52px;
   padding: 0;
   border: solid 1px #ececec;
   background-color: transparent;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .reviews__btn-next {
@@ -114,10 +117,11 @@
 }
 
 .reviews__write-btn {
+  padding: 20px 80px;
+
   @include button-style;
 
   @media (min-width: $tablet-width) {
     padding: 20px 40px;
   }
-  padding: 20px 80px;
 }
