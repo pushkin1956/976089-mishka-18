@@ -126,14 +126,14 @@
   }
 }
 
-.menu__item-search {
+.search {
   &::before {
     background: url("../img/icon-search.svg") no-repeat;
     width: 18px;
   }
 }
 
-.menu__link-search {
+.search__link {
   @media (min-width: $tablet-width) {
     margin-right: 60px;
     font-size: 0;
