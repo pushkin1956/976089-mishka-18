@@ -27,7 +27,7 @@
   }
 }
 
-.form__name {
+.form__names {
   @media (min-width: $tablet-width) {
     width: 500px;
     margin-left: auto;
@@ -127,7 +127,7 @@
   margin-bottom: 30px;
 }
 
-.form__checkbox {
+.form__checkboxes {
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     flex-direction: row;
