@@ -19,7 +19,6 @@
   @include reset-list;
 
   @media (min-width: $tablet-width) {
-    justify-content: unset;
     margin-right: -58px;
     padding: 0;
   }

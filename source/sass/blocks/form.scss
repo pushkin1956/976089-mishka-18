@@ -148,7 +148,6 @@
 .form__fieldset {
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: unset;
     align-items: baseline;
     padding: 50px 0;
   }
