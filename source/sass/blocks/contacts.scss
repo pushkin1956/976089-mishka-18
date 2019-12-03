@@ -70,6 +70,15 @@
   color: $color-danger;
 }
 
+.contacts__address {
+  width: 300px;
+}
+
+.contacts__city,
+.contacts__street {
+  margin: 0;
+}
+
 .contacts__value,
 .contacts__field {
   @media (min-width: $tablet-width) {
@@ -77,6 +86,7 @@
   }
   vertical-align: top;
   padding: 0;
+  margin: 0;
 }
 
 .contacts__value {
