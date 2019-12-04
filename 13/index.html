@@ -35,9 +35,9 @@
             <a class="menu__link menu__link-order" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="menu__list menu__list-search-basket">
-          <li class="menu__item menu__item-search">
-            <a class="menu__link menu__link-search" href="#">Поиск по сайту</a>
+        <ul class="menu__list">
+          <li class="menu__item search">
+            <a class="menu__link search__link" href="#">Поиск по сайту</a>
           </li>
           <li class="menu__item">
             <a class="menu__link menu__link-basket" href="#">Корзина: пока пуста</a>
@@ -220,11 +220,10 @@
             </div>
             <div class="contacts__address">
               <p class="contacts__value">адрес:</p>
-              <p class="contacts__field">
-                г. Санкт-Петербург,<br>
-                ул. Большая Конюшенная,<br>
-                д. 19/8, офис 101
-              </p>
+              <div class="contacts__field">
+                <p class="contacts__city">г. Санкт-Петербург,</p>
+                <p class="contacts__street">ул. Большая Конюшенная, д. 19/8, офис 101</p>
+              </div>
             </div>
           </div>
           <div class="contacts__map">
@@ -278,7 +277,6 @@
 
   <!-- Секция модального окна -->
   <section class="modal">
-    <div class="modal__overlay"></div>
     <div class="modal__content">
       <div class="modal__inner">
           <p class="modal__title">Добавить в корзину</p>
