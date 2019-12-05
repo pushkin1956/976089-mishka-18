@@ -6,21 +6,24 @@
 }
 
 .menu__list {
+  position: relative;
+
   @include reset-list;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
   }
-  position: relative;
 }
 
 .menu__list-new,
 .menu__list-delivery {
+  display: none;
+
   @media (min-width: $desktop-width) {
     margin-top: 25px;
   }
-  display: none;
 }
 
 .menu__list-new {
@@ -44,25 +47,18 @@
 }
 
 .menu__item {
-  @media (min-width: $tablet-width) {
-    align-self: center;
-    box-shadow: none;
-    padding: 0;
-  }
   width: auto;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
   padding: 32px 0 32px 76px;
+
+  @media (min-width: $tablet-width) {
+    align-self: stretch;
+    box-shadow: none;
+    padding: 0;
+  }
 }
 
 .menu__link {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: -36px;
-    height: 18px;
-    opacity: 0.2;
-  }
   position: relative;
   font-size: 17px;
   font-weight: bold;
@@ -124,20 +120,21 @@
   }
 }
 
-.menu__link-search {
-  @media (min-width: $tablet-width) {
-    margin-right: 60px;
-  }
-
+.menu__link-basket {
   &::before {
-    background: url("../img/icon-search.svg") no-repeat;
-    width: 18px;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background: url("../img/icon-cart.svg") no-repeat;
+    width: 21px;
+    height: 18px;
+    opacity: 0.2;
   }
-}
 
-.menu__link-basket::before {
-  background: url("../img/icon-cart.svg") no-repeat;
-  width: 20px;
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
 }
 
 .menu__btn {
@@ -173,5 +170,37 @@
 .logo {
   @media (min-width: $tablet-width) {
     margin-right: auto;
+  }
+}
+
+.search {
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 36px;
+      left: 15px;
+      background: url("../img/icon-search.svg") no-repeat;
+      width: 18px;
+      height: 18px;
+      opacity: 0.2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      top: 50px;
+      left: 15px;
+    }
+  }
+}
+
+.search__link {
+  @media (min-width: $tablet-width) {
+    margin-right: 60px;
+    font-size: 0;
   }
 }

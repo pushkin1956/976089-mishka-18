@@ -6,32 +6,26 @@
   display: flex;
 }
 
+.header__inner {
+  @media (min-width: $tablet-width) {
+    @include inner;
+  }
+
+  // @media (min-width: $desktop-width) {
+  // }
+}
+
 .logo__image {
   width: 86px;
   height: 35px;
   margin: 22px auto;
-}
 
-@media (min-width: $tablet-width) {
-  .header__inner {
-    display: flex;
-    width: 668px;
-    padding: 0 50px;
-    margin: 0 auto;
-  }
-
-  .logo__image {
+  @media (min-width: $tablet-width) {
     width: 112px;
     height: 46px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .header__inner {
-    width: 1050px;
-  }
-
-  .logo__image {
+  @media (min-width: $desktop-width) {
     width: 149px;
     height: 72px;
   }
