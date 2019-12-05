@@ -7,9 +7,10 @@
 }
 
 .header__inner {
-  @media (min-width: $tablet-width) {
-    @include inner;
-  }
+  @include inner;
+
+  // @media (min-width: $tablet-width) {
+  // }
 
   // @media (min-width: $desktop-width) {
   // }
