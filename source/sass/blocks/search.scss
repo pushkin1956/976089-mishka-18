@@ -1,16 +1,22 @@
 .search {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 35px;
+    background: url("../img/icon-search.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    opacity: 0.2;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 40px;
 
     &::before {
       content: "";
-      position: absolute;
       top: 36px;
       left: 15px;
-      background: url("../img/icon-search.svg") no-repeat;
-      width: 18px;
-      height: 18px;
-      opacity: 0.2;
     }
   }
 
