@@ -9,6 +9,10 @@
 .header__inner {
   @include inner;
 
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
+
   // @media (min-width: $tablet-width) {
   // }
 

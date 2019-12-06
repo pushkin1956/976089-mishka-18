@@ -49,7 +49,7 @@
 .menu__item {
   width: auto;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-  padding: 32px 0 32px 76px;
+  padding: 32px 76px 32px 76px;
 
   @media (min-width: $tablet-width) {
     align-self: stretch;
@@ -170,37 +170,5 @@
 .logo {
   @media (min-width: $tablet-width) {
     margin-right: auto;
-  }
-}
-
-.search {
-  @media (min-width: $tablet-width) {
-    margin-right: 40px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 36px;
-      left: 15px;
-      background: url("../img/icon-search.svg") no-repeat;
-      width: 18px;
-      height: 18px;
-      opacity: 0.2;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      position: absolute;
-      top: 50px;
-      left: 15px;
-    }
-  }
-}
-
-.search__link {
-  @media (min-width: $tablet-width) {
-    margin-right: 60px;
-    font-size: 0;
   }
 }
