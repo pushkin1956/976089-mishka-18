@@ -1,5 +1,5 @@
 .baskets {
-  margin-bottom: 36px;
+  margin-bottom: 70px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 100px;
@@ -47,7 +47,6 @@
   color: $color-brand;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -67,7 +66,7 @@
   font-size: 15px;
   line-height: 1.6;
   color: $color-danger;
-  margin: 0 0 28px 0;
+  margin: 0 0 20px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -90,6 +89,7 @@
   width: 100%;
   margin: 0 0 28px 0;
   border-collapse: collapse;
+  line-height: 36px;
 
   @media (min-width: $desktop-width) {
     line-height: 3;
@@ -98,6 +98,7 @@
 
 .baskets__text {
   @include reset-list;
+  padding-right: 24px;
 }
 
 .baskets__price {
@@ -106,7 +107,7 @@
   font-weight: bold;
   line-height: 1.41;
   color: $color-danger;
-  margin-bottom: 28px;
+  margin: 0 0 25px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 28px auto;
@@ -119,7 +120,7 @@
 
 .baskets__to-order-btn {
   display: block;
-  padding: 20px 84px;
+  padding: 15px 84px;
   margin: 0 auto;
 
   @include button-style;
@@ -138,6 +139,7 @@
   width: 260px;
   height: 315px;
   margin: 0 auto;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     width: 333px;
@@ -163,6 +165,10 @@
 }
 
 .baskets__good {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;

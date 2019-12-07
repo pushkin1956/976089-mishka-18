@@ -1,10 +1,12 @@
 .social__list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-top: 25px;
-
   @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 144px;
+  margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
     margin-right: -58px;

@@ -1,4 +1,7 @@
 .handwork {
+  margin-bottom: 30px;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center top rgb(249, 249, 249);
+
   @media (min-width: $tablet-width) {
     background: url("../img/hero-tablet@1x.jpg") no-repeat center top rgb(249, 249, 249);
     box-shadow: inset 0 -1px 0 1px #f9f9f9, inset 0 0 0 1px rgba(68, 68, 68, 0.2);
@@ -10,12 +13,14 @@
     margin-top: -50px;
     margin-bottom: 140px;
   }
-  margin-bottom: 34px;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat center top rgb(249, 249, 249);
 }
 
 .handwork__inner {
   @include inner;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 270px;
@@ -25,9 +30,6 @@
   @media (min-width: $desktop-width) {
     width: 460px;
   }
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .handwork__title {
@@ -37,6 +39,9 @@
 
 .handwork__text {
   @include page-title;
+
+  padding: 72px 52px 127px 52px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -51,11 +56,16 @@
     line-height: 1.08;
     padding: 161px 268px 354px 268px;
   }
-  padding: 85px 52px 130px 52px;
-  margin: 0 auto;
 }
 
 .handwork__category {
+  width: 105px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  color: #ffffff;
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
@@ -63,13 +73,6 @@
   @media (min-width: $desktop-width) {
     padding: 35px 0;
   }
-  width: 105px;
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 1.26;
-  color: #ffffff;
-  margin: 0;
-  padding-top: 8px;
 }
 
 .handwork__inner.handwork__flex-g {
@@ -81,10 +84,11 @@
 }
 
 .handwork__image-itn {
+  padding-right: 10px;
+
   @media (min-width: $tablet-width) {
     padding-right: 0;
   }
-  padding-right: 10px;
 }
 
 .handwork__toys {
@@ -93,6 +97,11 @@
 
 .handwork__interior,
 .handwork__toys {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  min-height: 100px;
+
   @media (min-width: $tablet-width) {
     width: 335px;
   }
@@ -100,11 +109,6 @@
   @media (min-width: $desktop-width) {
     width: 525px;
   }
-
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  min-height: 100px;
 }
 
 .handwork__image-itn,

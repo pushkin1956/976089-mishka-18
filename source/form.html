@@ -16,10 +16,10 @@
   <!-- Шапка сайта -->
   <header class="header">
     <div class="header__inner">
-      <nav class="header__menu menu">
+      <nav class="header__menu menu menu__closed menu__no-js">
         <a class="header__logo logo" href="index.html">
           <img class="logo__image" src="img/logo-mobile.svg"
-            srcset="img/logo-mobile.svg 767w,img/logo-tablet.svg 1149w,img/logo-desktop.svg" alt="Логотип">
+            srcset="img/logo-mobile.svg 767w, img/logo-tablet.svg 1149w, img/logo-desktop.svg" alt="Логотип">
         </a>
         <button class="menu__btn" type="button" aria-label="Открыть меню">
           <span class="menu__line"></span>
@@ -34,7 +34,7 @@
             <a class="menu__link menu__link-order">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="menu__list">
+        <ul class="menu__list menu__list-search">
           <li class="menu__item search">
             <a class="menu__link search__link" href="#">Поиск по сайту</a>
           </li>
@@ -118,16 +118,16 @@
         </div>
         <div class="form__fieldset">
           <div class="form__inner">
-            <p class="form__legend form__legend-line">Фио</p>
+            <p class="form__legend form__legend-names form__legend-line">Фио</p>
             <div class="form__names">
               <div class="form__first-name">
                 <label class="form__style-text form__text-mb" for="first-name">Имя:</label>
-                <input class="form__placeholder form__placeholder-mb" id="first-name" type="text"
+                <input class="form__placeholder" id="first-name" type="text"
                   placeholder="Введите ваше имя*">
               </div>
               <div class="form__last-name">
                 <label class="form__style-text form__text-mb" for="last-name">Фамилия:</label>
-                <input class="form__placeholder form__placeholder-mb" id="last-name" type="text"
+                <input class="form__placeholder" id="last-name" type="text"
                   placeholder="Укажите фамилию*">
               </div>
               <div class="form__father-name">
@@ -140,13 +140,13 @@
         <div class="form__fieldset form__fieldset-background">
           <div class="form__inner form__inner-column">
             <div class="form__wrapper-phone">
-              <p class="form__legend form__legend-line">Тел</p>
+              <p class="form__legend form__legend-phone form__legend-line">Тел</p>
               <label for="number-phone"></label>
               <input class="form__placeholder form__placeholder-tel" id="number-phone" type="tel"
                 pattern="2[0-9]{3}-[0-9]{3}" placeholder="+7 XXX XXX XX XX*" required>
             </div>
             <div class="form__wrapper-email">
-              <p class="form__legend form__legend-line">Email</p>
+              <p class="form__legend form__legend-email form__legend-line">Email</p>
               <label for="email"></label>
               <input class="form__placeholder form__placeholder-email" id="email" type="email" placeholder="Ваш Email*"
                 required>
@@ -155,7 +155,7 @@
         </div>
         <div class="form__fieldset">
           <div class="form__inner">
-            <p class="form__legend form__legend-line">Доп</p>
+            <p class="form__legend form__legend-additionally form__legend-line">Доп</p>
             <label class="form__textarea">
               <textarea class="form__textarea-text" name="form-text" id="form-text"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -203,6 +203,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/menu.js"></script>
 
 </body>
 

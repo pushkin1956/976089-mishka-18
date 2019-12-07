@@ -18,7 +18,9 @@
 .footer__copyright {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 185px;
+  margin: 0 auto;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -29,7 +31,7 @@
 }
 
 .footer__line {
-  margin: 26px 0;
+  margin: 18px 0;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -45,8 +47,16 @@
 }
 
 .copyright__text {
+  font-size: 19px;
+  line-height: 0.95;
+  margin-top: 10px;
+
   @media (min-width: $tablet-width) {
     align-self: center;
     margin-right: 30px;
   }
+}
+
+.footer__social {
+  padding-top: 30px;
 }
