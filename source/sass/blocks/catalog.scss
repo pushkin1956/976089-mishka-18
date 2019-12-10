@@ -1,5 +1,9 @@
 .catalog {
   margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
 }
 
 .catalog__inner {
@@ -11,7 +15,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -55px;
+    margin-top: -43px;
   }
 }
 
@@ -23,7 +27,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
-    padding: 106px 190px 78px 190px;
+    padding: 97px 190px 100px 190px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,15 +61,19 @@
 .catalog__item {
   border: 1px solid #ececec;
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
   &:not(:last-of-type) {
     @media (min-width: $desktop-width) {
       width: 316px;
     }
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: 52px;
+    }
   }
 }
 
@@ -101,7 +109,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 268px;
+    width: 280px;
     position: relative;
   }
 }
@@ -116,7 +124,9 @@
   margin: 0 0 5px 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,6 +136,10 @@
 
 .catalog__title-basket {
   width: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 212px;
+  }
 }
 
 .catalog__text {
@@ -134,6 +148,11 @@
   text-align: left;
   color: $color-danger;
   margin: 0 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 2;
+  }
 }
 
 .catalog__text-basket {
@@ -185,6 +204,11 @@
   line-height: 1.6;
   text-align: left;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.41;
+  }
 }
 
 .catalog__process {
@@ -195,7 +219,7 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    margin: 0 auto 40px 40px;
+    margin: 0 auto 30px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -214,6 +238,10 @@
 .catalog__img {
   margin: 0 30px 0 0;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 33px 0 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 0 30px 0;
   }
@@ -226,6 +254,7 @@
     order: -1;
     width: 668px;
     height: 455px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -263,7 +292,8 @@
 
   @media (min-width: $tablet-width) {
     min-width: 585px;
-    padding: 20px 220px;
+    padding: 14px 220px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {

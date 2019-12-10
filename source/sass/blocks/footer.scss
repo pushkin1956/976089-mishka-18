@@ -10,8 +10,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 37px;
+    padding-bottom: 40px;
   }
 }
 
@@ -25,8 +25,9 @@
 
   @media (min-width: $tablet-width) {
     align-self: center;
-    padding: 0;
     font-size: 19px;
+    padding: 0;
+    margin: 0;
   }
 }
 

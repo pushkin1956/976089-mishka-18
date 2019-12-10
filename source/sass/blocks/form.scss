@@ -1,5 +1,9 @@
 .form {
   margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .form__inner {
@@ -32,7 +36,10 @@
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
     width: 500px;
+    margin-top: 0;
     margin-left: auto;
   }
 
@@ -53,7 +60,7 @@
 .form__first-name,
 .form__last-name {
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
   }
 }
 
@@ -84,7 +91,8 @@
   background-color: #f1f1f1;
 
   @media (min-width: $tablet-width) {
-    margin-top: -55px;
+    margin-top: -44px;
+    margin-bottom: 42px;
   }
 }
 
@@ -96,7 +104,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
-    padding: 104px 185px 90px 185px;
+    padding: 95px 185px 90px 185px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,7 +136,7 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
+    width: 480px;
     margin-left: auto;
   }
 
@@ -145,6 +153,10 @@
 .form__interior {
   display: flex;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .form__checkboxes {
@@ -156,8 +168,9 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 500px;
-    margin-left: auto;
+    width: 446px;
+    margin-left: 128px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -176,8 +189,19 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: baseline;
-    padding: 50px 0;
   }
+}
+
+.form__fieldset-type {
+  padding: 58px 0 34px 0;
+}
+
+.form__fieldset-names {
+  padding: 67px 0 22px 0;
+}
+
+.form__fieldset-additionally {
+  padding: 50px 0 41px 0;
 }
 
 .form__legend {
@@ -212,6 +236,10 @@
 
 .form__legend-additionally {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+  }
 }
 
 .form__legend-line {
@@ -232,17 +260,28 @@
   font-weight: bold;
   line-height: 1.06;
 
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 0.95;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 19px;
     line-height: 0.95;
   }
 }
 
-.form__text-indentation {
-  &:not(:last-of-type) {
-    margin-bottom: 44px;
-  }
+.form__radio-indentation {
   padding-left: 60px;
+}
+
+.form__checkbox-indentation {
+  padding-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    margin-bottom: 58px;
+  }
 }
 
 .form__placeholder {
@@ -258,8 +297,13 @@
   padding: 10px 0 18px 0;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
+    &::placeholder {
+      font-size: 19px;
+      line-height: 0.95;
+    }
+    width: 428px;
     margin-left: auto;
+    padding: 0 0 19px 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -268,12 +312,24 @@
   }
 }
 
+.form__placeholder-last-name,
+.form__placeholder-father-name {
+  width: 378px;
+}
+
 .form__placeholder-tel {
   padding: 12px 0 18px 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    padding: 0 0 19px 17px;
+    margin-bottom: 14px;
+    width: 500px;
+    margin-left: 108px;
   }
+}
+
+.form__placeholder-email {
+  width: 500px;
 }
 
 .form__textarea {
@@ -301,6 +357,13 @@
   height: 140px;
   resize: none;
   border: solid 2px $color-danger;
+
+  @media (min-width: $tablet-width) {
+    &::placeholder {
+      font-size: 19px;
+      line-height: 0.95;
+    }
+  }
 }
 
 .form__text-mb {
@@ -309,14 +372,19 @@
   }
 
   @media (min-width: $tablet-width) {
-    align-self: center;
-    margin-right: 15px;
+    align-self: baseline;
+    margin-right: 24px;
   }
 }
 
 .form__require {
   font-size: 14px;
   line-height: 1.14;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }
 
 .form__inner-required {
@@ -324,6 +392,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -341,11 +410,20 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
+    padding: 14px 30px;
   }
 }
 
-.form__fieldset-background {
+.form__fieldset-checkboxes {
   @media (min-width: $tablet-width) {
     background-color: #f1f1f1;
+    padding: 65px 0 10px 0;
+  }
+}
+
+.form__fieldset-email {
+  @media (min-width: $tablet-width) {
+    background-color: #f1f1f1;
+    padding: 68px 0 24px 0;
   }
 }

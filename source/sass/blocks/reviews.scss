@@ -7,7 +7,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 85px;
+    padding-top: 82px;
+    margin-bottom: 150px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,8 +60,8 @@
     width: 645px;
     font-size: 17px;
     line-height: 1.76;
-    padding-top: 52px;
-    margin-bottom: 70px;
+    padding-top: 44px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,6 +74,11 @@
   font-weight: bold;
   line-height: 1.41;
   margin: 0 0 5px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }
 
 .reviews__account {
@@ -85,7 +91,7 @@
 }
 
 .reviews__user {
-  margin-bottom: 28px;
+  margin-bottom: 48px;
 }
 
 .reviews__slide {
@@ -120,11 +126,11 @@
 }
 
 .reviews__write-btn {
-  padding: 14px 80px;
+  padding: 20px 40px;
 
   @include button-style;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 40px;
+    padding: 14px 38px;
   }
 }

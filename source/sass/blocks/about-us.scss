@@ -2,7 +2,7 @@
   margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 54px;
   }
 }
 
@@ -38,6 +38,44 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    width: 630px;
+  }
+}
+
+.about-us__item-eco {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.about-us__item-scandinavian {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.about-us__item-likes {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+}
+
+.about-us__item-love {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.about-us__item-support {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.about-us__item-present {
+  @media (min-width: $tablet-width) {
+    order: 6;
   }
 }
 
@@ -53,7 +91,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 300px;
+    width: 295px;
   }
 
   @media (min-width: $desktop-width) {

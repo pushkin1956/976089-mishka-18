@@ -2,7 +2,7 @@
   margin-bottom: 70px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 100px;
+    margin-bottom: 118px;
   }
 }
 
@@ -50,7 +50,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    width: 70px;
+    width: 100px;
     line-height: 1;
     padding: 0 28px 0 0;
   }
@@ -71,7 +71,7 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 1.76;
-    margin: 0 0 40px 0;
+    margin: 0 0 36px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,7 +110,9 @@
   margin: 0 0 25px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 28px auto;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 12px auto 33px auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,7 +128,7 @@
   @include button-style;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 84px;
+    padding: 14px 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -173,7 +175,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {

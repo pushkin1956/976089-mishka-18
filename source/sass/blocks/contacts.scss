@@ -1,6 +1,10 @@
 .contacts {
   margin-bottom: 38px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 110px;
   }
@@ -28,7 +32,7 @@
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 42px;
+    margin-bottom: 46px;
     font-size: 43px;
     line-height: 1.16;
 
@@ -63,6 +67,11 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    margin-bottom: 33px;
+  }
+
   @media (min-width: $desktop-width) {
     display: block;
     clear: both;
@@ -81,7 +90,7 @@
 }
 
 .contacts__address {
-  width: 300px;
+  width: 302px;
 }
 
 .contacts__city,
@@ -97,6 +106,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+    line-height: 1.76;
   }
 }
 
@@ -116,6 +126,14 @@
   @media (max-width: $mobile-width-only) {
     width: 320px;
     margin-left: -29px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    font-size: 17px;
+    line-height: 1.76;
+    margin-left: -50px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -139,7 +157,7 @@
   @include button-style;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 42px;
+    padding: 14px 40px;
   }
 
   @media (min-width: $desktop-width) {
