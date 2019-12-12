@@ -44,17 +44,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 700px;
+    width: 800px;
     margin: 0 auto;
   }
 }
 
 .form__first-name {
   margin-bottom: 17px;
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }
 
 .form__last-name {
   margin-bottom: 16px;
+
+  @media (min-width: $desktop-width) {
+    width: 900px;
+  }
 }
 
 .form__first-name,
@@ -109,7 +117,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
-    padding: 105px 330px 112px 330px;
+    padding: 96px 330px 112px 330px;
   }
 }
 
@@ -125,8 +133,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 672px;
-    margin: 100px auto 20px auto;
+    width: 698px;
+    margin: 71px auto 20px auto;
   }
 }
 
@@ -141,7 +149,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 700px;
+    width: 758px;
     margin: 0 auto;
   }
 }
@@ -162,7 +170,6 @@
 .form__checkboxes {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -174,9 +181,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 700px;
+    width: 766px;
+    padding-right: 54px;
     margin: 0 auto;
-    padding-right: 140px;
   }
 }
 
@@ -193,15 +200,33 @@
 }
 
 .form__fieldset-type {
-  padding: 58px 0 34px 0;
+  @media (min-width: $tablet-width) {
+    padding: 58px 0 36px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 0 68px 0;
+  }
 }
 
 .form__fieldset-names {
-  padding: 67px 0 22px 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 67px 0 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 48px;
+  }
 }
 
 .form__fieldset-additionally {
   padding: 50px 0 41px 0;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
 }
 
 .form__legend {
@@ -219,6 +244,10 @@
     width: auto;
     align-self: baseline;
     min-width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 62px;
   }
 }
 
@@ -278,6 +307,12 @@
 .form__checkbox-indentation {
   padding-left: 60px;
 
+  @media (max-width: $mobile-width-only) {
+    &:not(:last-of-type) {
+      padding-bottom: 44px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 185px;
     margin-bottom: 58px;
@@ -315,10 +350,23 @@
 .form__placeholder-last-name,
 .form__placeholder-father-name {
   width: 378px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 575px;
+    margin: 0;
+  }
 }
 
 .form__placeholder-tel {
   padding: 12px 0 18px 0;
+
+  @media (max-width: $mobile-width-only) {
+    letter-spacing: 0.06em;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0 0 19px 17px;
@@ -326,10 +374,24 @@
     width: 500px;
     margin-left: 108px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin-left: 80px;
+  }
 }
 
 .form__placeholder-email {
   width: 500px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin-left: 55px;
+  }
 }
 
 .form__textarea {
@@ -341,7 +403,7 @@
 
   @media (min-width: $desktop-width) {
     width: 700px;
-    margin: 0 auto;
+    margin-left: 74px;
   }
 }
 
@@ -396,8 +458,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 758px;
-    padding: 0 0 0 60px;
+    width: 790px;
     margin: 0 auto;
   }
 }
@@ -415,6 +476,10 @@
 }
 
 .form__fieldset-checkboxes {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 32px;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: #f1f1f1;
     padding: 65px 0 10px 0;

@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 102px;
+  }
 }
 
 .catalog__inner {
@@ -16,6 +20,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 124px;
   }
 }
 
@@ -32,7 +40,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
-    padding: 105px 340px 100px 340px;
+    padding: 96px 340px 106px 340px;
   }
 }
 
@@ -55,6 +63,8 @@
     width: 1050px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
+    margin: 0 auto;
   }
 }
 
@@ -112,6 +122,10 @@
     width: 280px;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 266px;
+  }
 }
 
 .catalog__title {
@@ -130,7 +144,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    letter-spacing: 0.01em;
     margin: 0;
+    padding: 25px 0 5px 0;
   }
 }
 
@@ -139,6 +155,10 @@
 
   @media (min-width: $tablet-width) {
     width: 212px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 5px 0;
   }
 }
 
@@ -153,11 +173,16 @@
     font-size: 15px;
     line-height: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 0 0 38px 0;
+  }
 }
 
 .catalog__text-basket {
   @media (min-width: $desktop-width) {
-    margin-bottom: 5px;
+    padding: 0 0 14px 0;
   }
 }
 
@@ -193,6 +218,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     min-height: 455px;
+    margin-top: 6px;
   }
 }
 
@@ -227,12 +253,16 @@
     align-items: flex-start;
     width: 160px;
     float: right;
-    margin: 50px 140px 30px 0;
+    margin: 45px 129px 35px 0;
   }
 }
 
 .catalog__title-process {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .catalog__img {
@@ -243,7 +273,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 30px 0;
+    margin: 0 0 18px 0;
   }
 }
 
@@ -258,6 +288,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 682px;
     margin: 0;
     float: left;
   }
@@ -280,7 +311,9 @@
     flex-direction: column;
     align-items: flex-start;
     width: 224px;
-    margin: 0 0 40px 0;
+    margin: 0 0 42px 0;
+    line-height: 2;
+    padding: 0;
   }
 }
 
@@ -297,7 +330,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 46px;
+    padding: 16px 38px;
     margin: 0;
     min-width: 230px;
   }
@@ -306,7 +339,7 @@
 .catalog__process-wrapper {
   @media (min-width: $desktop-width) {
     float: right;
-    width: 240px;
+    width: 230px;
     text-align: left;
     margin: 0 58px 0 0;
   }

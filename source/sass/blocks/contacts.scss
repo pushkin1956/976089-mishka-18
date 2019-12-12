@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 110px;
+    margin-bottom: 52px;
   }
 }
 
@@ -17,7 +17,7 @@
 .contacts__wrapper {
   @media (min-width: $desktop-width) {
     position: relative;
-    width: 875px;
+    width: 876px;
     min-height: 500px;
     margin-left: auto;
     margin-bottom: 45px;
@@ -54,7 +54,8 @@
     }
     float: left;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    margin-left: -4px;
     font-size: 53px;
     line-height: 1.08;
   }
@@ -76,7 +77,8 @@
     display: block;
     clear: both;
     float: left;
-    margin-bottom: 94px;
+    width: auto;
+    margin-bottom: 56px;
   }
 }
 
@@ -112,6 +114,10 @@
 
 .contacts__value {
   padding-right: 28px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 25px;
+  }
 }
 
 .contacts__field-line {
@@ -137,8 +143,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: auto;
     float: right;
-    margin-top: -160px;
+    margin-top: -177px;
   }
 }
 

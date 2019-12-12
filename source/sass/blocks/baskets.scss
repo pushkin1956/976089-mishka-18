@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 118px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 156px;
+  }
 }
 
 .baskets__wrapper {
@@ -77,6 +81,7 @@
   @media (min-width: $desktop-width) {
     font-size: 17px;
     width: 290px;
+    margin: 0 0 45px 0;
   }
 }
 
@@ -92,13 +97,17 @@
   line-height: 36px;
 
   @media (min-width: $desktop-width) {
-    line-height: 3;
+    line-height: 2.6;
   }
 }
 
 .baskets__text {
   @include reset-list;
   padding-right: 24px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .baskets__price {
@@ -130,10 +139,6 @@
   @media (min-width: $tablet-width) {
     padding: 14px 100px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 20px 100px;
-  }
 }
 
 .baskets__image {
@@ -152,7 +157,7 @@
   @media (min-width: $desktop-width) {
     width: 525px;
     height: 636px;
-    margin-top: -151px;
+    margin-top: -162px;
     margin-left: 55px;
     display: block;
   }

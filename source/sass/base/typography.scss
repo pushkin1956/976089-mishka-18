@@ -4,4 +4,9 @@
   line-height: 1.2;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 1.08;
+  }
 }
