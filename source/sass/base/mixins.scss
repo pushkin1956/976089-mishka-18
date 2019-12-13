@@ -29,6 +29,16 @@
   border: solid 2px $color-danger;
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $color-danger;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @mixin page-title {
