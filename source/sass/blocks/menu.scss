@@ -78,6 +78,10 @@
     order: 2;
     margin-top: 12px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+  }
 }
 
 .menu__link-delivery {

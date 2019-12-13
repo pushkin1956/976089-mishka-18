@@ -100,19 +100,6 @@
   margin: 0;
 }
 
-.contacts__field {
-  text-decoration: none;
-  color: #000000;
-
-  &:hover {
-    color: $color-brand;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
 .contacts__value,
 .contacts__field {
   vertical-align: top;
@@ -135,6 +122,16 @@
 
 .contacts__field-line {
   border-bottom: 1px solid $color-brand;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    color: $color-brand;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
