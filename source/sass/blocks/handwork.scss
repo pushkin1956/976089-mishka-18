@@ -79,6 +79,12 @@
 
 .handwork__interior {
   background-color: #63d1bb;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: #59d5bc;
+    transform: translateY(-5px);
+  }
 }
 
 .handwork__image-itn {
@@ -91,6 +97,17 @@
 
 .handwork__toys {
   background-color: #56c3b2;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: #46c1ae;
+    transform: translateY(-5px);
+  }
+}
+
+.handwork__inner:active > .handwork__category,
+.handwork__inner:active > .handwork__image-active {
+  opacity: 0.3;
 }
 
 .handwork__interior,

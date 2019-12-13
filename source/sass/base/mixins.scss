@@ -50,3 +50,10 @@
   }
 }
 
+@mixin hover-opacity {
+  opacity: 0.6;
+}
+
+@mixin down-opacity {
+  opacity: 0.3;
+}

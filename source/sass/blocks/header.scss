@@ -13,20 +13,3 @@
     padding: 0;
   }
 }
-
-.logo__image {
-  width: 86px;
-  height: 35px;
-  margin: 22px auto;
-
-  @media (min-width: $tablet-width) {
-    width: 112px;
-    height: 46px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 149px;
-    height: 72px;
-    margin: 0 auto;
-  }
-}
