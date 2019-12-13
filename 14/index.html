@@ -75,14 +75,14 @@
         <a href="catalog.html" class="handwork__interior">
           <div class="handwork__inner handwork__flex-g">
             <p class="handwork__category">Предметы интерьера</p>
-            <img class="handwork__image-itn" src="https://via.placeholder.com/150x150" width="40" height="62"
+            <img class="handwork__image-itn handwork__image-active" src="https://via.placeholder.com/150x150" width="40" height="62"
               alt="Предметы интерьера">
           </div>
         </a>
         <a href="catalog.html" class="handwork__toys">
           <div class="handwork__inner handwork__flex-g">
             <p class="handwork__category">Детские игрушки</p>
-            <img class="handwork__image-toys" src="https://via.placeholder.com/150x150" width="60" height="60"
+            <img class="handwork__image-toys handwork__image-active" src="https://via.placeholder.com/150x150" width="60" height="60"
               alt="Детские игрушки">
           </div>
         </a>
@@ -216,7 +216,7 @@
           <div class="contacts__info">
             <div class="contacts__email">
               <p class="contacts__value">e-mail:</p>
-              <p class="contacts__field contacts__field-line">info@mimimishkashop.ru</p>
+              <a href="mailto:info@mimimishkashop.ru" class="contacts__field contacts__field-line">info@mimimishkashop.ru</a>
             </div>
             <div class="contacts__address">
               <p class="contacts__value">адрес:</p>
@@ -279,24 +279,24 @@
   <section class="modal">
     <div class="modal__content">
       <div class="modal__inner">
-          <p class="modal__title">Добавить в корзину</p>
-          <fieldset class="modal__fieldset">
-            <legend class="modal__legend">Выберите размер:</legend>
-            <div class="modal__sizes">
-              <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size" checked>
-              <label class="modal__size" for="size-s">S</label>
-              <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
-              <label class="modal__size" for="size-m">M</label>
-              <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size">
-              <label class="modal__size" for="size-l">L</label>
-            </div>
-          </fieldset>
-          <button class="modal__btn button" type="button">Добавить</button>
-        </div>
+        <p class="modal__title">Добавить в корзину</p>
+        <fieldset class="modal__fieldset">
+          <legend class="modal__legend">Выберите размер:</legend>
+          <div class="modal__sizes">
+            <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size" checked>
+            <label class="modal__size" for="size-s">S</label>
+            <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
+            <label class="modal__size" for="size-m">M</label>
+            <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size">
+            <label class="modal__size" for="size-l">L</label>
+          </div>
+        </fieldset>
+        <button class="modal__btn button" type="button">Добавить</button>
+      </div>
     </div>
   </section>
 
-<script src="js/menu.js"></script>
+  <script src="js/menu.js"></script>
 
 </body>
 
