@@ -45,22 +45,16 @@
 
 .handwork__text {
   @include page-title;
-
-  padding: 72px 36px 127px 36px;
-  margin: 0 auto;
+  padding: 72px 0 127px 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 43px;
-    font-weight: bold;
     line-height: 1.16;
-    padding: 155px 120px 375px 120px;
+    padding: 155px 0 375px 0;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 53px;
-    font-weight: bold;
     line-height: 1.08;
-    padding: 156px 268px 358px 268px;
+    padding: 156px 0 358px 0;
   }
 }
 

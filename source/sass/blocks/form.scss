@@ -105,19 +105,16 @@
 }
 
 .form__page-text {
-  padding: 72px 36px 74px 36px;
-  margin: 0;
+  padding: 72px 0 74px 0;
 
   @include page-title;
 
   @media (min-width: $tablet-width) {
-    font-size: 43px;
-    padding: 95px 185px 90px 185px;
+    padding: 95px 0 90px 0;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 53px;
-    padding: 96px 330px 112px 330px;
+    padding: 96px 0 112px 0;
   }
 }
 

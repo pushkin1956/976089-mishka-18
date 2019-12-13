@@ -36,4 +36,17 @@
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
+  width: 244px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    width: 620px;
+  }
 }
+

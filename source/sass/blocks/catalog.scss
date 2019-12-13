@@ -28,19 +28,16 @@
 }
 
 .catalog__page-text {
-  padding: 74px 40px;
-  margin: 0;
+  padding: 74px 0;
 
   @include page-title;
 
   @media (min-width: $tablet-width) {
-    font-size: 43px;
-    padding: 97px 190px 100px 190px;
+    padding: 97px 0 100px 0;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 53px;
-    padding: 96px 340px 106px 340px;
+    padding: 96px 0 106px 0;
   }
 }
 
