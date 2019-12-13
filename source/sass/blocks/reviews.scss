@@ -1,8 +1,12 @@
 .reviews {
   margin-bottom: 85px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 165px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 158px;
+    margin-bottom: 170px;
   }
 }
 
@@ -12,13 +16,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 82px;
-    margin-bottom: 150px;
   }
 
   @media (min-width: $desktop-width) {
     width: 875px;
     margin-left: auto;
-    padding-top: 78px;
+    padding-top: 68px;
     margin-bottom: 0;
   }
 }
@@ -114,7 +117,7 @@
 }
 
 .reviews__user {
-  margin-bottom: 48px;
+  margin-bottom: 28px;
 }
 
 .reviews__slide {
@@ -155,5 +158,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 14px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+    min-height: 53px;
   }
 }
