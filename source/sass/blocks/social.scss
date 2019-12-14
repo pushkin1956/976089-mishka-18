@@ -1,0 +1,21 @@
+.social__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 144px;
+  margin: 0 auto;
+
+
+  @media (min-width: $tablet-width) {
+    margin-right: -58px;
+    padding: 0;
+  }
+}
+
+.social__item:not(:last-of-type) {
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+  }
+}

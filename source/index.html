@@ -16,7 +16,7 @@
   <!-- Шапка сайта -->
   <header class="header">
     <div class="header__inner">
-      <nav class="header__menu menu">
+      <nav class="header__menu menu menu__closed menu__no-js">
         <a class="header__logo logo">
           <img class="logo__image" src="img/logo-mobile.svg"
             srcset="img/logo-mobile.svg 767w,img/logo-tablet.svg 1149w,img/logo-desktop.svg" alt="Логотип">
@@ -34,7 +34,7 @@
             <a class="menu__link menu__link-order" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="menu__list">
+        <ul class="menu__list menu__list-search">
           <li class="menu__item search">
             <a class="menu__link search__link" href="#">Поиск по сайту</a>
           </li>
@@ -68,20 +68,20 @@
     <!-- Секция ручной работы -->
     <section class="handwork">
       <div class="handwork__title">
-        <p class="handwork__text">Милые штуки ручной работы для дома</p>
+        <p class="handwork__text">Милые штуки ручной <br class="handwork__title-br"> работы для дома</p>
       </div>
       <div class="handwork__goods">
         <a href="catalog.html" class="handwork__interior">
           <div class="handwork__inner handwork__flex-g">
             <p class="handwork__category">Предметы интерьера</p>
-            <img class="handwork__image-itn" src="https://via.placeholder.com/150x150" width="40" height="62"
+            <img class="handwork__image-itn handwork__image-active" src="https://via.placeholder.com/150x150" width="40" height="62"
               alt="Предметы интерьера">
           </div>
         </a>
         <a href="catalog.html" class="handwork__toys">
           <div class="handwork__inner handwork__flex-g">
             <p class="handwork__category">Детские игрушки</p>
-            <img class="handwork__image-toys" src="https://via.placeholder.com/150x150" width="60" height="60"
+            <img class="handwork__image-toys handwork__image-active" src="https://via.placeholder.com/150x150" width="60" height="60"
               alt="Детские игрушки">
           </div>
         </a>
@@ -99,7 +99,7 @@
           <div class="baskets__info">
             <div class="baskets__description">
               <p class="baskets__about-text">
-                Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
+                Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
               </p>
               <table class="baskets__table">
                 <tr class="baskets__desc-table">
@@ -146,32 +146,32 @@
         <div class="about-us__wrapper">
           <h2 class="about-us__title title">Коротко о нас:</h2>
           <ul class="about-us__list">
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item-eco">
               <img class="about-us__image" src="https://via.placeholder.com/150x150" width="32" height="37"
                 alt="Экологически чистые материалы">
               <p class="about-us__text">Экологически чистые материалы</p>
             </li>
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item-scandinavian">
               <img class="about-us__image" src="https://via.placeholder.com/150x150" width="47" height="27"
                 alt="Скандинавский стиль по российской цене">
               <p class="about-us__text">Скандинавский стиль по российской цене</p>
             </li>
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item-likes">
               <img class="about-us__image" src="https://via.placeholder.com/150x150" width="34" height="27"
                 alt="Увеличивает лайкина фотографиях">
               <p class="about-us__text">Увеличивает лайки на фотографиях</p>
             </li>
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item-love">
               <img class="about-us__image" src="https://via.placeholder.com/150x150" width="35" height="34"
                 alt="Связано вручную с любовью и умилением">
               <p class="about-us__text">Связано вручную с любовью и умилением</p>
             </li>
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item-support">
               <img class="about-us__image" src="https://via.placeholder.com/150x150" width="55" height="23"
                 alt="Поддержка отечественного производителя">
               <p class="about-us__text">Поддержка отечественного производителя</p>
             </li>
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item-present">
               <img class="about-us__image" src="https://via.placeholder.com/150x150" width="33" height="32"
                 alt="Поставляется в подарочной упаковке">
               <p class="about-us__text">Поставляется в подарочной упаковке</p>
@@ -190,7 +190,7 @@
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко
               такого количества лайков, как у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке, <br class="reviews__text-br">
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
             <div class="reviews__user">
@@ -215,13 +215,14 @@
           <div class="contacts__info">
             <div class="contacts__email">
               <p class="contacts__value">e-mail:</p>
-              <p class="contacts__field contacts__field-line">info@mimimishkashop.ru</p>
+              <a href="mailto:info@mimimishkashop.ru" class="contacts__field contacts__field-line">info@mimimishkashop.ru</a>
             </div>
             <div class="contacts__address">
               <p class="contacts__value">адрес:</p>
               <div class="contacts__field">
                 <p class="contacts__city">г. Санкт-Петербург,</p>
-                <p class="contacts__street">ул. Большая Конюшенная, д. 19/8, офис 101</p>
+                <p class="contacts__street">ул. Большая Конюшенная,</p>
+                <p class="contacts__street">д. 19/8, офис 101</p>
               </div>
             </div>
           </div>
@@ -278,22 +279,24 @@
   <section class="modal">
     <div class="modal__content">
       <div class="modal__inner">
-          <p class="modal__title">Добавить в корзину</p>
-          <fieldset class="modal__fieldset">
-            <legend class="modal__legend">Выберите размер:</legend>
-            <div class="modal__sizes">
-              <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size" checked>
-              <label class="modal__size" for="size-s">S</label>
-              <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
-              <label class="modal__size" for="size-m">M</label>
-              <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size">
-              <label class="modal__size" for="size-l">L</label>
-            </div>
-          </fieldset>
-          <button class="modal__btn button" type="button">Добавить</button>
-        </div>
+        <p class="modal__title">Добавить в корзину</p>
+        <fieldset class="modal__fieldset">
+          <legend class="modal__legend">Выберите размер:</legend>
+          <div class="modal__sizes">
+            <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size" checked>
+            <label class="modal__size" for="size-s">S</label>
+            <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
+            <label class="modal__size" for="size-m">M</label>
+            <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size">
+            <label class="modal__size" for="size-l">L</label>
+          </div>
+        </fieldset>
+        <button class="modal__btn button" type="button">Добавить</button>
+      </div>
     </div>
   </section>
+
+  <script src="js/menu.js"></script>
 
 </body>
 

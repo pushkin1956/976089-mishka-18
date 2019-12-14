@@ -1,7 +1,13 @@
 .menu {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 0 0 0;
   }
 }
 
@@ -15,6 +21,10 @@
     flex-wrap: wrap;
     align-content: center;
   }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
 }
 
 .menu__list-new,
@@ -22,34 +32,21 @@
   display: none;
 
   @media (min-width: $desktop-width) {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 
 .menu__list-new {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
     margin-right: auto;
   }
 }
 
-.menu__link-new {
-  @media (min-width: $desktop-width) {
-    &:first-of-type {
-      margin-right: 64px;
-    }
-    font-size: 15px;
-  }
-}
-
 .menu__item {
   width: auto;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-  padding: 32px 0 32px 76px;
+  padding: 32px 60px 32px 76px;
 
   @media (min-width: $tablet-width) {
     align-self: stretch;
@@ -65,13 +62,25 @@
   line-height: 1.41;
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    @include hover-opacity;
+  }
+
+  &:active {
+    @include down-opacity;
+  }
 }
 
 .menu__list-delivery {
   @media (min-width: $tablet-width) {
     display: block;
     order: 2;
-    margin-top: 25px;
+    margin-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
   }
 }
 
@@ -89,7 +98,7 @@
     margin-right: auto;
     order: 1;
     font-size: 15px;
-    margin-top: 25px;
+    margin-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,12 +129,21 @@
   }
 }
 
+.menu__link-new {
+  @media (min-width: $desktop-width) {
+    &:first-of-type {
+      margin-right: 64px;
+    }
+    font-size: 15px;
+  }
+}
+
 .menu__link-basket {
   &::before {
     content: "";
     position: absolute;
     top: 2px;
-    left: 0;
+    left: -40px;
     background: url("../img/icon-cart.svg") no-repeat;
     width: 21px;
     height: 18px;
@@ -134,13 +152,18 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 50px;
+
+    &::before {
+      content: "";
+      left: 0;
+    }
   }
 }
 
 .menu__btn {
   position: absolute;
-  top: 26px;
-  right: 32px;
+  top: 24px;
+  right: 24px;
   z-index: 2;
   display: none;
   width: 35px;
@@ -148,6 +171,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
 }
 
 .menu__line {
@@ -173,34 +200,37 @@
   }
 }
 
-.search {
-  @media (min-width: $tablet-width) {
-    margin-right: 40px;
+// Добавляем стили для закрытого меню
+.menu__closed .menu__btn {
+  background: url("");
+}
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 36px;
-      left: 15px;
-      background: url("../img/icon-search.svg") no-repeat;
-      width: 18px;
-      height: 18px;
-      opacity: 0.2;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      position: absolute;
-      top: 50px;
-      left: 15px;
-    }
+.menu__closed .menu__list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 
-.search__link {
-  @media (min-width: $tablet-width) {
-    margin-right: 60px;
-    font-size: 0;
+// Добавляем стили для открытого меню
+.menu__opened .menu__btn {
+  background: url("");
+}
+
+.menu__opened .menu__list-search,
+.menu__opened .menu__list-catalog-order {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
+// Добавляем стили для кнопки без JS
+.menu__no-js .menu__btn {
+  display: none;
+}
+
+.menu__no-js .menu__list-search,
+.menu__no-js .menu__list-catalog-order {
+  @media (max-width: $mobile-width-only) {
+    display: block;
   }
 }

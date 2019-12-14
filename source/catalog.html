@@ -16,7 +16,7 @@
   <!-- Шапка сайта -->
   <header class="header">
     <div class="header__inner">
-      <nav class="header__menu menu">
+      <nav class="header__menu menu menu__closed menu__no-js">
         <a class="header__logo logo" href="index.html">
           <img class="logo__image" src="img/logo-mobile.svg"
             srcset="img/logo-mobile.svg 767w, img/logo-tablet.svg 1149w, img/logo-desktop.svg" alt="Логотип">
@@ -34,7 +34,7 @@
             <a class="menu__link menu__link-order" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="menu__list">
+        <ul class="menu__list menu__list-search">
           <li class="menu__item search">
             <a class="menu__link search__link" href="#">Поиск по сайту</a>
           </li>
@@ -78,12 +78,14 @@
               <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg"
                 srcset="img/photo-hare-mobile@1x.jpg 767w, img/photo-hare-tablet@1x.jpg 1149w, img/photo-hare-desktop@1x.jpg"
                 alt="Зайчик-попрыгайчик">
-              <div class="catalog__desc">
-                <p class="catalog__title">Зайчик-попрыгайчик</p>
-                <p class="catalog__text">Рост 30 см, вес 200 г</p>
-                <div class="catalog__price">
-                  <p class="catalog__money">1200 руб.</p>
-                  <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+              <div class="catalog__shadow">
+                <div class="catalog__desc">
+                  <p class="catalog__title">Зайчик-попрыгайчик</p>
+                  <p class="catalog__text">Рост 30 см, вес 200 г</p>
+                  <div class="catalog__price">
+                    <p class="catalog__money">1 200 руб.</p>
+                    <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+                  </div>
                 </div>
               </div>
             </a>
@@ -93,12 +95,14 @@
               <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg"
                 srcset="img/photo-bowl-mobile@1x.jpg 767w, img/photo-bowl-tablet@1x.jpg 1149w, img/photo-bowl-desktop@1x.jpg"
                 alt="Корзинка для белья">
-              <div class="catalog__desc">
-                <p class="catalog__title">Корзинка для белья</p>
-                <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
-                <div class="catalog__price">
-                  <p class="catalog__money">690 руб.</p>
-                  <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+              <div class="catalog__shadow">
+                <div class="catalog__desc">
+                  <p class="catalog__title">Корзинка для белья</p>
+                  <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
+                  <div class="catalog__price">
+                    <p class="catalog__money">690 руб.</p>
+                    <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+                  </div>
                 </div>
               </div>
             </a>
@@ -108,12 +112,14 @@
               <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg"
                 srcset="img/photo-toys-mobile@1x.jpg 767w, img/photo-toys-tablet@1x.jpg 1149w, img/photo-toys-desktop@1x.jpg"
                 alt="Большая корзина для игрушек">
-              <div class="catalog__desc">
-                <p class="catalog__title catalog__title-basket">Большая корзина для игрушек</p>
-                <p class="catalog__text catalog__text-basket">Диаметр 30 см, высота 30 см</p>
-                <div class="catalog__price">
-                  <p class="catalog__money">1500 руб.</p>
-                  <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+              <div class="catalog__shadow">
+                <div class="catalog__desc">
+                  <p class="catalog__title catalog__title-basket">Большая корзинка для игрушек</p>
+                  <p class="catalog__text catalog__text-basket">Диаметр 30 см, высота 30 см</p>
+                  <div class="catalog__price">
+                    <p class="catalog__money">1 500 руб.</p>
+                    <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+                  </div>
                 </div>
               </div>
             </a>
@@ -179,22 +185,24 @@
     <div class="modal__overlay"></div>
     <div class="modal__content">
       <div class="modal__inner">
-          <p class="modal__title">Добавить в корзину</p>
-          <fieldset class="modal__fieldset">
-            <legend class="modal__legend">Выберите размер:</legend>
-            <div class="modal__sizes">
-              <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size" checked>
-              <label class="modal__size" for="size-s">S</label>
-              <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
-              <label class="modal__size" for="size-m">M</label>
-              <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size">
-              <label class="modal__size" for="size-l">L</label>
-            </div>
-          </fieldset>
-          <button class="modal__btn button" type="button">Добавить</button>
-        </div>
+        <p class="modal__title">Добавить в корзину</p>
+        <fieldset class="modal__fieldset">
+          <legend class="modal__legend">Выберите размер:</legend>
+          <div class="modal__sizes">
+            <input class="modal__input visually-hidden" value="size-s" id="size-s" type="radio" name="size" checked>
+            <label class="modal__size" for="size-s">S</label>
+            <input class="modal__input visually-hidden" value="size-m" id="size-m" type="radio" name="size">
+            <label class="modal__size" for="size-m">M</label>
+            <input class="modal__input visually-hidden" value="size-l" id="size-l" type="radio" name="size">
+            <label class="modal__size" for="size-l">L</label>
+          </div>
+        </fieldset>
+        <button class="modal__btn button" type="button">Добавить</button>
+      </div>
     </div>
   </section>
+
+  <script src="js/menu.js"></script>
 
 </body>
 

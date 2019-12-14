@@ -1,5 +1,13 @@
 .catalog {
-  margin-bottom: 30px;
+  margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 102px;
+  }
 }
 
 .catalog__inner {
@@ -8,26 +16,28 @@
 
 .catalog__title-page {
   background-color: #f1f1f1;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -55px;
+    margin-top: -43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 124px;
   }
 }
 
 .catalog__page-text {
-  padding: 76px 40px;
-  margin: 0;
+  padding: 74px 0;
 
   @include page-title;
 
   @media (min-width: $tablet-width) {
-    font-size: 43px;
-    padding: 106px 190px 78px 190px;
+    padding: 97px 0 100px 0;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 53px;
-    padding: 105px 340px 100px 340px;
+    padding: 96px 0 106px 0;
   }
 }
 
@@ -50,21 +60,27 @@
     width: 1050px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
+    margin: 0 auto;
   }
 }
 
 .catalog__item {
   border: 1px solid #ececec;
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
   &:not(:last-of-type) {
     @media (min-width: $desktop-width) {
       width: 316px;
     }
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: 52px;
+    }
   }
 }
 
@@ -78,10 +94,22 @@
   }
 }
 
+.catalog__link:hover > .catalog__shadow {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.catalog__link:active > .catalog__shadow {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
 .catalog__image {
   width: 260px;
   height: 195px;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     width: 334px;
@@ -95,13 +123,26 @@
   }
 }
 
-.catalog__desc {
+.catalog__shadow {
   width: 205px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 268px;
+    width: 280px;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+}
+
+.catalog__desc {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 266px;
   }
 }
 
@@ -112,19 +153,39 @@
   line-height: 1.41;
   text-align: left;
   color: #000000;
-  margin: 0 0 18px 0;
+  margin: 0 0 5px 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
-    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
+    letter-spacing: 0.01em;
     margin: 0;
+    padding: 25px 0 5px 0;
   }
 }
 
 .catalog__title-basket {
   width: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 212px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 5px 0;
+  }
 }
 
 .catalog__text {
@@ -132,12 +193,22 @@
   line-height: 2.31;
   text-align: left;
   color: $color-danger;
-  margin: 0 0 26px 0;
+  margin: 0 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 0 0 38px 0;
+  }
 }
 
 .catalog__text-basket {
   @media (min-width: $desktop-width) {
-    margin-bottom: 5px;
+    padding: 0 0 14px 0;
   }
 }
 
@@ -146,8 +217,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-bottom: 30px;
-  padding-top: 27px;
+  margin-bottom: 27px;
+  padding-top: 21px;
   border-top: 1px solid #e1e1e1;
 
   @media (min-width: $tablet-width) {
@@ -163,6 +234,16 @@
 }
 
 .catalog__item-video {
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -173,6 +254,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     min-height: 455px;
+    margin-top: 6px;
   }
 }
 
@@ -184,17 +266,22 @@
   line-height: 1.6;
   text-align: left;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.41;
+  }
 }
 
 .catalog__process {
   display: flex;
   align-items: center;
   width: 205px;
-  margin: 28px auto;
+  margin: 26px auto;
 
   @media (min-width: $tablet-width) {
     width: auto;
-    margin: 0 auto 40px 40px;
+    margin: 0 auto 30px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -202,42 +289,52 @@
     align-items: flex-start;
     width: 160px;
     float: right;
-    margin: 50px 140px 30px 0;
+    margin: 45px 129px 35px 0;
   }
 }
 
 .catalog__title-process {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .catalog__img {
-  margin: 0 25px 0 0;
+  margin: 0 30px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 33px 0 0;
+  }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 30px 0;
+    margin: 0 0 18px 0;
   }
 }
 
 .catalog__video {
-  margin-bottom: 34px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     order: -1;
     width: 668px;
     height: 455px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 682px;
     margin: 0;
     float: left;
   }
 }
 
 .catalog__text-process {
-  width: 185px;
+  width: 192px;
   line-height: 1.85;
   text-align: left;
-  margin: 0 auto 28px auto;
+  margin: 0 auto 25px auto;
 
   @media (min-width: $tablet-width) {
     margin: 0 40px 40px 40px;
@@ -250,23 +347,26 @@
     flex-direction: column;
     align-items: flex-start;
     width: 224px;
-    margin: 0 0 40px 0;
+    margin: 0 0 42px 0;
+    line-height: 2;
+    padding: 0;
   }
 }
 
 .catalog__btn {
-  padding: 14px 26px;
+  padding: 14px 24px;
   margin-bottom: 32px;
 
   @include button-style;
 
   @media (min-width: $tablet-width) {
     min-width: 585px;
-    padding: 20px 220px;
+    padding: 14px 220px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 46px;
+    padding: 16px 38px;
     margin: 0;
     min-width: 230px;
   }
@@ -275,7 +375,7 @@
 .catalog__process-wrapper {
   @media (min-width: $desktop-width) {
     float: right;
-    width: 240px;
+    width: 230px;
     text-align: left;
     margin: 0 58px 0 0;
   }

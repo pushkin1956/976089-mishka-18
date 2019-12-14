@@ -21,7 +21,7 @@
   @include inner;
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    display: table-cell;
   }
 }
 
