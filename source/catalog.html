@@ -84,7 +84,8 @@
                   <p class="catalog__text">Рост 30 см, вес 200 г</p>
                   <div class="catalog__price">
                     <p class="catalog__money">1 200 руб.</p>
-                    <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+                    <img id="modal-add" src="https://via.placeholder.com/150x150" width="20" height="19"
+                      alt="Иконка корзины">
                   </div>
                 </div>
               </div>
@@ -101,7 +102,8 @@
                   <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
                   <div class="catalog__price">
                     <p class="catalog__money">690 руб.</p>
-                    <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+                    <img id="modal-add" src="https://via.placeholder.com/150x150" width="20" height="19"
+                      alt="Иконка корзины">
                   </div>
                 </div>
               </div>
@@ -118,7 +120,8 @@
                   <p class="catalog__text catalog__text-basket">Диаметр 30 см, высота 30 см</p>
                   <div class="catalog__price">
                     <p class="catalog__money">1 500 руб.</p>
-                    <img src="https://via.placeholder.com/150x150" width="20" height="19" alt="Иконка корзины">
+                    <img id="modal-add" src="https://via.placeholder.com/150x150" width="20" height="19"
+                      alt="Иконка корзины">
                   </div>
                 </div>
               </div>
@@ -138,7 +141,7 @@
                 По просьбам наших любимых фолловеров мы сняли
                 для вас подробное видео о том, как появляются наши товары.
               </p>
-              <button class="catalog__btn button" type="button">Сделать заказ</button>
+              <button class="catalog__btn button" id="modal-add" type="button">Сделать заказ</button>
             </div>
           </li>
         </ul>
@@ -182,7 +185,6 @@
 
   <!-- Секция модального окна -->
   <section class="modal">
-    <div class="modal__overlay"></div>
     <div class="modal__content">
       <div class="modal__inner">
         <p class="modal__title">Добавить в корзину</p>
@@ -197,12 +199,14 @@
             <label class="modal__size" for="size-l">L</label>
           </div>
         </fieldset>
-        <button class="modal__btn button" type="button">Добавить</button>
+        <button class="modal__btn button" type="submit">Добавить</button>
       </div>
     </div>
   </section>
 
   <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/write-us.js"></script>
 
 </body>
 

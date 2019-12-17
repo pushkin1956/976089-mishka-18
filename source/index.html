@@ -74,15 +74,15 @@
         <a href="catalog.html" class="handwork__interior">
           <div class="handwork__inner handwork__flex-g">
             <p class="handwork__category">Предметы интерьера</p>
-            <img class="handwork__image-itn handwork__image-active" src="https://via.placeholder.com/150x150" width="40" height="62"
-              alt="Предметы интерьера">
+            <img class="handwork__image-itn handwork__image-active" src="https://via.placeholder.com/150x150" width="40"
+              height="62" alt="Предметы интерьера">
           </div>
         </a>
         <a href="catalog.html" class="handwork__toys">
           <div class="handwork__inner handwork__flex-g">
             <p class="handwork__category">Детские игрушки</p>
-            <img class="handwork__image-toys handwork__image-active" src="https://via.placeholder.com/150x150" width="60" height="60"
-              alt="Детские игрушки">
+            <img class="handwork__image-toys handwork__image-active" src="https://via.placeholder.com/150x150"
+              width="60" height="60" alt="Детские игрушки">
           </div>
         </a>
       </div>
@@ -133,7 +133,7 @@
               alt="Вязаные корзинки">
             <div class="baskets__order">
               <p class="baskets__price">Цена: 990 руб.</p>
-              <button class="baskets__to-order-btn button" type="button">Заказать</button>
+              <button class="baskets__to-order-btn button" id="modal-add" type="button">Заказать</button>
             </div>
           </div>
         </div>
@@ -202,7 +202,9 @@
               <button class="reviews__btn-next" type="button" aria-label="Следующий слайд">Следующий</button>
             </div>
           </div>
-          <button type="button" class="reviews__write-btn button">Написать</button>
+          <form action="mailto:info@mimimishkashop.ru">
+            <button type="submit" class="reviews__write-btn button">Написать</button>
+          </form>
         </div>
       </div>
     </section>
@@ -215,7 +217,8 @@
           <div class="contacts__info">
             <div class="contacts__email">
               <p class="contacts__value">e-mail:</p>
-              <a href="mailto:info@mimimishkashop.ru" class="contacts__field contacts__field-line">info@mimimishkashop.ru</a>
+              <a href="mailto:info@mimimishkashop.ru"
+                class="contacts__field contacts__field-line">info@mimimishkashop.ru</a>
             </div>
             <div class="contacts__address">
               <p class="contacts__value">адрес:</p>
@@ -233,7 +236,9 @@
               alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
             <img class="contacts__pin" src="https://via.placeholder.com/150x150" alt="Контакты" width="100" height="67">
           </div>
-          <button class="contacts__btn button">Напишите нам</button>
+          <form action="mailto:info@mimimishkashop.ru">
+            <button class="contacts__btn button" type="submit">Напишите нам</button>
+          </form>
         </div>
       </div>
     </section>
@@ -292,14 +297,15 @@
             <label class="modal__size" for="size-l">L</label>
           </div>
         </fieldset>
-        <button class="modal__btn button" type="button">Добавить</button>
+        <button class="modal__btn button" type="submit">Добавить</button>
       </div>
     </div>
   </section>
 
   <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
   <script src="js/map.js"></script>
-  <script src=https://api-maps.yandex.ru/2.1/?lang=ru_RU></script>    
+  <script src=https://api-maps.yandex.ru/2.1/?lang=ru_RU> </script> <script src="js/write-us.js"></script>
 
 </body>
 
