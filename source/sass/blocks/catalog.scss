@@ -314,6 +314,8 @@
 
 .catalog__video {
   margin-bottom: 18px;
+  width: 250px;
+  height: 150px;
 
   @media (min-width: $tablet-width) {
     order: -1;

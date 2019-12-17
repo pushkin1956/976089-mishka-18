@@ -1,5 +1,5 @@
 .about-us {
-  margin-bottom: 50px;
+  margin-bottom: 56px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
@@ -55,37 +55,67 @@
 }
 
 .about-us__item--eco {
+  @media (max-width: $mobile-width-only) {
+    width: 175px;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 205px;
     order: 1;
   }
 }
 
 .about-us__item--scandinavian {
+  @media (max-width: $mobile-width-only) {
+    width: 200px;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 248px;
     order: 3;
   }
 }
 
 .about-us__item--likes {
+  @media (max-width: $mobile-width-only) {
+    width: 182px;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 235px;
     order: 5;
   }
 }
 
 .about-us__item--love {
+  @media (max-width: $mobile-width-only) {
+    width: 212px;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 295px;
     order: 2;
   }
 }
 
 .about-us__item--support {
+  @media (max-width: $mobile-width-only) {
+    width: 252px;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 295px;
     order: 4;
   }
 }
 
 .about-us__item--present {
+  @media (max-width: $mobile-width-only) {
+    width: 198px;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 294px;
     order: 6;
   }
 }
@@ -93,108 +123,57 @@
 .about-us__image {
   margin-bottom: 20px;
 
-  &:nth-of-type(1) {
-    margin-bottom: 8px;
-    width: 32px;
-    height: 37px;
-  }
-
-  &:nth-of-type(2) {
-    width: 47px;
-    height: 27px;
-    margin-bottom: 17px;
-  }
-
-  &:nth-of-type(3) {
-    width: 34px;
-    height: 27px;
-    margin-bottom: 16px;
-  }
-
-  &:nth-of-type(4) {
-    margin-bottom: 9px;
-  }
-
-  &:nth-of-type(5) {
-    margin-bottom: 20px;
-    width: 55px;
-    height: 23px;
-  }
-
-  &:nth-of-type(6) {
-    width: 33px;
-    height: 32px;
-    margin-bottom: 13px;
-  }
-
   @media (min-width: $desktop-width) {
     margin-bottom: 6px;
   }
 }
 
 .about-us__item {
-  width: 260px;
-
   &:not(:last-of-type) {
     margin-bottom: 30px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    &:nth-of-type(1) {
-      width: 175px;
-    }
-
-    &:nth-of-type(2) {
-      width: 200px;
-    }
-
-    &:nth-of-type(3) {
-      width: 182px;
-    }
-
-    &:nth-of-type(4) {
-      width: 212px;
-    }
-
-    &:nth-of-type(5) {
-      width: 252px;
-    }
-
-    &:nth-of-type(6) {
-      width: 198px;
-    }
   }
 
   @media (min-width: $tablet-width) {
     &:not(:last-of-type) {
       margin-bottom: 56px;
     }
-
-    &:nth-of-type(1) {
-      width: 205px;
-    }
-
-    &:nth-of-type(2) {
-      width: 248px;
-    }
-
-    &:nth-of-type(3) {
-      width: 235px;
-    }
-
-    &:nth-of-type(4) {
-      width: 295px;
-    }
-
-    &:nth-of-type(5) {
-      width: 295px;
-    }
-
-    &:nth-of-type(6) {
-      width: 294px;
-    }
   }
 }
+
+.about-us__image--eco {
+  margin-bottom: 8px;
+  width: 32px;
+  height: 37px;
+}
+
+.about-us__image--scandinavian {
+  width: 47px;
+  height: 27px;
+  margin-bottom: 17px;
+}
+
+.about-us__image--likes {
+  width: 34px;
+  height: 27px;
+  margin-bottom: 16px;
+}
+
+.about-us__image--love {
+  margin-bottom: 9px;
+}
+
+.about-us__image--support {
+  margin-bottom: 20px;
+  width: 55px;
+  height: 23px;
+}
+
+.about-us__image--present {
+  width: 33px;
+  height: 32px;
+  margin-bottom: 13px;
+}
+
 
 .about-us__text {
   font-size: 17px;
