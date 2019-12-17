@@ -57,37 +57,37 @@
   }
 }
 
-.about-us__item-eco {
+.about-us__item--eco {
   @media (min-width: $tablet-width) {
     order: 1;
   }
 }
 
-.about-us__item-scandinavian {
+.about-us__item--scandinavian {
   @media (min-width: $tablet-width) {
     order: 3;
   }
 }
 
-.about-us__item-likes {
+.about-us__item--likes {
   @media (min-width: $tablet-width) {
     order: 5;
   }
 }
 
-.about-us__item-love {
+.about-us__item--love {
   @media (min-width: $tablet-width) {
     order: 2;
   }
 }
 
-.about-us__item-support {
+.about-us__item--support {
   @media (min-width: $tablet-width) {
     order: 4;
   }
 }
 
-.about-us__item-present {
+.about-us__item--present {
   @media (min-width: $tablet-width) {
     order: 6;
   }

@@ -37,7 +37,7 @@
   flex-wrap: wrap;
 }
 
-.handwork__title-br {
+.handwork__title--br {
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -73,7 +73,7 @@
   }
 }
 
-.handwork__inner.handwork__flex-g {
+.handwork__inner.handwork__flex--g {
   flex-grow: 1;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .handwork__inner:active > .handwork__category,
-.handwork__inner:active > .handwork__image-active {
+.handwork__inner:active > .handwork__image--active {
   opacity: 0.3;
 }
 

@@ -176,7 +176,7 @@
   }
 }
 
-.catalog__title-basket {
+.catalog__title--basket {
   width: 180px;
 
   @media (min-width: $tablet-width) {
@@ -206,7 +206,7 @@
   }
 }
 
-.catalog__text-basket {
+.catalog__text--basket {
   @media (min-width: $desktop-width) {
     padding: 0 0 14px 0;
   }
@@ -233,7 +233,7 @@
   }
 }
 
-.catalog__item-video {
+.catalog__item--video {
   transition: all 0.2s ease;
 
   &:hover {
@@ -293,7 +293,7 @@
   }
 }
 
-.catalog__title-process {
+.catalog__title--process {
   margin: 0;
 
   @media (min-width: $desktop-width) {
@@ -330,7 +330,7 @@
   }
 }
 
-.catalog__text-process {
+.catalog__text--process {
   width: 192px;
   line-height: 1.85;
   text-align: left;
