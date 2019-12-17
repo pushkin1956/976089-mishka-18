@@ -48,14 +48,9 @@
 
   @media (min-width: $tablet-width) {
     align-self: center;
-    font-size: 43px;
     font-weight: bold;
     line-height: 1.16;
     margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 53px;
   }
 }
 

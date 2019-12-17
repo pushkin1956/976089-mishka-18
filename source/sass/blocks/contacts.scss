@@ -26,14 +26,16 @@
 
 .contacts__title {
   position: relative;
-  font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
   margin-bottom: 26px;
 
+  @media (max-width: $mobile-width-only) {
+    font-size: 18px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
-    font-size: 43px;
     line-height: 1.16;
 
     &::after {
@@ -56,7 +58,6 @@
     margin-top: 60px;
     margin-bottom: 50px;
     margin-left: -4px;
-    font-size: 53px;
     line-height: 1.08;
   }
 }
