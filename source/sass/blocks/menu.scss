@@ -74,6 +74,12 @@
   &:active {
     @include down-opacity;
   }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    width: 185px;
+    margin: 0 auto;
+  }
 }
 
 .menu__list--delivery {
