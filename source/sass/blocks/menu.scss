@@ -16,6 +16,10 @@
 
   @include reset-list;
 
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -197,17 +201,6 @@
 .logo {
   @media (min-width: $tablet-width) {
     margin-right: auto;
-  }
-}
-
-// Добавляем стили для закрытого меню
-.menu__closed .menu__btn {
-  background: url("");
-}
-
-.menu__closed .menu__list {
-  @media (max-width: $mobile-width-only) {
-    display: none;
   }
 }
 
