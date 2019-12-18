@@ -5,11 +5,19 @@ navMenu.classList.remove('menu__no-js');
 document.body.classList.remove('no-js');
 
 navBtn.addEventListener('click', function() {
-  if (navMenu.classList.contains('menu__closed')) {
-    navMenu.classList.remove('menu__closed');
+  if (navBtn.classList.toggle("visible")) {
     navMenu.classList.add('menu__opened');
-  } else {
-    navMenu.classList.add('menu__closed');
-    navMenu.classList.remove('menu__opened');
   }
 });
+
+// navMenu.classList.toggle('menu__opened');
+
+// navBtn.addEventListener('click', function() {
+// )};
+  // if (navMenu.classList.contains('menu__closed')) {
+  //   navMenu.classList.remove('menu__closed');
+  //   navMenu.classList.add('menu__opened');
+  // } else {
+  //   navMenu.classList.add('menu__closed');
+  //   navMenu.classList.remove('menu__opened');
+  // }
