@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body no-js">
 
   <!-- Шапка сайта -->
   <header class="header">
@@ -26,33 +26,33 @@
           <span class="menu__line"></span>
           <span class="menu__line"></span>
         </button>
-        <ul class="menu__list menu__list-catalog-order">
+        <ul class="menu__list menu__list--catalog-order">
           <li class="menu__item">
-            <a class="menu__link menu__link-catalog" href="catalog.html">Каталог товаров</a>
+            <a class="menu__link menu__link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link-order" href="form.html">Вязание на заказ</a>
+            <a class="menu__link menu__link--order" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="menu__list menu__list-search">
+        <ul class="menu__list menu__list--search">
           <li class="menu__item search">
             <a class="menu__link search__link" href="#">Поиск по сайту</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link-basket" href="#">Корзина: пока пуста</a>
+            <a class="menu__link menu__link--basket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        <ul class="menu__list menu__list-new">
+        <ul class="menu__list menu__list--new">
           <li class="menu__item">
-            <a class="menu__link menu__link-new" href="#">Новые поступления</a>
+            <a class="menu__link menu__link--new" href="#">Новые поступления</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link-new" href="#">Распродажа</a>
+            <a class="menu__link menu__link--new" href="#">Распродажа</a>
           </li>
         </ul>
-        <ul class="menu__list menu__list-delivery">
+        <ul class="menu__list menu__list--delivery">
           <li class="menu__item">
-            <a class="menu__link menu__link-delivery">Бесплатная доставка по России</a>
+            <a class="menu__link menu__link--delivery">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -68,21 +68,21 @@
     <!-- Секция ручной работы -->
     <section class="handwork">
       <div class="handwork__title">
-        <p class="handwork__text">Милые штуки ручной <br class="handwork__title-br"> работы для дома</p>
+        <p class="handwork__text">Милые штуки ручной <br class="handwork__title--br"> работы для дома</p>
       </div>
       <div class="handwork__goods">
         <a href="catalog.html" class="handwork__interior">
-          <div class="handwork__inner handwork__flex-g">
+          <div class="handwork__inner handwork__flex--g">
             <p class="handwork__category">Предметы интерьера</p>
-            <img class="handwork__image-itn handwork__image-active" src="https://via.placeholder.com/150x150" width="40" height="62"
-              alt="Предметы интерьера">
+            <img class="handwork__image-itn handwork__image--active" src="http://placecorgi.com/150" width="40"
+              height="62" alt="Предметы интерьера">
           </div>
         </a>
         <a href="catalog.html" class="handwork__toys">
-          <div class="handwork__inner handwork__flex-g">
+          <div class="handwork__inner handwork__flex--g">
             <p class="handwork__category">Детские игрушки</p>
-            <img class="handwork__image-toys handwork__image-active" src="https://via.placeholder.com/150x150" width="60" height="60"
-              alt="Детские игрушки">
+            <img class="handwork__image-toys handwork__image--active" src="http://placecorgi.com/150"
+              width="60" height="60" alt="Детские игрушки">
           </div>
         </a>
       </div>
@@ -133,7 +133,7 @@
               alt="Вязаные корзинки">
             <div class="baskets__order">
               <p class="baskets__price">Цена: 990 руб.</p>
-              <button class="baskets__to-order-btn button" type="button">Заказать</button>
+              <button class="baskets__to-order-btn button modal-add" type="button">Заказать</button>
             </div>
           </div>
         </div>
@@ -146,33 +146,33 @@
         <div class="about-us__wrapper">
           <h2 class="about-us__title title">Коротко о нас:</h2>
           <ul class="about-us__list">
-            <li class="about-us__item about-us__item-eco">
-              <img class="about-us__image" src="https://via.placeholder.com/150x150" width="32" height="37"
+            <li class="about-us__item about-us__item--eco">
+              <img class="about-us__image about-us__image--eco" src="http://placecorgi.com/150" width="32" height="37"
                 alt="Экологически чистые материалы">
               <p class="about-us__text">Экологически чистые материалы</p>
             </li>
-            <li class="about-us__item about-us__item-scandinavian">
-              <img class="about-us__image" src="https://via.placeholder.com/150x150" width="47" height="27"
+            <li class="about-us__item about-us__item--scandinavian">
+              <img class="about-us__image about-us__image--scandinavian" src="http://placecorgi.com/150" width="47" height="27"
                 alt="Скандинавский стиль по российской цене">
               <p class="about-us__text">Скандинавский стиль по российской цене</p>
             </li>
-            <li class="about-us__item about-us__item-likes">
-              <img class="about-us__image" src="https://via.placeholder.com/150x150" width="34" height="27"
+            <li class="about-us__item about-us__item--likes">
+              <img class="about-us__image about-us__image--likes" src="http://placecorgi.com/150" width="34" height="27"
                 alt="Увеличивает лайкина фотографиях">
               <p class="about-us__text">Увеличивает лайки на фотографиях</p>
             </li>
-            <li class="about-us__item about-us__item-love">
-              <img class="about-us__image" src="https://via.placeholder.com/150x150" width="35" height="34"
+            <li class="about-us__item about-us__item--love">
+              <img class="about-us__image about-us__image--love" src="http://placecorgi.com/150" width="35" height="34"
                 alt="Связано вручную с любовью и умилением">
               <p class="about-us__text">Связано вручную с любовью и умилением</p>
             </li>
-            <li class="about-us__item about-us__item-support">
-              <img class="about-us__image" src="https://via.placeholder.com/150x150" width="55" height="23"
+            <li class="about-us__item about-us__item--support">
+              <img class="about-us__image about-us__image--support" src="http://placecorgi.com/150" width="55" height="23"
                 alt="Поддержка отечественного производителя">
               <p class="about-us__text">Поддержка отечественного производителя</p>
             </li>
-            <li class="about-us__item about-us__item-present">
-              <img class="about-us__image" src="https://via.placeholder.com/150x150" width="33" height="32"
+            <li class="about-us__item about-us__item--present">
+              <img class="about-us__image about-us__image--present" src="http://placecorgi.com/150" width="33" height="32"
                 alt="Поставляется в подарочной упаковке">
               <p class="about-us__text">Поставляется в подарочной упаковке</p>
             </li>
@@ -202,7 +202,9 @@
               <button class="reviews__btn-next" type="button" aria-label="Следующий слайд">Следующий</button>
             </div>
           </div>
-          <button type="button" class="reviews__write-btn button">Написать</button>
+          <form action="mailto:info@mimimishkashop.ru">
+            <button type="submit" class="reviews__write-btn button">Написать</button>
+          </form>
         </div>
       </div>
     </section>
@@ -215,7 +217,8 @@
           <div class="contacts__info">
             <div class="contacts__email">
               <p class="contacts__value">e-mail:</p>
-              <a href="mailto:info@mimimishkashop.ru" class="contacts__field contacts__field-line">info@mimimishkashop.ru</a>
+              <a href="mailto:info@mimimishkashop.ru"
+                class="contacts__field contacts__field--line">info@mimimishkashop.ru</a>
             </div>
             <div class="contacts__address">
               <p class="contacts__value">адрес:</p>
@@ -226,13 +229,16 @@
               </div>
             </div>
           </div>
+          <div id="map" class="contacts__map-js contacts__map-js--dn"></div>
           <div class="contacts__map">
             <img class="contacts__image" src="img/map-mobile@1x.jpg"
               srcset="img/map-mobile@1x.jpg 767w, img/map-tablet@1x.jpg 1149w, img/map-desktop@1x.jpg"
               alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-            <img class="contacts__pin" src="https://via.placeholder.com/150x150" alt="Контакты" width="100" height="67">
+            <img class="contacts__pin" src="http://placecorgi.com/150" alt="Контакты" width="100" height="67">
           </div>
-          <button class="contacts__btn button">Напишите нам</button>
+          <form action="mailto:info@mimimishkashop.ru">
+            <button class="contacts__btn button" type="submit">Напишите нам</button>
+          </form>
         </div>
       </div>
     </section>
@@ -248,18 +254,18 @@
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link-instagram" href="#" aria-label="Инстаграм">
-              <img src="https://via.placeholder.com/150x150" alt="Наш инстаграм" width="22" height="21">
+            <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
+              <img src="http://placecorgi.com/150" alt="Наш инстаграм" width="22" height="21">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link-facebook" href="#" aria-label="Фейсбук">
-              <img src="https://via.placeholder.com/150x150" alt="Наш фейсбук" width="15" height="28">
+            <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
+              <img src="http://placecorgi.com/150" alt="Наш фейсбук" width="15" height="28">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link-twitter" href="#" aria-label="Твитер">
-              <img src="https://via.placeholder.com/150x150" alt="Наш твиттер" width="23" height="20">
+            <a class="social__link social__link--twitter" href="#" aria-label="Твитер">
+              <img src="http://placecorgi.com/150" alt="Наш твиттер" width="23" height="20">
             </a>
           </li>
         </ul>
@@ -268,7 +274,7 @@
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="footer__image" src="https://via.placeholder.com/150x150" width="27" height="34"
+          <img class="footer__image" src="http://placecorgi.com/150" width="27" height="34"
             alt="HTML Academy">
         </a>
       </div>
@@ -291,12 +297,15 @@
             <label class="modal__size" for="size-l">L</label>
           </div>
         </fieldset>
-        <button class="modal__btn button" type="button">Добавить</button>
+        <button class="modal__btn button" type="submit">Добавить</button>
       </div>
     </div>
   </section>
 
   <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/map.js"></script>
+  <script src=https://api-maps.yandex.ru/2.1/?lang=ru_RU> </script>
 
 </body>
 
