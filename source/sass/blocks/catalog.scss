@@ -112,6 +112,7 @@
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     width: 334px;
     height: 334px;
     margin-bottom: 0;
@@ -313,13 +314,14 @@
 }
 
 .catalog__video {
-  margin-bottom: 18px;
+  position: relative;
+  margin-bottom: 25px;
   width: 250px;
   height: 150px;
 
   @media (min-width: $tablet-width) {
     order: -1;
-    width: 668px;
+    width: 667px;
     height: 455px;
     margin-bottom: 33px;
   }
@@ -329,6 +331,15 @@
     margin: 0;
     float: left;
   }
+}
+
+.catalog__video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 102px;
+  height: 78px;
 }
 
 .catalog__text--process {

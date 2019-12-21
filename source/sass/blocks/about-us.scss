@@ -1,5 +1,5 @@
 .about-us {
-  margin-bottom: 56px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
@@ -26,7 +26,7 @@
 
   @media (min-width: $tablet-width) {
     line-height: 1.16;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -138,6 +138,12 @@
       margin-bottom: 56px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-of-type) {
+      margin-bottom: 47px;
+    }
+  }
 }
 
 .about-us__image--eco {
@@ -174,15 +180,20 @@
   margin-bottom: 13px;
 }
 
-
 .about-us__text {
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
-  margin: 0;
+  margin: 10px 0 10px 0;
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.1;
+    margin-top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 12px;
   }
 }
