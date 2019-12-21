@@ -2,7 +2,7 @@
   margin-bottom: 85px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 165px;
+    margin-bottom: 162px;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,6 +115,10 @@
 
 .reviews__slide {
   margin-bottom: 40px;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
 }
 
 .reviews__slider {
@@ -144,6 +148,12 @@
   margin-left: -5px;
 }
 
+.reviews__write-form {
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+}
+
 .reviews__write-btn {
   padding: 14px 80px;
 
@@ -154,7 +164,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 10px;
+    margin-top: 14px;
     min-height: 53px;
   }
 }

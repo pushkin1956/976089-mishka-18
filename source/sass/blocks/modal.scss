@@ -44,6 +44,8 @@
   font-size: 15px;
   line-height: 2;
   color: $color-danger;
+  margin-left: auto; // Для FireFox
+  margin-right: auto; // Для FireFox
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -110,7 +112,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  animation: modal-animate 1s ease;
+  animation: modal-animate 0.5s ease;
 }
 
 .modal-show {
@@ -119,11 +121,7 @@
 
 @keyframes modal-animate {
   0% {
-    transform: translateY(-10000px) scale(0);
-  }
-
-  50% {
-    transform: translateY(100px) scale(1.5);
+    transform: translateY(-100px) scale(2);
   }
 
   100% {

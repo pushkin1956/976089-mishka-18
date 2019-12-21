@@ -37,5 +37,9 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "node-sass": "^4.13.0"
   }
 }

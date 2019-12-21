@@ -5,16 +5,16 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 8px 0 0 0;
-  }
 }
 
 .menu__list {
   position: relative;
 
   @include reset-list;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -32,7 +32,7 @@
   display: none;
 
   @media (min-width: $desktop-width) {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -70,6 +70,12 @@
   &:active {
     @include down-opacity;
   }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    width: 185px;
+    margin: 0 auto;
+  }
 }
 
 .menu__list--delivery {
@@ -80,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -197,17 +203,6 @@
 .logo {
   @media (min-width: $tablet-width) {
     margin-right: auto;
-  }
-}
-
-// Добавляем стили для закрытого меню
-.menu__closed .menu__btn {
-  background: url("");
-}
-
-.menu__closed .menu__list {
-  @media (max-width: $mobile-width-only) {
-    display: none;
   }
 }
 
