@@ -970,6 +970,9 @@ img {
 
 .reviews__slide {
   margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    .reviews__slide {
+      text-align: center; } }
 
 @media (min-width: 768px) {
   .reviews__slider {
@@ -1000,6 +1003,10 @@ img {
 
 .reviews__btn-next {
   margin-left: -5px; }
+
+@media (max-width: 767px) {
+  .reviews__write-form {
+    text-align: center; } }
 
 .reviews__write-btn {
   padding: 14px 80px;
@@ -1036,15 +1043,29 @@ img {
     .contacts {
       margin-bottom: 48px; } }
 
-.contacts__inner {
-  margin: 0 auto;
-  padding: 0 30px; }
-  @media (min-width: 768px) {
+@media (min-width: 1150px) {
+  .contacts__inner {
+    margin: 0 auto;
+    padding: 0 30px; } }
+  @media (min-width: 1150px) and (min-width: 768px) {
     .contacts__inner {
       width: 100%;
       padding: 0 50px; } }
-  @media (min-width: 1150px) {
+  @media (min-width: 1150px) and (min-width: 1150px) {
     .contacts__inner {
+      width: 1140px;
+      padding: 0 45px; } }
+
+@media (max-width: 1150px) {
+  .ll {
+    margin: 0 auto;
+    padding: 0 30px; } }
+  @media (max-width: 1150px) and (min-width: 768px) {
+    .ll {
+      width: 100%;
+      padding: 0 50px; } }
+  @media (max-width: 1150px) and (min-width: 1150px) {
+    .ll {
       width: 1140px;
       padding: 0 45px; } }
 
@@ -1159,20 +1180,14 @@ img {
 .contacts__map-js {
   position: relative;
   text-align: center;
-  margin-bottom: 40px;
-  min-height: 457px; }
-  @media (max-width: 767px) {
-    .contacts__map,
-    .contacts__map-js {
-      width: 320px;
-      margin-left: -30px; } }
+  width: 100%;
+  min-height: 457px;
+  margin-bottom: 40px; }
   @media (min-width: 768px) {
     .contacts__map,
     .contacts__map-js {
-      width: 768px;
       font-size: 17px;
       line-height: 1.76;
-      margin-left: -50px;
       margin-bottom: 56px; } }
   @media (min-width: 1150px) {
     .contacts__map,
