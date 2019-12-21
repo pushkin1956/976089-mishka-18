@@ -1,9 +1,9 @@
-.search {
+.search__link {
   &::before {
     content: "";
     position: absolute;
-    top: 38px;
-    left: 35px;
+    top: 3px;
+    left: -40px;
     background: url("../img/icon-search.svg") no-repeat;
     width: 18px;
     height: 18px;
@@ -11,27 +11,21 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 40px;
+    margin-right: 60px;
+    font-size: 0;
 
     &::before {
       content: "";
-      top: 36px;
-      left: 15px;
+      top: -15px;
+      left: -10px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::before {
       position: absolute;
-      top: 6px;
-      left: 15px;
+      top: -15px;
+      left: -10px;
     }
-  }
-}
-
-.search__link {
-  @media (min-width: $tablet-width) {
-    margin-right: 60px;
-    font-size: 0;
   }
 }
