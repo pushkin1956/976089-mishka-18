@@ -115,6 +115,10 @@
 
 .reviews__slide {
   margin-bottom: 40px;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
 }
 
 .reviews__slider {
@@ -142,6 +146,12 @@
 
 .reviews__btn-next {
   margin-left: -5px;
+}
+
+.reviews__write-form {
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
 }
 
 .reviews__write-btn {

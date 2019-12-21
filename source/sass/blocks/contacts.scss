@@ -11,7 +11,15 @@
 }
 
 .contacts__inner {
-  @include inner;
+  @media (min-width: $desktop-width) {
+    @include inner;
+  }
+}
+
+.ll {
+  @media (max-width: $desktop-width) {
+    @include inner;
+  }
 }
 
 .contacts__wrapper {
@@ -139,19 +147,20 @@
 .contacts__map-js {
   position: relative;
   text-align: center;
-  margin-bottom: 40px;
+  width: 100%;
   min-height: 457px;
+  margin-bottom: 40px;
 
   @media (max-width: $mobile-width-only) {
-    width: 320px;
-    margin-left: -30px;
+    // width: 320px;
+    // margin-left: -30px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    // width: 768px;
     font-size: 17px;
     line-height: 1.76;
-    margin-left: -50px;
+    // margin-left: -50px;
     margin-bottom: 56px;
   }
 
