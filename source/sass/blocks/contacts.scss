@@ -17,7 +17,7 @@
 }
 
 .contacts__inner-content {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     @include inner;
   }
 }
