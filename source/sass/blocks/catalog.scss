@@ -15,6 +15,7 @@
 }
 
 .catalog__title-page {
+  position: relative;
   background-color: #f1f1f1;
   margin-bottom: 30px;
 
@@ -301,18 +302,6 @@
   }
 }
 
-.catalog__img {
-  margin: 0 30px 0 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 33px 0 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 0 18px 0;
-  }
-}
-
 .catalog__video {
   position: relative;
   margin-bottom: 25px;
@@ -331,15 +320,6 @@
     margin: 0;
     float: left;
   }
-}
-
-.catalog__video-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 102px;
-  height: 78px;
 }
 
 .catalog__text--process {

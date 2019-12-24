@@ -1,12 +1,15 @@
 .baskets {
-  margin-bottom: 70px;
+  position: relative;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 118px;
+    margin-bottom: 45px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 156px;
+    margin-bottom: 60px;
+    padding-bottom: 96px;
   }
 }
 
@@ -19,6 +22,10 @@
 
 .baskets__inner {
   @include inner;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 24px;
+  }
 }
 
 .baskets__title {

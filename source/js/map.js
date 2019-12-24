@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function init() {
     map = new ymaps.Map("map", { // в кавычках id элемента куда загружается карта
       center: [59.9387165, 30.32304739999995],
-      zoom: 17, // координаты центра фрагмента карты
+      zoom: 18, // координаты центра фрагмента карты
       controls: []
     });
     var placemark = new ymaps.Placemark([59.9387165, 30.32304739999995], {}, { // координаты метки
       iconLayout: "default#image",
-      iconImageHref: "http://placecorgi.com/150", // иконка метки
+      iconImageHref: "../img/icon-map-pin.svg", // иконка метки
       iconImageSize: [82, 82] // размер метки
     });
   map.geoObjects.add(placemark);
