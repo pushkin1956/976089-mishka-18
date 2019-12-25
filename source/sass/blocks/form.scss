@@ -1,5 +1,5 @@
 .form {
-  margin-bottom: 47px;
+  margin-bottom: 52px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
@@ -104,6 +104,7 @@
 .form__title-page {
   position: relative;
   background-color: #f1f1f1;
+  box-shadow: inset 0 -1px 0 1px #f9f9f9, inset 0 0 0 1px rgba(68, 68, 68, 0.2);
 
   @media (min-width: $tablet-width) {
     margin-top: -44px;
@@ -669,5 +670,24 @@
 
   @media (min-width: $desktop-width) {
     padding: 65px 0 24px 0;
+  }
+}
+
+.form__zigzag-icon {
+  display: none;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 22px;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 34px;
   }
 }

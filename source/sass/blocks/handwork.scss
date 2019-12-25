@@ -16,6 +16,25 @@
   }
 }
 
+.handwork__zigzag-icon {
+  display: none;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 22px;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 34px;
+  }
+}
+
 .handwork__inner {
   @include inner;
 
@@ -108,6 +127,10 @@
     background-color: #46c1ae;
     transform: translateY(-5px);
   }
+}
+
+.handwork__image--active {
+  color: #149080;
 }
 
 .handwork__inner:active > .handwork__category,

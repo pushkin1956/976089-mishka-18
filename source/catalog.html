@@ -26,10 +26,10 @@
         </a>
         <button class="menu__btn" type="button" aria-label="Открыть меню">
           <svg class="svg-icon svg-icon__menu-open" width="20" height="14">
-            <use xlink:href="img/sprite.svg#icon-menu-open" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+            <use xlink:href="img/sprite.svg#icon-menu-open"></use>
           </svg>
           <svg class="svg-icon svg-icon__menu-close" width="21" height="20">
-            <use xlink:href="img/sprite.svg#icon-menu-close" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+            <use xlink:href="img/sprite.svg#icon-menu-close"></use>
           </svg>
         </button>
         <ul class="menu__list menu__list--catalog-order">
@@ -74,9 +74,11 @@
 
     <div class="catalog__title-page">
       <p class="catalog__page-text">Каталог товаров</p>
-      <svg class="svg-icon svg-icon__zigzag" width="100%" height="34">
-        <use xlink:href="img/sprite.svg#icon-zig-zag" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-      </svg>
+      <div class="catalog__zigzag-icon">
+        <svg class="svg-icon svg-icon__zigzag" width="100%" height="34">
+          <use xlink:href="img/sprite.svg#icon-zig-zag"></use>
+        </svg>
+      </div>
     </div>
 
     <!-- Секция каталога -->
@@ -105,9 +107,11 @@
                   <p class="catalog__text">Рост 30 см, вес 200 г</p>
                   <div class="catalog__price">
                     <p class="catalog__money">1 200 руб.</p>
-                    <svg class="svg-icon svg-icon__cart modal-add" width="20" height="19">
-                      <use xlink:href="img/sprite.svg#icon-cart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                    </svg>
+                    <div class="social__icon-cart">
+                      <svg class="svg-icon svg-icon__cart modal-add" width="20" height="19">
+                        <use xlink:href="img/sprite.svg#icon-cart"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -135,9 +139,11 @@
                   <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
                   <div class="catalog__price">
                     <p class="catalog__money">690 руб.</p>
-                    <svg class="svg-icon svg-icon__cart modal-add" width="20" height="19">
-                      <use xlink:href="img/sprite.svg#icon-cart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                    </svg>
+                    <div class="social__icon-cart">
+                      <svg class="svg-icon svg-icon__cart modal-add" width="20" height="19">
+                        <use xlink:href="img/sprite.svg#icon-cart"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -165,9 +171,11 @@
                   <p class="catalog__text catalog__text--basket">Диаметр 30 см, высота 30 см</p>
                   <div class="catalog__price">
                     <p class="catalog__money">1 500 руб.</p>
-                    <svg class="svg-icon svg-icon__cart modal-add" width="20" height="19">
-                      <use xlink:href="img/sprite.svg#icon-cart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                    </svg>
+                    <div class="social__icon-cart">
+                      <svg class="svg-icon svg-icon__cart modal-add" width="20" height="19">
+                        <use xlink:href="img/sprite.svg#icon-cart"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -175,9 +183,11 @@
           </li>
           <li class="catalog__item catalog__item--video">
             <div class="catalog__process">
-              <svg class="svg-icon svg-icon__video">
-                <use xlink:href="img/sprite.svg#icon-video" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-              </svg>
+              <div class="catalog__process-icon">
+                <svg class="svg-icon svg-icon__video" width="43" height="32">
+                  <use xlink:href="img/sprite.svg#icon-video"></use>
+                </svg>
+              </div>
               <p class="catalog__title catalog__title--process">Процесс производства</p>
             </div>
             <div class="catalog__video">
@@ -193,9 +203,11 @@
                 <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"
                   alt="Процесс производства">
               </picture>
-              <svg class="svg-icon svg-icon__play" width="101" height="77">
-                <use xlink:href="img/sprite.svg#icon-play" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-              </svg>
+              <div class="catalog__play-icon">
+                <svg class="svg-icon svg-icon__play" width="101" height="77">
+                  <use xlink:href="img/sprite.svg#icon-play"></use>
+                </svg>
+              </div>
             </div>
             <div class="catalog__process-wrapper">
               <p class="catalog__text catalog__text--process">
@@ -222,22 +234,21 @@
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
               <svg class="svg-icon svg-icon__instagram" width="22" height="21">
-                <use xlink:href="img/sprite.svg#icon-instagram" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
-              <!-- <img src="http://placecorgi.com/150" alt="Наш инстаграм" width="22" height="21"> -->
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
               <svg class="svg-icon svg-icon__facebook" width="15" height="28">
-                <use xlink:href="img/sprite.svg#icon-facebook" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#" aria-label="Твитер">
               <svg class="svg-icon svg-icon__twitter" width="23" height="20">
-                <use xlink:href="img/sprite.svg#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -247,9 +258,11 @@
       <div class="footer__copyright">
         <b class="footer__copyright-text">Разработано</b>
         <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="svg-icon svg-icon__academy" width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-academy" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-          </svg>
+          <div class="footer__academy-icon">
+            <svg class="svg-icon svg-icon__academy" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
+            </svg>
+          </div>
         </a>
       </div>
     </div>

@@ -24,7 +24,8 @@
   @include inner;
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 24px;
+    padding-bottom: 48px;
+    margin-bottom: 20px;
   }
 }
 
@@ -212,5 +213,20 @@
 .baskets__about-product {
   @media (min-width: $desktop-width) {
     width: 295px;
+  }
+}
+
+.baskets__line-icon {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: #e6e7e8;
+  width: 100%;
+  height: 22px;
+  transform: translateX(-50%) rotate(180deg);
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }

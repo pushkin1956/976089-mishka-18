@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     var placemark = new ymaps.Placemark([59.9387165, 30.32304739999995], {}, { // координаты метки
       iconLayout: "default#image",
-      iconImageHref: "../img/icon-map-pin.svg", // иконка метки
+      iconImageHref: "img/icon-map-pin.svg", // иконка метки
       iconImageSize: [82, 82] // размер метки
     });
   map.geoObjects.add(placemark);
