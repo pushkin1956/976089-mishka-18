@@ -1,5 +1,5 @@
 .form {
-  margin-bottom: 47px;
+  margin-bottom: 52px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
@@ -102,11 +102,13 @@
 }
 
 .form__title-page {
+  position: relative;
   background-color: #f1f1f1;
+  box-shadow: inset 0 -1px 0 1px #f9f9f9, inset 0 0 0 1px rgba(68, 68, 68, 0.2);
 
   @media (min-width: $tablet-width) {
     margin-top: -44px;
-    margin-bottom: 42px;
+    margin-bottom: 38px;
   }
 }
 
@@ -258,6 +260,7 @@
   @media (max-width: $mobile-width-only) {
     margin: 0 0 45px 0;
   }
+
   margin: 0 0 18px 0;
 }
 
@@ -315,11 +318,110 @@
 }
 
 .form__radio--indentation {
+  position: relative;
   padding-left: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: -20px;
+    width: 52px;
+    height: 52px;
+    border: 2px solid $color-danger;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -5px;
+    width: 22px;
+    height: 22px;
+    background-color: $color-brand;
+    border: 2px solid $color-brand;
+    border-radius: 50%;
+    transform: scale(0);
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      top: -10px;
+      left: -1px;
+    }
+
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      top: 2px;
+      left: 11px;
+    }
+  }
+}
+
+.form__input-check:checked ~ .form__radio--indentation::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -5px;
+  width: 22px;
+  height: 22px;
+  background-color: $color-brand;
+  border: 2px solid $color-brand;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.4s ease;
+
+  @media (max-width: $mobile-width-only) {
+    top: 2px;
+    left: 11px;
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .form__checkbox--indentation {
+  position: relative;
   padding-left: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: -21px;
+    width: 54px;
+    height: 52px;
+    border: 2px solid $color-danger;
+
+    @media (max-width: $mobile-width-only) {
+      top: -12px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 33px;
+    height: 22px;
+    background: url("../img/icon-tick.svg") no-repeat;
+    transform: scale(0);
+    transition: all 0.4s ease;
+
+    @media (max-width: $mobile-width-only) {
+      top: -4px;
+      left: 4px;
+    }
+  }
 
   @media (max-width: $mobile-width-only) {
     &:not(:last-of-type) {
@@ -333,6 +435,23 @@
   }
 }
 
+.form__checkbox-check:checked + .form__checkbox--indentation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 33px;
+  height: 22px;
+  background: url("../img/icon-tick.svg") no-repeat;
+  transform: scale(1);
+  transition: all 0.4s ease;
+
+  @media (max-width: $mobile-width-only) {
+    top: -4px;
+    left: 4px;
+  }
+}
+
 .form__placeholder {
   &::placeholder {
     opacity: 0.3;
@@ -340,6 +459,7 @@
     line-height: 1.06;
     color: $color-danger;
   }
+
   font-size: 19px;
   color: $color-danger;
   width: 100%;
@@ -365,6 +485,7 @@
       font-size: 19px;
       line-height: 0.95;
     }
+
     width: 428px;
     margin-left: auto;
     padding: 0 0 0 16px;
@@ -392,6 +513,9 @@
 
 .form__placeholder--tel {
   padding: 12px 0 18px 0;
+  background: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
 
   @media (max-width: $mobile-width-only) {
     letter-spacing: 0.06em;
@@ -414,6 +538,9 @@
 }
 
 .form__placeholder--email {
+  background: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
   width: 500px;
 
   @media (max-width: $mobile-width-only) {
@@ -484,7 +611,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    // align-self: baseline;
     margin-right: 24px;
   }
 }
@@ -544,5 +670,24 @@
 
   @media (min-width: $desktop-width) {
     padding: 65px 0 24px 0;
+  }
+}
+
+.form__zigzag-icon {
+  display: none;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 22px;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 34px;
   }
 }

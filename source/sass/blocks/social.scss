@@ -1,6 +1,7 @@
 .social__list {
   @include reset-list;
 
+  align-items: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -9,7 +10,7 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-right: -58px;
+    margin-right: -78px;
     padding: 0;
   }
 }
@@ -18,4 +19,13 @@
   @media (min-width: $tablet-width) {
     margin-right: 40px;
   }
+}
+
+.social__link {
+  color: #000000;
+}
+
+.social__icon-cart {
+  color: #231f20;
+  opacity: 0.2;
 }

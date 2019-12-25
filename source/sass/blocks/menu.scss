@@ -59,6 +59,7 @@
   line-height: 1.41;
   text-decoration: none;
   color: #000000;
+  z-index: 1;
 
   &:hover {
     @include hover-opacity;
@@ -164,6 +165,7 @@
 }
 
 .menu__btn {
+  align-items: center;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -176,7 +178,7 @@
   cursor: pointer;
 
   @media (max-width: $mobile-width-only) {
-    display: block;
+    display: flex;
   }
 }
 
@@ -203,7 +205,19 @@
   }
 }
 
-// Добавляем стили для открытого меню
+// Добавляем стили для меню
+.menu.menu__opened .svg-icon__menu-open {
+  display: none;
+}
+
+.menu.menu__opened .svg-icon__menu-close {
+  display: block;
+}
+
+.menu .svg-icon__menu-close {
+  display: none;
+}
+
 .menu__opened .menu__btn {
   background: url("");
 }

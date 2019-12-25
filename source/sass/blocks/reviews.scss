@@ -1,12 +1,16 @@
 .reviews {
-  margin-bottom: 85px;
+  position: relative;
+  padding-bottom: 26px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 162px;
+    margin-bottom: 62px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 170px;
+    margin-bottom: 85px;
+    padding-bottom: 88px;
   }
 }
 
@@ -33,13 +37,17 @@
 .reviews__inner {
   @include inner;
 
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 34px;
+  }
+
   @media (min-width: $tablet-width) {
-    background: url("../img/review@1x.jpg") no-repeat 0% 75%;
+    padding-bottom: 60px;
+    background: url("../img/review@1x.jpg") no-repeat 0% 5%;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../img/review@1x.jpg") 6% 5% no-repeat;
-    padding-bottom: 60px;
   }
 }
 
@@ -71,7 +79,7 @@
   @media (min-width: $desktop-width) {
     width: 770px;
     margin-bottom: 38px;
-    line-height: 1.83;
+    line-height: 1.73;
   }
 }
 
@@ -114,10 +122,15 @@
 }
 
 .reviews__slide {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 40px;
+  margin-right: 20px;
+  width: 136px;
 
   @media (max-width: $mobile-width-only) {
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -132,12 +145,15 @@
 
 .reviews__btn-prev,
 .reviews__btn-next {
-  width: 130px;
-  height: 52px;
+  min-height: 52px;
   padding: 0;
   border: solid 1px #ececec;
   background-color: transparent;
   cursor: pointer;
+
+  @media (max-width: $mobile-width-only) {
+    width: 130px;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -164,5 +180,20 @@
   @media (min-width: $desktop-width) {
     margin-top: 14px;
     min-height: 53px;
+  }
+}
+
+.reviews__line-icon {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: #e6e7e8;
+  width: 100%;
+  height: 22px;
+  transform: translateX(-50%) rotate(180deg);
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }

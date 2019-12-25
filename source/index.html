@@ -25,9 +25,12 @@
           </picture>
         </a>
         <button class="menu__btn" type="button" aria-label="Открыть меню">
-          <span class="menu__line"></span>
-          <span class="menu__line"></span>
-          <span class="menu__line"></span>
+          <svg class="svg-icon svg-icon__menu-open" width="20" height="14">
+            <use xlink:href="img/sprite.svg#icon-menu-open"></use>
+          </svg>
+          <svg class="svg-icon svg-icon__menu-close" width="21" height="20">
+            <use xlink:href="img/sprite.svg#icon-menu-close"></use>
+          </svg>
         </button>
         <ul class="menu__list menu__list--catalog-order">
           <li class="menu__item">
@@ -39,7 +42,8 @@
         </ul>
         <ul class="menu__list menu__list--search">
           <li class="menu__item search">
-            <a class="menu__link search__link" href="#"><span class="search__link-dn">Поиск по сайту</span></a>
+            <a class="menu__link search__link" href="#"><span class="search__link-display-none">Поиск по
+                сайту</span></a>
           </li>
           <li class="menu__item">
             <a class="menu__link menu__link--basket" href="#">Корзина: пока пуста</a>
@@ -77,17 +81,28 @@
         <a href="catalog.html" class="handwork__interior">
           <div class="handwork__inner handwork__flex--g">
             <p class="handwork__category">Предметы интерьера</p>
-            <img class="handwork__image-itn handwork__image--active" src="http://placecorgi.com/150" width="40"
-              height="62" alt="Предметы интерьера">
+            <div class="handwork__image-interior handwork__image--active">
+              <svg class="svg-icon svg-icon__interior" width="40" height="62">
+                <use xlink:href="img/sprite.svg#icon-interior"></use>
+              </svg>
+            </div>
           </div>
         </a>
         <a href="catalog.html" class="handwork__toys">
           <div class="handwork__inner handwork__flex--g">
             <p class="handwork__category">Детские игрушки</p>
-            <img class="handwork__image-toys handwork__image--active" src="http://placecorgi.com/150" width="60"
-              height="60" alt="Детские игрушки">
+            <div class="handwork__image-toys handwork__image--active">
+              <svg class="svg-icon svg-icon__toy" width="60" height="60">
+                <use xlink:href="img/sprite.svg#icon-toy"></use>
+              </svg>
+            </div>
           </div>
         </a>
+      </div>
+      <div class="handwork__zigzag-icon">
+        <svg class="svg-icon svg-icon__zigzag" width="100%" height="34">
+          <use xlink:href="img/sprite.svg#icon-zig-zag"></use>
+        </svg>
       </div>
     </section>
 
@@ -131,10 +146,19 @@
                 </tr>
               </table>
             </div>
-            <picture >
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-                <img class="baskets__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/webp/triple-set-mobile.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)"
+                srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="baskets__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+                alt="Вязаные корзинки">
             </picture>
             <div class="baskets__order">
               <p class="baskets__price">Цена: 990 руб.</p>
@@ -142,6 +166,11 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="baskets__line-icon">
+        <svg class="svg-icon svg-icon__zigzag-line" width="100%" height="23px">
+          <use xlink:href="img/sprite.svg#icon-zigzag-line" ></use>
+        </svg>
       </div>
     </section>
 
@@ -152,38 +181,38 @@
           <h2 class="about-us__title title">Коротко о нас:</h2>
           <ul class="about-us__list">
             <li class="about-us__item about-us__item--eco">
-              <svg class="about__us-icon about__us-icon--flower" width="32" height="37">
-                <use xlink:href="img/sprite.svg#icon-flower" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              <svg class="svg-icon svg-icon--brand" width="32" height="37">
+                <use xlink:href="img/sprite.svg#icon-flower"></use>
               </svg>
               <p class="about-us__text">Экологически чистые материалы</p>
             </li>
             <li class="about-us__item about-us__item--scandinavian">
-              <svg class="about__us-icon about__us-icon--money" width="47" height="27">
-                <use xlink:href="img/sprite.svg#icon-money" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              <svg class="svg-icon svg-icon--brand" width="47" height="27">
+                <use xlink:href="img/sprite.svg#icon-money"></use>
               </svg>
               <p class="about-us__text">Скандинавский стиль по российской цене</p>
             </li>
             <li class="about-us__item about-us__item--likes">
-              <svg class="about__us-icon about__us-icon--heart" width="34" height="27">
-                <use xlink:href="img/sprite.svg#icon-heart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              <svg class="svg-icon svg-icon--brand" width="34" height="27">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
               </svg>
               <p class="about-us__text">Увеличивает лайки на фотографиях</p>
             </li>
             <li class="about-us__item about-us__item--love">
-              <svg class="about__us-icon about__us-icon--ball" width="35" height="34">
-                <use xlink:href="img/sprite.svg#icon-ball" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              <svg class="svg-icon svg-icon--brand" width="35" height="34">
+                <use xlink:href="img/sprite.svg#icon-ball"></use>
               </svg>
               <p class="about-us__text">Связано вручную с любовью и умилением</p>
             </li>
             <li class="about-us__item about-us__item--support">
-              <svg class="about__us-icon about__us-icon--rocket" width="55" height="23">
-                <use xlink:href="img/sprite.svg#icon-rocket" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              <svg class="svg-icon svg-icon--brand" width="55" height="23">
+                <use xlink:href="img/sprite.svg#icon-rocket"></use>
               </svg>
               <p class="about-us__text">Поддержка отечественного производителя</p>
             </li>
             <li class="about-us__item about-us__item--present">
-              <svg class="about__us-icon about__us-icon--gift" width="33" height="32">
-                <use xlink:href="img/sprite.svg#icon-gift" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              <svg class="svg-icon svg-icon--brand" width="33" height="32">
+                <use xlink:href="img/sprite.svg#icon-gift"></use>
               </svg>
               <p class="about-us__text">Поставляется в подарочной упаковке</p>
             </li>
@@ -209,14 +238,27 @@
               <p class="reviews__account">@misssssiskras</p>
             </div>
             <div class="reviews__slide">
-              <button class="reviews__btn-prev" type="button" aria-label="Предущий слайд">Предыдущий</button>
-              <button class="reviews__btn-next" type="button" aria-label="Следующий слайд">Следующий</button>
+              <button class="reviews__btn-prev" type="button" aria-label="Предущий слайд">
+                <svg class="svg-icon svg-icon__prev" width="50" height="26">
+                  <use xlink:href="img/sprite.svg#icon-prev"></use>
+                </svg>
+              </button>
+              <button class="reviews__btn-next" type="button" aria-label="Следующий слайд">
+                <svg class="svg-icon svg-icon__next" width="50" height="26">
+                  <use xlink:href="img/sprite.svg#icon-next"></use>
+                </svg>
+              </button>
             </div>
           </div>
           <form class="reviews__write-form" action="mailto:info@mimimishkashop.ru">
             <button type="submit" class="reviews__write-btn button">Написать</button>
           </form>
         </div>
+      </div>
+      <div class="reviews__line-icon">
+        <svg class="svg-icon svg-icon__zigzag-line" width="100%" height="23px">
+          <use xlink:href="img/sprite.svg#icon-zigzag-line"></use>
+        </svg>
       </div>
     </section>
 
@@ -244,10 +286,22 @@
           </div>
           <div id="map" class="contacts__map-js contacts__map-js--dn"></div>
           <div class="contacts__map">
-            <img class="contacts__image" src="img/map-mobile@1x.jpg"
-              srcset="img/map-mobile@1x.jpg 767w, img/map-tablet@1x.jpg 1149w, img/map-desktop@1x.jpg"
-              alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-            <img class="contacts__pin" src="http://placecorgi.com/150" alt="Контакты" width="100" height="67">
+            <picture class="contacts__image">
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/webp/map-desktop@1x.webp 1x, img/webp/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/webp/map-tablet1x.webp 1x, img/webp/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/map-mobile.webp 1x, img/webp/map-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@1x.jpg"
+                alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+            </picture>
+            <div class="contacts__map-pin">
+              <svg class="svg-icon svg-icon__pin" width="100" height="67">
+                <use xlink:href="img/sprite.svg#icon-pin"></use>
+              </svg>
+            </div>
           </div>
           <form action="mailto:info@mimimishkashop.ru">
             <button class="contacts__btn button" type="submit">Напишите нам</button>
@@ -268,17 +322,23 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
-              <img src="http://placecorgi.com/150" alt="Наш инстаграм" width="22" height="21">
+              <svg class="svg-icon svg-icon__instagram" width="22" height="21">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
-              <img src="http://placecorgi.com/150" alt="Наш фейсбук" width="15" height="28">
+              <svg class="svg-icon svg-icon__facebook" width="15" height="28">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#" aria-label="Твитер">
-              <img src="http://placecorgi.com/150" alt="Наш твиттер" width="23" height="20">
+              <svg class="svg-icon svg-icon__twitter" width="23" height="20">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -287,10 +347,11 @@
       <div class="footer__copyright">
         <b class="footer__copyright-text">Разработано</b>
         <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="footer__academy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34">
-            <path fill="#63d1bb"
-              d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z" />
+          <div class="footer__academy-icon">
+            <svg class="svg-icon svg-icon__academy" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
             </svg>
+          </div>
         </a>
       </div>
     </div>

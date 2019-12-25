@@ -16,16 +16,21 @@
 
     &::before {
       content: "";
-      top: -15px;
-      left: -10px;
+      top: -13px;
+      left: -23px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::before {
       position: absolute;
-      top: -15px;
-      left: -10px;
+      left: -26px;
     }
+  }
+}
+
+.search__link-display-none {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

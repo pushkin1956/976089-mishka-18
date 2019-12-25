@@ -1,12 +1,15 @@
 .baskets {
-  margin-bottom: 70px;
+  position: relative;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 118px;
+    margin-bottom: 45px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 156px;
+    margin-bottom: 60px;
+    padding-bottom: 96px;
   }
 }
 
@@ -19,6 +22,11 @@
 
 .baskets__inner {
   @include inner;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 48px;
+    margin-bottom: 20px;
+  }
 }
 
 .baskets__title {
@@ -205,5 +213,20 @@
 .baskets__about-product {
   @media (min-width: $desktop-width) {
     width: 295px;
+  }
+}
+
+.baskets__line-icon {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: #e6e7e8;
+  width: 100%;
+  height: 22px;
+  transform: translateX(-50%) rotate(180deg);
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }
