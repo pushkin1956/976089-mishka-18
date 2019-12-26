@@ -111,14 +111,6 @@
   }
 }
 
-.handwork__image-interior {
-  padding-right: 10px;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 0;
-  }
-}
-
 .handwork__toys {
   background-color: #56c3b2;
   transition: all 0.4s ease;
@@ -154,9 +146,14 @@
   }
 }
 
-.handwork__image-interior,
-.handwork__image-toys {
+.handwork__icon {
   opacity: 0.2;
+}
+
+.handwork__icon--position {
+  @media (max-width: $mobile-width-only) {
+    padding-right: 10px;
+  }
 }
 
 .handwork__goods {

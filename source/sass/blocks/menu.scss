@@ -206,20 +206,28 @@
 }
 
 // Добавляем стили для меню
-.menu.menu__opened .svg-icon__menu-open {
+.menu__btn-icon {
+  width: 20px;
+  height: 18px;
+  margin-top: 4px;
+}
+
+.menu__line-one,
+.menu__line-two,
+.menu__line-three {
+  transition: all 0.5s ease;
+}
+
+.menu__opened .menu__line-one {
+  transform: rotate(45deg) translate(0, -3px);
+}
+
+.menu__opened .menu__line-two {
+  transform: rotate(-45deg) translate(-8px, 3px);
+}
+
+.menu__opened .menu__line-three {
   display: none;
-}
-
-.menu.menu__opened .svg-icon__menu-close {
-  display: block;
-}
-
-.menu .svg-icon__menu-close {
-  display: none;
-}
-
-.menu__opened .menu__btn {
-  background: url("");
 }
 
 .menu__opened .menu__list--search,
