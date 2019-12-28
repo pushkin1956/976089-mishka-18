@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Мишка - форма заказа: HTML Academy</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body no-js">
@@ -25,10 +25,12 @@
           </picture>
         </a>
         <button class="menu__btn" type="button" aria-label="Открыть меню">
-          <svg class="menu__btn-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
-            <rect class="menu__line-one" fill="#231F20" width="19.958" height="2"/>
-            <rect class="menu__line-two" y="6" fill="#231F20" width="19.958" height="2"/>
-            <rect class="menu__line-three" y="12" fill="#231F20" width="19.958" height="2"/>
+          <svg class="menu__btn-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px"
+            viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
+            <rect class="menu__line-one" fill="#231F20" width="19.958" height="2" />
+            <rect class="menu__line-two" y="6" fill="#231F20" width="19.958" height="2" />
+            <rect class="menu__line-three" y="12" fill="#231F20" width="19.958" height="2" />
           </svg>
         </button>
         <ul class="menu__list menu__list--catalog-order">
@@ -75,7 +77,7 @@
       <p class="form__page-text">Вязание на заказ</p>
       <div class="form__zigzag-icon">
         <svg class="svg-icon svg-icon__zigzag" width="100%" height="34">
-          <use xlink:href="img/sprite.svg#icon-zig-zag"></use>
+          <use xlink:href="img/sprite.svg#icon-bg-zigzag-fill"></use>
         </svg>
       </div>
     </div>
@@ -94,7 +96,8 @@
             <p class="form__legend form__legend--line">Тип</p>
             <div class="form__radio">
               <div class="form__interior">
-                <input class="form__input-check visually-hidden" id="interior" type="radio" name="type" value="interior" checked>
+                <input class="form__input-check visually-hidden" id="interior" type="radio" name="type" value="interior"
+                  checked>
                 <label class="form__style-text form__radio--indentation qqq" for="interior">
                   Аксессуар для интерьера
                 </label>
@@ -112,17 +115,21 @@
           <div class="form__inner">
             <p class="form__legend form__legend-line">Цвет</p>
             <div class="form__checkboxes">
-              <input class="form__checkbox-check visually-hidden" id="white" name="color" value="white" type="checkbox" checked>
+              <input class="form__checkbox-check visually-hidden" id="white" name="color" value="white" type="checkbox"
+                checked>
               <label class="form__style-text form__checkbox--indentation" for="white">Белый</label>
-              <input class="form__checkbox-check visually-hidden" id="gray" name="color" value="grey" type="checkbox" checked>
+              <input class="form__checkbox-check visually-hidden" id="gray" name="color" value="grey" type="checkbox"
+                checked>
               <label class="form__style-text form__checkbox--indentation" for="gray">Серый</label>
-              <input class="form__checkbox-check visually-hidden" id="tiffany" name="color" value="tiffany" type="checkbox">
+              <input class="form__checkbox-check visually-hidden" id="tiffany" name="color" value="tiffany"
+                type="checkbox">
               <label class="form__style-text form__checkbox--indentation" for="tiffany">«Тиффани»</label>
               <input class="form__checkbox-check visually-hidden" id="black" name="color" value="black" type="checkbox">
               <label class="form__style-text form__checkbox--indentation" for="black">Черный</label>
               <input class="form__checkbox-check visually-hidden" id="pink" name="color" value="pink" type="checkbox">
               <label class="form__style-text form__checkbox--indentation" for="pink">Розовый</label>
-              <input class="form__checkbox-check visually-hidden" id="orange" name="color" value="orange" type="checkbox">
+              <input class="form__checkbox-check visually-hidden" id="orange" name="color" value="orange"
+                type="checkbox">
               <label class="form__style-text form__checkbox--indentation" for="orange">Оранжевый</label>
             </div>
           </div>
@@ -185,22 +192,22 @@
   <!-- Подвал сайта -->
   <footer class="footer">
     <div class="footer__inner">
-      <a class="footer__logo-link">
-        <img class="footer__logo" src="img/logo-footer.svg" href="index.html" alt="Логотип Мишка">
+      <a class="footer__logo-link" href="index.html">
+        <img class="footer__logo" src="img/logo-footer.svg" alt="Логотип Мишка">
       </a>
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
               <svg class="svg-icon svg-icon__instagram" width="22" height="21">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
               <svg class="svg-icon svg-icon__facebook" width="15" height="28">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -217,9 +224,11 @@
       <div class="footer__copyright">
         <b class="footer__copyright-text">Разработано</b>
         <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <div class="footer__academy-icon">
-            <svg class="svg-icon svg-icon__academy" width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-academy"></use>
+          <div class="footer__academy-icon svg-icon">
+            <svg class="svg-icon__academy" xmlns="http://www.w3.org/2000/svg" fill="#63d1bb" width="26.943"
+              height="34.09">
+              <path
+                d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
             </svg>
           </div>
         </a>
@@ -230,6 +239,10 @@
   <!-- Скрипты -->
   <script src="js/menu.js"></script>
   <script src="js/picturefill.js"></script>
+
+  <div style="display:none">
+    <include src="source/img/sprite.svg"></include>
+  </div>
 
 </body>
 
