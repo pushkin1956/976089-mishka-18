@@ -678,7 +678,7 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
     position: absolute;
     bottom: 0;
     width: 100%;

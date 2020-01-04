@@ -15,9 +15,11 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
 
 gulp.task("clean", function () {
-  return del("build");
+  return del("build", "source/js/min-js");
 });
 
 gulp.task("html", function () {
@@ -25,6 +27,9 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 });
 
@@ -44,6 +49,13 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task ("jsmin", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("source/js/min-js"))
+    .pipe(gulp.dest("build/js/min-js"));
+});
+
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([imagemin.optipng({
@@ -52,7 +64,8 @@ gulp.task("images", function () {
       imagemin.jpegtran({
         progressive: true
       })
-    ])).pipe(gulp.dest("build/img"));
+    ]))
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
@@ -77,15 +90,14 @@ gulp.task("sprite", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**/*.{jpg,png,webp}",
-    "source/img/logo-*.svg",
-    "source/img/icon-bg-zigzag-*.svg",
-    "source/js/**"
-  ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/**/*.{jpg,png,webp}",
+      "source/img/logo-*.svg",
+      "source/img/icon-bg-zigzag-*.svg"
+    ], {
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("server", function () {
@@ -107,5 +119,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "html", "css", "images", "webp", "sprite", "copy"));
+gulp.task("build", gulp.series("clean", "html", "css", "jsmin", "images", "webp", "sprite", "copy"));
 gulp.task("start", gulp.series("build", "server"));
