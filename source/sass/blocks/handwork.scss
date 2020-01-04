@@ -23,7 +23,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     position: absolute;
-    align-content: center;
     bottom: 0;
     left: 50%;
     width: 100%;
@@ -32,6 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1150px;
     height: 34px;
   }
 }
