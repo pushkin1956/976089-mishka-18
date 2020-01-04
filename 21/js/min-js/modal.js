@@ -1,0 +1,1 @@
+for(var modal=document.querySelectorAll(".modal-add"),modalShow=document.querySelector(".modal"),i=0;i<modal.length;i++)modal[i].addEventListener("click",function(e){e.preventDefault(),modalShow.classList.add("modal-show")});window.addEventListener("keydown",function(e){27===e.keyCode&&(e.preventDefault(),modalShow.classList.remove("modal-show"))});
