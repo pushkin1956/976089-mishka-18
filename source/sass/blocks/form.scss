@@ -317,6 +317,12 @@
   }
 }
 
+.form__radio--indentation:hover {
+  &::before {
+    border-color: $color-brand;
+  }
+}
+
 .form__radio--indentation {
   position: relative;
   padding-left: 60px;
@@ -330,6 +336,7 @@
     height: 52px;
     border: 2px solid $color-danger;
     border-radius: 50%;
+    transition: all 0.4s ease;
   }
 
   &::after {
@@ -385,6 +392,12 @@
   }
 }
 
+.form__checkbox--indentation:hover {
+  &::before {
+    border-color: $color-brand;
+  }
+}
+
 .form__checkbox--indentation {
   position: relative;
   padding-left: 60px;
@@ -397,6 +410,7 @@
     width: 54px;
     height: 52px;
     border: 2px solid $color-danger;
+    transition: all 0.4s ease;
 
     @media (max-width: $mobile-width-only) {
       top: -12px;

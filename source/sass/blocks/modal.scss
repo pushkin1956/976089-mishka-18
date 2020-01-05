@@ -79,6 +79,10 @@
   border: solid 2px #ececec;
   background-color: transparent;
 
+  &:hover {
+    border-color: #c1c1c1;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 20px 52px;
   }

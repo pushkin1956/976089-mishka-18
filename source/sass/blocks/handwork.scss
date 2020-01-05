@@ -112,6 +112,16 @@
   }
 }
 
+.handwork__interior:hover .handwork__icon,
+.handwork__toys:hover .handwork__icon {
+  opacity: 0.4;
+}
+
+.handwork__icon {
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
 .handwork__toys {
   background-color: #56c3b2;
   transition: all 0.4s ease;
@@ -128,7 +138,7 @@
 
 .handwork__inner:active > .handwork__category,
 .handwork__inner:active > .handwork__image--active {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .handwork__interior,
@@ -145,10 +155,6 @@
   @media (min-width: $desktop-width) {
     width: 525px;
   }
-}
-
-.handwork__icon {
-  opacity: 0.2;
 }
 
 .handwork__icon--position {
