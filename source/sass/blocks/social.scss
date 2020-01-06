@@ -23,9 +23,17 @@
 
 .social__link {
   color: #000000;
+
+  &:active {
+    @include active-opacity;
+  }
 }
 
 .social__icon-cart {
   color: #231f20;
   opacity: 0.2;
+
+  &:hover {
+    color: #63d1bb;
+  }
 }

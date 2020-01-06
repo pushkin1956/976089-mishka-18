@@ -151,6 +151,14 @@
   background-color: transparent;
   cursor: pointer;
 
+  &:hover {
+    @include hover-opacity;
+  }
+
+  &:active {
+    @include active-opacity;
+  }
+
   @media (max-width: $mobile-width-only) {
     width: 130px;
   }
